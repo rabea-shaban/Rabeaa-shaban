@@ -80,6 +80,9 @@ export const metadata = {
     images: ["/og-image.jpg"],
     creator: "@rabea_sh_elzayat",
   },
+  verification: {
+    google: "nNlwGk53zi-tWlVHmfwrF4yAgkzMN9n_lZji1_cAk9Y",
+  },
 };
 
 const jsonLd = {
