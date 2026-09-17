@@ -96,7 +96,10 @@ export const metadata = {
     creator: "@rabea_sh_elzayat",
   },
   verification: {
-    google: "nNlwGk53zi-tWlVHmfwrF4yAgkzMN9n_lZji1_cAk9Y",
+    google: [
+      "vnqIpYUy_6-cc_4ZxpTWULbpWGTnJdDtOVTada2zUhc",
+      "nNlwGk53zi-tWlVHmfwrF4yAgkzMN9n_lZji1_cAk9Y"
+    ],
   },
 };
 
