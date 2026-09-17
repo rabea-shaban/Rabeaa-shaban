@@ -185,44 +185,49 @@ const HomeView = () => {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProjects.map((project, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="glass-effect rounded-2xl p-6 border border-border/40 hover:border-primary/40 hover:shadow-xl transition-all flex flex-col justify-between group"
-              >
-                <div>
-                  {project.img && (
-                    <div className="relative aspect-video rounded-xl overflow-hidden mb-4 bg-muted">
-                      <img
-                        src={typeof project.img === 'string' ? project.img : project.img.src || project.img}
-                        alt={project.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </div>
-                  )}
-                  <h3 className="text-xl font-bold font-display mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
-                  <p className="text-xs text-muted-foreground mb-4 leading-relaxed line-clamp-3">{project.description}</p>
-                </div>
-                <div className="pt-4 border-t border-border/30 flex justify-between items-center">
-                  <div className="flex flex-wrap gap-1.5">
-                    {project.technologies?.slice(0, 3).map((tech, tIdx) => (
-                      <span key={tIdx} className="px-2 py-0.5 text-[10px] font-bold rounded bg-primary/10 text-primary border border-primary/20">
-                        {tech}
-                      </span>
-                    ))}
+            {featuredProjects.map((project, idx) => {
+              const projectTitle = (isAr && project.titleAr) ? project.titleAr : project.title;
+              const projectDesc = (isAr && project.descriptionAr) ? project.descriptionAr : project.description;
+
+              return (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1 }}
+                  className="glass-effect rounded-2xl p-6 border border-border/40 hover:border-primary/40 hover:shadow-xl transition-all flex flex-col justify-between group"
+                >
+                  <div>
+                    {project.img && (
+                      <div className="relative aspect-video rounded-xl overflow-hidden mb-4 bg-muted">
+                        <img
+                          src={typeof project.img === 'string' ? project.img : project.img.src || project.img}
+                          alt={projectTitle}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    )}
+                    <h3 className="text-xl font-bold font-display mb-2 group-hover:text-primary transition-colors">{projectTitle}</h3>
+                    <p className="text-xs text-muted-foreground mb-4 leading-relaxed line-clamp-3">{projectDesc}</p>
                   </div>
-                  {project.liveUrl && (
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="p-2 text-primary hover:scale-110 transition-transform">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  )}
-                </div>
-              </motion.div>
-            ))}
+                  <div className="pt-4 border-t border-border/30 flex justify-between items-center">
+                    <div className="flex flex-wrap gap-1.5">
+                      {(project.technologies || project.tech)?.slice(0, 3).map((tech, tIdx) => (
+                        <span key={tIdx} className="px-2 py-0.5 text-[10px] font-bold rounded bg-primary/10 text-primary border border-primary/20">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    {(project.liveUrl || project.demo) && (
+                      <a href={project.liveUrl || project.demo} target="_blank" rel="noopener noreferrer" className="p-2 text-primary hover:scale-110 transition-transform">
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    )}
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
 
           <div className="mt-16 text-center">

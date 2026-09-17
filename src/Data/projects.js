@@ -26,7 +26,9 @@ import EduSphere from "../Img/EduSphere.jpg";
 export const projects = [
   {
     title: "EduSphere",
+    titleAr: "منصة EduSphere التعليمية السحابية",
     description: "Cloud-based Enterprise SaaS E-Learning & Communication Platform facilitating interactive digital learning between teachers and students, with real-time messaging, WebRTC audio/video calls, and admin management tools.",
+    descriptionAr: "منصة تعليمية وتواصل سحابية تفاعلية للشركات والمؤسسات (SaaS) تربط المعلمين والطلاب مع دعم المحادثات الفورية، ومكالمات الصوت والفيديو عبر WebRTC، وأدوات إدارة متقدمة للدروس والواجبات.",
     tech: ["Next.js", "React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Socket.io", "WebRTC", "Tailwind CSS", "Cloudflare R2"],
     category: ["Next.js", "Full Stack", "web-app"],
     demo: "https://education-spheree.vercel.app/",
@@ -39,14 +41,25 @@ export const projects = [
       "Cloudflare R2 S3-compatible cloud storage for course media, recordings, and assignments.",
       "Role-based access control (JWT authentication) with MongoDB & Mongoose ORM models."
     ],
+    featuresAr: [
+      "محادثات فورية فردية وجماعية مع علامات استلام وقراءة الرسائل (✓✓).",
+      "مكالمات صوت وفيديو مباشرة بتقنية WebRTC دون الحاجة لخوادم وسائط خارجية.",
+      "تسجيل رسائل صوتية داخل التطبيق مع مشغل موجات صوتية إلكتروني مخصص.",
+      "تخزين سحابي للوسائط والتسجيلات والواجبات عبر Cloudflare R2 المتوافق مع S3.",
+      "نظام صلاحيات ومصادقة محمي برمز JWT وقواعد بيانات MongoDB و Mongoose."
+    ],
     challenges: "Building low-latency WebRTC RTCPeerConnection signaling and presence handling via Socket.io while managing media streams across diverse client networks.",
+    challengesAr: "بناء إشارات WebRTC RTCPeerConnection فائقة السرعة ومعالجة حالة الاتصال عبر Socket.io مع إدارة تدفقات الوسائط عبر شبكات العملاء المختلفة.",
     lessons: "Mastered real-time communication architectures, Web Audio API synthesis, and Cloudflare R2 object storage integration in Next.js App Router.",
+    lessonsAr: "إتقان معماريات التواصل اللحظي وتوليد ومعالجة الصوتيات عبر Web Audio API والتكامل مع سحابة Cloudflare R2 في Next.js App Router.",
     img: EduSphere,
   },
 
   {
     title: "Sa2yanti",
+    titleAr: "تطبيق صيانتي لصيانة السيارات",
     description: "Car maintenance request and booking application. Connects car owners with mechanics, supporting real-time location mapping, request pipelines, and pricing estimates.",
+    descriptionAr: "تطبيق لطلب وحجز خدمات صيانة السيارات يربط بين أصحاب السيارات والفنيين ومراكز الصيانة، مع دعم تتبع الموقع الجغرافي وتقدير التكلفة ومتابعة مسار الطلب.",
     tech: ["React", "Node.js", "Express.js", "MongoDB", "Google Maps", "JWT"],
     category: ["React", "web-app"],
     demo: "https://sy2antek.vercel.app/",
@@ -58,13 +71,23 @@ export const projects = [
       "User request pipeline allowing clients to details issues and receive price estimates.",
       "Dynamic map visualizers integrated with Google Maps APIs."
     ],
+    featuresAr: [
+      "بحث قائم على الموقع الجغرافي لعرض أقرب مراكز وفنيي الصيانة.",
+      "لوحة تحكم للفنيين لاستعراض وقبول وتحديث مراحل طلبات الصيانة.",
+      "مسار طلبات تفاعلي يتيح للعميل توضيح الأعطال واستلام عروض الأسعار التقديرية.",
+      "خرائط تفاعلية متكاملة مع واجهات برمجة تطبيقات Google Maps."
+    ],
     challenges: "Implementing precise coordinates lookup calculations and querying MongoDB geospatial indexes correctly on small mobile viewports.",
+    challengesAr: "تنفيذ حسابات إحداثيات المواقع بدقة عالية والاستعلام عن فهارس MongoDB الجغرافية المكانية بكفاءة على شاشات الهواتف.",
     lessons: "Acquired experience consuming third-party mapping APIs, handling asynchronous coordinate lookups, and building fluid mobile touch targets.",
+    lessonsAr: "اكتساب خبرة عميقة في التعامل مع واجهات خرائط Google Maps والتعامل مع استعلامات الإحداثيات وبناء واجهات سلسة للهواتف الذكية.",
     img: Sa2yanti,
   },
   {
     title: "AGRSUP",
+    titleAr: "متجر AGRSUP للمستلزمات الزراعية",
     description: "A full-stack e-commerce platform for agricultural supplies featuring secure authentication, user roles, product management, shopping cart, and online payment integration using Stripe.",
+    descriptionAr: "منصة تجارة إلكترونية متكاملة للمستلزمات الزراعية تدعم المصادقة الآمنة، وتعدد أدوار المستخدمين، وإدارة المنتجات، وسلة التسوق، والدفع الإلكتروني المباشر عبر Stripe.",
     tech: ["React", ".NET Core", "SQL Server", "Stripe", "REST APIs"],
     category: ["React", "e-commerce"],
     demo: "https://agrsup.vercel.app/",
@@ -76,13 +99,23 @@ export const projects = [
       "Persisted shopping cart and user order history management.",
       "Granular user roles for inventory managers, store admins, and regular clients."
     ],
+    featuresAr: [
+      "كتالوج تجارة إلكترونية متكامل مع فلاتر ذكية وتصنيفات وبحث فوري.",
+      "بوابة دفع إلكتروني آمنة مدمجة مع واجهات الدفع Stripe Checkout.",
+      "سلة تسوق دائمة مع إدارة كاملة لسجل الطلبات السابقة للمستخدم.",
+      "أدوار مستخدمين وصلاحيات دقيقة لمديري المخزون ومسؤولي المتجر والعملاء."
+    ],
     challenges: "Configuring state-handling checkout webhooks via Stripe to securely confirm inventory and payments, and mapping relational tables in SQL Server using Entity Framework Core.",
+    challengesAr: "إعداد خطافات الويب (Webhooks) في Stripe للتحقق الآمن من الدفع والمخزون، وتصميم الجداول العلائقية في SQL Server عبر Entity Framework Core.",
     lessons: "Gained hands-on experience structuring RESTful APIs in .NET Core, implementing repository patterns, and integrating third-party payment gateways.",
+    lessonsAr: "بناء واجهات برمجة تطبيقات RESTful قوية في .NET Core وتطبيق أنماط التصميم المستودعية (Repository Pattern) وربط بوابات الدفع.",
     img: Latest_Products,
   },
   {
     title: "Portfolio Website",
+    titleAr: "موقعي الشخصي التفاعلي",
     description: "My personal portfolio showcasing my projects, technical skills, certifications, and professional journey with modern UI, responsive design, and smooth animations.",
+    descriptionAr: "الموقع الشخصي التفاعلي لمعرض أعمالي ومهاراتي التقنية وشهاداتي ومسيرتي المهنية بتصميم عصري فائق السرعة وتأثيرات حركية تفاعلية ودعم كامل للغتين العربية والإنجليزية.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     category: ["React", "website"],
     demo: "https://rabea-shaban.vercel.app/",
@@ -94,33 +127,67 @@ export const projects = [
       "Dynamic timeline entries and certificate modals.",
       "Responsive layout optimized for iPhone and Android viewports."
     ],
+    featuresAr: [
+      "التبديل الفوري بين المظهر الفاتح والداكن وتخصيص الألوان.",
+      "شريط علوي زجاجي عائم وقائمة سفلية حديثة للهواتف الذكية.",
+      "خط زمني تفاعلي ونوافذ منبثقة تفاعلية للشهادات والمشاريع.",
+      "تصميم متجاوب وسلس متوافق تماماً مع جميع شاشات الجوال والحواسيب."
+    ],
     challenges: "Resolving transform conflicts where Framer Motion translateY animations collided with CSS translate-x centering classes on mobile pills.",
+    challengesAr: "حل تعارضات التحريك وتوسيط المكونات الزجاجية العائمة والتجاوب الكامل مع الوضع العربي (RTL).",
     lessons: "Mastered building highly responsive, reusable components in React with clean separation of layout and animation containers.",
+    lessonsAr: "إتقان بناء مكونات برمجية نظيفة وقابلة لإعادة الاستخدام مع عزل كامل لمنطق التحريك عن التخطيط الهيكلي.",
     img: TaskOenUpskilling,
   },
   {
     title: "AI Email Classification",
+    titleAr: "نظام تصنيف البريد الذكي بالذكاء الاصطناعي",
     description: "An automated email classifier that analyzes incoming emails using OpenAI, categorizes them (Inquiry, Support, Spam, Billing), and drafts contextual auto-responses.",
+    descriptionAr: "نظام آلي لتحليل وتصنيف رسائل البريد الإلكتروني الواردة باستخدام نماذج OpenAI وتقسيمها إلى (استفسار، دعم فني، بريد مزعج، فواتير) مع كتابة مسودات ردود سياقية تلقائية.",
     tech: ["React", "Node.js", "OpenAI API", "Tailwind CSS", "Nodemailer"],
     category: ["React", "web-app"],
     demo: "https://ai-email-classifier.vercel.app/",
     github: "https://github.com/rabea-shaban/ai-email-classification",
     featured: true,
+    features: [
+      "Instant sentiment and intent analysis via OpenAI API.",
+      "Automated categorization into custom business workflows.",
+      "Pre-generated response drafts with one-click reply dispatch."
+    ],
+    featuresAr: [
+      "تحليل لغوي فوري لرسائل البريد وتحديد النية والهدف بدقة عبر OpenAI.",
+      "تصنيف آلي وفق مسارات العمل المخصصة وتوزيع الأولويات.",
+      "توليد مسودات ردود احترافية مع إمكانية التعديل والإرسال الفوري."
+    ],
     img: Latest_Products,
   },
   {
     title: "User Management System",
+    titleAr: "نظام إدارة المستخدمين (UMS)",
     description: "A complete user management system built with React and Context API. Features include adding, editing, deleting users, toggling active status, and fetching data from an external API.",
+    descriptionAr: "نظام متكامل لإدارة بيانات وصلاحيات المستخدمين مبني باستخدام React و Context API، يدعم إضافة وتعديل وحذف المستخدمين وتفعيل الحالة والربط مع واجهات برمجية خارجية.",
     tech: ["React", "Context API", "React Hook Form", "DummyJSON API", "CSS"],
     category: ["React", "web-app"],
     demo: "https://ums-gamma.vercel.app/",
     github: "https://github.com/rabea-shaban/UMS",
     featured: true,
+    features: [
+      "Complete CRUD operations with instant UI feedback.",
+      "Form validation using React Hook Form.",
+      "Global state management with Context API."
+    ],
+    featuresAr: [
+      "عمليات إدارة شاملة (إضافة، تعديل، حذف) مع استجابة فورية للواجهة.",
+      "التحقق المتقدم من صحة الحقول عبر React Hook Form.",
+      "إدارة الحالة العامة للتطبيق عبر Context API بكفاءة عالية."
+    ],
     img: UMS,
   },
   {
     title: "Kayan Gardens - Riyadh Landscaping",
+    titleAr: "حدائق كيان - تنسيق حدائق بالرياض",
     description: "An elegant Arabic website for a landscaping and garden design company in Riyadh. It offers a wide range of outdoor services including artificial grass, irrigation systems, pergolas, water features, and wooden flooring. Built with WordPress and optimized for RTL and local SEO.",
+    descriptionAr: "موقع عربي راقٍ لشركة تنسيق وتصميم حدائق بالرياض، يقدم خدمات متكاملة تشمل الثيل الصناعي، وشبكات الري، والمظلات، والشلالات، والنوافير، والأرضيات الخشبية، مبني عبر ووردبريس ومحسن للغة العربية والسيو المحلي.",
     tech: ["WordPress", "Elementor", "Blocksy", "RTL Arabic", "Local SEO"],
     category: "wordpress",
     demo: "https://kayan-gardens.site/",
@@ -130,7 +197,9 @@ export const projects = [
   },
   {
     title: "Basmat Alwafa Medical Center",
+    titleAr: "مركز بسمة الوفاء الطبي",
     description: "An Arabic WordPress website for a multi-specialty medical center in Saudi Arabia offering dentistry, dermatology, and cosmetic services. Built with Elementor and Blocksy, featuring modern UI/UX and high SEO optimization.",
+    descriptionAr: "موقع ووردبريس عربي لمركز طبي متعدد التخصصات بالمملكة العربية السعودية لخدمات الأسنان والجلدية والتجميل، مبني باستخدام Elementor و Blocksy مع تجربة مستخدم عصرية وتهيئة متقدمة للـ SEO.",
     tech: ["WordPress", "Elementor", "Blocksy", "Arabic SEO", "Medical Services"],
     category: ["wordpress", "e-commerce"],
     demo: "https://basmat-alwafa.com/",
@@ -140,7 +209,9 @@ export const projects = [
   },
   {
     title: "Tansiq Garden Riyadh",
+    titleAr: "تنسيق حدائق الرياض",
     description: "A professional Arabic WordPress website for a landscaping company based in Riyadh, offering services like garden design, artificial/natural grass installation, irrigation systems, pergolas, and more. Built using Elementor and Blocksy, optimized for performance and local SEO.",
+    descriptionAr: "موقع ووردبريس احترافي لشركة تنسيق حدائق بالرياض يقدم خدمات الثيل الطبيعي والصناعي والمظلات والبرجولات والإنارة الخارجية مع سرعة أداء عالية وتهيئة للسيو المحلي.",
     tech: ["WordPress", "Elementor", "Blocksy", "SEO", "Arabic"],
     category: "wordpress",
     demo: "https://tansiq-garden.org/",
@@ -150,7 +221,9 @@ export const projects = [
   },
   {
     title: "Hadayiq Al-Marjan",
+    titleAr: "حدائق المرجان - المدينة المنورة والرياض",
     description: "A beautifully crafted Arabic WordPress website for a landscape design and garden services company based in Madinah and Riyadh. Built using Elementor and Blocksy, the site showcases a wide range of services including natural/artificial grass installation, irrigation systems, garden decor, and more — all optimized for local SEO.",
+    descriptionAr: "موقع ووردبريس عربي مميز لشركة تصميم وتنسيق الحدائق بالمدينة المنورة والرياض، يستعرض باقة الخدمات والديكورات الخارجية وشبكات الري مع تهيئة متكاملة للظهور في نتائج البحث.",
     tech: ["WordPress", "Elementor", "Blocksy", "SEO", "Arabic"],
     category: "wordpress",
     demo: "http://hadayiq-almarjan-ksa.org/",
@@ -160,7 +233,9 @@ export const projects = [
   },
   {
     title: "Car Rental React App",
+    titleAr: "تطبيق تأجير السيارات التفاعلي",
     description: "A modern car rental web application with advanced filtering, responsive design, car detail pages, client testimonials, and dynamic data integration.",
+    descriptionAr: "تطبيق ويب حديث لحجز وتأجير السيارات مع فلاتر بحث متقدمة، صفحات تفاصيل شاملة لكل سيارة، آراء العملاء، وتصميم متجاوب بالكامل باستخدام React و SCSS.",
     tech: ["React", "Axios", "React Router", "SCSS", "Bootstrap", "Swiper.js"],
     category: ["React", "web-app", "e-commerce"],
     demo: "https://car-rental-eosin-ten.vercel.app/",
@@ -170,7 +245,9 @@ export const projects = [
   },
   {
     title: "Programming Library",
+    titleAr: "مكتبة المبرمج الشاملة",
     description: "A comprehensive programming resources library featuring books, podcasts, apps, learning paths, channels, and tools. Built with React and JSON.",
+    descriptionAr: "مكتبة مصادر برمجية متكاملة تضم كتباً تقنية، وبودكاست، ومسارات تعليمية، وأدوات تطويرية لمساعدة المطورين في مسيرتهم التعليمية، مبنية بـ React و JSON.",
     tech: ["React", "React Router", "Bootstrap", "Vite", "Font Awesome"],
     category: ["React", "web-app", "website"],
     demo: "https://programminglibrary.vercel.app/",
@@ -180,7 +257,9 @@ export const projects = [
   },
   {
     title: "365 Furniture Website",
+    titleAr: "موقع شركة 365 لنقل وتركيب الأثاث",
     description: "A furniture and shipping service website built for a Riyadh-based company. Fully responsive and built using React and custom CSS.",
+    descriptionAr: "موقع خدمات نقل وتركيب وتغليف الأثاث لشركة بالرياض، بتصميم متجاوب بالكامل وسريع التصفح باستخدام React و CSS المخصص.",
     tech: ["React", "CSS", "JSX"],
     category: ["e-commerce", "React"],
     demo: "https://company-365.netlify.app/",
@@ -190,7 +269,9 @@ export const projects = [
   },
   {
     title: "Demolition & Renovation - Medina",
+    titleAr: "تكسير وترميم المباني - المدينة المنورة",
     description: "A professional Arabic WordPress website for a building demolition and renovation company in Medina, Saudi Arabia. It showcases services like wall cutting, plumbing systems, marble installation, and structural restoration. Developed with Elementor and optimized for local SEO.",
+    descriptionAr: "موقع ووردبريس احترافي لخدمات تكسير وهدم وترميم المباني بالمدينة المنورة، يقدم خدمات قص الجدران بالليزر والسباكة والترميم الإنشائي وتركيب الرخام.",
     tech: ["WordPress", "Elementor", "Blocksy", "Arabic SEO", "Local Services"],
     category: "wordpress",
     demo: "https://taksir-watarmim.site/",
@@ -200,7 +281,9 @@ export const projects = [
   },
   {
     title: "Alert System (React + TS)",
+    titleAr: "نظام التنبيهات والإشعارات التفاعلي",
     description: "A modern alert and notification component system built using React and TypeScript. Supports various alert types, custom styles, and animations.",
+    descriptionAr: "مكتبة مكونات تنبيهات وإشعارات متقدمة مبنية بـ React و TypeScript تدعم مختلف أنواع التنبيهات مع تحريكات سلسة وأساليب تخصيص مرنة.",
     tech: ["React", "TypeScript", "SCSS", "Lucide-react", "@mixin"],
     category: ["component", "React"],
     demo: "https://alert-react-tsx.vercel.app/",
@@ -210,7 +293,9 @@ export const projects = [
   },
   {
     title: "Kashf w 3laj",
+    titleAr: "منصة كشف وعلاج الطبية",
     description: "A full-featured Arabic WordPress medical booking website for clinics, doctors, and pharmacies. Built using Elementor (v3.29.2), JetEngine, and Blocksy Companion. Offers smart doctor search, appointment booking, pharmacy services, and medical content powered by AI.",
+    descriptionAr: "منصة طبية متكاملة لحجز العيادات والأطباء والصيدليات بالمملكة، تدعم البحث الذكي عن الأطباء وحجز المواعيد وخدمات الصيدلية وتوليد محتوى بالذكاء الاصطناعي.",
     tech: ["WordPress", "Elementor 3.29.2", "JetEngine", "Blocksy Companion", "SEO", "Arabic"],
     category: ["wordpress", "e-commerce"],
     demo: "https://kashf-3laj.com/",
@@ -220,7 +305,9 @@ export const projects = [
   },
   {
     title: "Spider-Man Far From Home",
+    titleAr: "واجهة سبايدرمان التفاعلية",
     description: "Spider-Man Far From Home component design built with Tailwind CSS.",
+    descriptionAr: "تصميم تفاعلي مبتكر ومميز لفيلم Spider-Man: Far From Home باستخدام Tailwind CSS مع تأثيرات بصرية جذابة.",
     tech: ["Html", "Css", "Tailwind css"],
     category: "component",
     demo: "https://task-2-web-master-sbider-man.vercel.app",
@@ -230,7 +317,9 @@ export const projects = [
   },
   {
     title: "al-yman landscaping",
+    titleAr: "مؤسسة اليمان لتنسيق الحدائق",
     description: "A professional WordPress website built using Blocksy and Elementor. Fully responsive and optimized for search engines.",
+    descriptionAr: "موقع ووردبريس احترافي لتصميم وتنسيق المساحات الخضراء والحدائق المنزلية، متوافق تماماً مع محركات البحث وجميع الأجهزة الذكية.",
     tech: ["WordPress", "Elementor", "Blocksy", "SEO"],
     category: "wordpress",
     demo: "https://tansiqhadayiq.com/",
@@ -240,7 +329,9 @@ export const projects = [
   },
   {
     title: "Al-Amar Concrete Cutting",
+    titleAr: "شركة العمار لقص وتخريم الخرسانة",
     description: "A professional WordPress website for a Riyadh-based company specializing in laser wall cutting and core drilling. Built using Elementor and the Blocksy theme. Fully responsive, fast-loading, and optimized for Arabic SEO.",
+    descriptionAr: "موقع ووردبريس لشركة متخصصة في قص وتخريم الخرسانة وكور الليزر بالرياض، سريع التصفح ومهيأ لمحركات البحث مع عرض واضح لسابقة الأعمال.",
     tech: ["WordPress", "Elementor", "Blocksy", "SEO", "Arabic"],
     category: "wordpress",
     demo: "https://al-amar.org/",
@@ -250,7 +341,9 @@ export const projects = [
   },
   {
     title: "Alarahma Ads Website",
+    titleAr: "موقع شركة الرحمة للدعاية والإعلان",
     description: "A WordPress website for Alarahma Advertising Company. It showcases services like digital printing, signage, exhibitions, and more.",
+    descriptionAr: "موقع ووردبريس لشركة الرحمة للدعاية والإعلان يستعرض خدمات الطباعة الرقمية، وتصنيع اللوحات الإعلانية، وتجهيز المعارض والمؤتمرات.",
     tech: ["WordPress", "Elementor", "Blocksy", "SEO"],
     category: "wordpress",
     demo: "http://alrahma-advertising.com/",
@@ -260,7 +353,9 @@ export const projects = [
   },
   {
     title: "Abu Ruslan Garden Website",
+    titleAr: "موقع أبو رسلان لتنسيق الحدائق",
     description: "A garden design and landscaping company website in Riyadh. Built using WordPress with a clean and elegant design.",
+    descriptionAr: "موقع لشركة تصميم وتنسيق الحدائق والديكورات الخارجية بالرياض بتصميم هادئ وواجهات متجاوبة.",
     tech: ["Html", "Css", "JS", "Bootstrap"],
     category: "wordpress",
     demo: "https://aburuslan-garden.com/",
@@ -270,7 +365,9 @@ export const projects = [
   },
   {
     title: "Latest Products CRUD App",
+    titleAr: "تطبيق إدارة أحدث المنتجات (CRUD)",
     description: "A full-featured CRUD app to manage latest products using React 19, TypeScript, and Tailwind CSS 4. Includes toast notifications and unique ID generation.",
+    descriptionAr: "تطبيق متكامل لإدارة وعرض المنتجات مبني بـ React 19 و TypeScript و Tailwind CSS 4، يدعم إشعارات التنبيهات الفورية وتوليد المعرفات الفريدة.",
     tech: ["React 19", "TypeScript", "Vite", "Tailwind CSS 4", "UUID", "react-hot-toast"],
     category: ["React", "web-app"],
     demo: "https://latest-products.vercel.app",
@@ -280,7 +377,9 @@ export const projects = [
   },
   {
     title: "Todos List App (Full-Stack)",
+    titleAr: "تطبيق إدارة المهام المتكامل (Full-Stack)",
     description: "A full-stack Todo List application built with React and Strapi. Features JWT authentication, protected routes, advanced data fetching with React Query, and real-time notifications.",
+    descriptionAr: "تطبيق لإدارة المهام اليومية مبني بـ React و Strapi، يدعم المصادقة وحماية المسارات والجلب المتقدم للبيانات عبر React Query والتنبيهات الفورية.",
     tech: ["React", "Strapi", "React Query", "Tailwind CSS", "JWT Auth", "Axios", "Vite"],
     category: ["React", "web-app"],
     demo: "https://todos-list-zeta.vercel.app",
@@ -290,7 +389,9 @@ export const projects = [
   },
   {
     title: "Takseer SA",
+    titleAr: "موقع تكسير وهدم المباني بالرياض",
     description: "A professional Arabic WordPress website for a concrete and wall demolition company based in Riyadh. Built with Elementor and Blocksy theme, the site offers SEO-optimized content, a service catalog, and detailed informational articles to rank high in local search results.",
+    descriptionAr: "موقع ووردبريس احترافي لخدمات هدم وتكسير المباني بالرياض مع كتالوج خدمات متكامل ومقالات إرشادية مهيأة للسيو المحلي لضمان الصدارة في محركات البحث.",
     tech: ["WordPress", "Elementor", "Blocksy", "SEO", "Arabic"],
     category: "wordpress",
     demo: "https://takseer-sa.site/",
@@ -300,7 +401,9 @@ export const projects = [
   },
   {
     title: "🚀 Personal Portfolio - TaskOenUpskilling",
+    titleAr: "معرض الأعمال الشخصي - TaskOne",
     description: "A professional personal portfolio website showcasing my web development projects and skills. Built using React, Vite, React Router, Bootstrap, and Font Awesome. Designed to be responsive and fast, demonstrating modern frontend best practices.",
+    descriptionAr: "موقع معرض أعمال يعرض المشاريع والمهارات البرمجية، مبني باستخدام React و Vite و Bootstrap مع تصميم متجاوب وسريع يجسد أفضل ممارسات الواجهات الأمامية.",
     tech: ["React", "Vite", "React Router", "Bootstrap", "Font Awesome", "Yarn"],
     category: ["React", "web-app"],
     demo: "https://task-oen-upskilling.vercel.app/",
@@ -310,7 +413,9 @@ export const projects = [
   },
   {
     title: "🔆 Solar Company Website - Solidarity Solar",
+    titleAr: "موقع شركة سوليداريتي للطاقة الشمسية",
     description: "A responsive landing page for a solar installation company in Plymouth. Built with HTML and CSS, showcasing services, values, and products of the company.",
+    descriptionAr: "صفحة هبوط تفاعلية لشركة تركيب أنظمة الطاقة الشمسية تستعرض الخدمات والمنتجات والقيم البيئية والاقتصادية لتوليد الطاقة النظيفة.",
     tech: ["HTML", "CSS", "Responsive Design"],
     category: ["website"],
     demo: "https://task-one-web-master-theta.vercel.app/",
@@ -320,7 +425,9 @@ export const projects = [
   },
   {
     title: "🌍 API Country Search App",
+    titleAr: "تطبيق استكشاف وبيانات الدول",
     description: "A modern country search app using React + TypeScript + Tailwind. Fetches and displays detailed info about countries from REST Countries API in a sleek dark UI.",
+    descriptionAr: "تطبيق حديث للبحث عن الدول واستعراض تفاصيلها الجغرافية والسكانية والعملات عبر استهلاك REST Countries API بواجهة داكنة أنيقة وسلسة.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Axios", "Vite"],
     category: ["React", "web-app"],
     demo: "https://api-cuntry.vercel.app",

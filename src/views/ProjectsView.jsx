@@ -40,10 +40,13 @@ const ProjectsView = () => {
     const categories = Array.isArray(project.category) ? project.category : [project.category];
     const matchesCategory = selectedCategory === "all" || categories.includes(selectedCategory);
     
+    const query = searchQuery.toLowerCase();
     const matchesSearch =
-      project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      project.tech?.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()));
+      project.title?.toLowerCase().includes(query) ||
+      (project.titleAr && project.titleAr.toLowerCase().includes(query)) ||
+      project.description?.toLowerCase().includes(query) ||
+      (project.descriptionAr && project.descriptionAr.toLowerCase().includes(query)) ||
+      project.tech?.some(t => t.toLowerCase().includes(query));
 
     return matchesCategory && matchesSearch;
   });
@@ -120,161 +123,172 @@ const ProjectsView = () => {
         ) : (
           <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <AnimatePresence>
-              {filteredProjects.map((project, idx) => (
-                <motion.div
-                  key={project.title + idx}
-                  layout
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
-                  whileHover={{ y: -6 }}
-                  className="glass-effect rounded-2xl border border-border/40 overflow-hidden hover:border-primary/40 hover:shadow-xl transition-all flex flex-col justify-between group"
-                >
-                  <div>
-                    {/* Project Image Header */}
-                    <div
-                      className="relative aspect-video bg-muted/30 overflow-hidden cursor-pointer"
-                      onClick={() => setActiveProject(project)}
-                    >
-                      {project.img ? (
-                        <img
-                          src={typeof project.img === 'string' ? project.img : project.img.src || project.img}
-                          alt={project.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                      ) : (
-                        <div className="w-full h-full flex items-center justify-center bg-primary/10">
-                          <Sparkles className="w-10 h-10 text-primary/40" />
-                        </div>
-                      )}
-                      {project.featured && (
-                        <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary text-white text-[10px] font-bold shadow-md">
-                          {isAr ? "مشروع مميز" : "Featured"}
-                        </span>
-                      )}
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                        <span className="px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold">
-                          {isAr ? "عرض التفاصيل الكاملة" : "View Project Details"}
-                        </span>
-                      </div>
-                    </div>
+              {filteredProjects.map((project, idx) => {
+                const projectTitle = (isAr && project.titleAr) ? project.titleAr : project.title;
+                const projectDesc = (isAr && project.descriptionAr) ? project.descriptionAr : project.description;
 
-                    {/* Body */}
-                    <div className="p-6">
-                      <h3
-                        className="text-2xl font-bold font-display leading-tight mb-2 group-hover:text-primary transition-colors cursor-pointer"
+                return (
+                  <motion.div
+                    key={project.title + idx}
+                    layout
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.3 }}
+                    whileHover={{ y: -6 }}
+                    className="glass-effect rounded-2xl border border-border/40 overflow-hidden hover:border-primary/40 hover:shadow-xl transition-all flex flex-col justify-between group"
+                  >
+                    <div>
+                      {/* Project Image Header */}
+                      <div
+                        className="relative aspect-video bg-muted/30 overflow-hidden cursor-pointer"
                         onClick={() => setActiveProject(project)}
                       >
-                        {project.title}
-                      </h3>
-                      <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3 mb-4">
-                        {project.description}
-                      </p>
-
-                      {/* Tech Pills */}
-                      <div className="flex flex-wrap gap-1.5 mb-4">
-                        {project.tech?.slice(0, 4).map((tech, tIdx) => (
-                          <span key={tIdx} className="px-2.5 py-0.5 text-[10px] font-bold rounded-md bg-primary/10 text-primary border border-primary/20">
-                            {tech}
-                          </span>
-                        ))}
-                        {project.tech?.length > 4 && (
-                          <span className="px-2 py-0.5 text-[10px] font-bold rounded-md bg-muted text-muted-foreground">
-                            +{project.tech.length - 4}
+                        {project.img ? (
+                          <img
+                            src={typeof project.img === 'string' ? project.img : project.img.src || project.img}
+                            alt={projectTitle}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center bg-primary/10">
+                            <Sparkles className="w-10 h-10 text-primary/40" />
+                          </div>
+                        )}
+                        {project.featured && (
+                          <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary text-white text-[10px] font-bold shadow-md">
+                            {isAr ? "مشروع مميز" : "Featured"}
                           </span>
                         )}
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                          <span className="px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold">
+                            {isAr ? "عرض التفاصيل الكاملة" : "View Project Details"}
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Body */}
+                      <div className="p-6">
+                        <h3
+                          className="text-2xl font-bold font-display leading-tight mb-2 group-hover:text-primary transition-colors cursor-pointer"
+                          onClick={() => setActiveProject(project)}
+                        >
+                          {projectTitle}
+                        </h3>
+                        <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3 mb-4">
+                          {projectDesc}
+                        </p>
+
+                        {/* Tech Pills */}
+                        <div className="flex flex-wrap gap-1.5 mb-4">
+                          {project.tech?.slice(0, 4).map((tech, tIdx) => (
+                            <span key={tIdx} className="px-2.5 py-0.5 text-[10px] font-bold rounded-md bg-primary/10 text-primary border border-primary/20">
+                              {tech}
+                            </span>
+                          ))}
+                          {project.tech?.length > 4 && (
+                            <span className="px-2 py-0.5 text-[10px] font-bold rounded-md bg-muted text-muted-foreground">
+                              +{project.tech.length - 4}
+                            </span>
+                          )}
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  {/* Actions Footer */}
-                  <div className="px-6 pb-6 pt-0 flex items-center gap-3 border-t border-border/20 pt-4 mt-auto">
-                    {project.demo && (
-                      <Button asChild size="sm" className="flex-1 shadow-sm text-xs">
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                          {t.common.liveDemo} <ExternalLink className="w-3.5 h-3.5 ml-1.5 rtl:mr-1.5 rtl:ml-0" />
-                        </a>
-                      </Button>
-                    )}
-                    {project.github && (
-                      <Button variant="outline" size="sm" asChild className="glass-effect text-xs">
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
-                          {t.common.sourceCode} <Github className="w-3.5 h-3.5 ml-1.5 rtl:mr-1.5 rtl:ml-0" />
-                        </a>
-                      </Button>
-                    )}
-                  </div>
-                </motion.div>
-              ))}
+                    {/* Actions Footer */}
+                    <div className="px-6 pb-6 pt-0 flex items-center gap-3 border-t border-border/20 pt-4 mt-auto">
+                      {project.demo && (
+                        <Button asChild size="sm" className="flex-1 shadow-sm text-xs">
+                          <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                            {t.common.liveDemo} <ExternalLink className="w-3.5 h-3.5 ml-1.5 rtl:mr-1.5 rtl:ml-0" />
+                          </a>
+                        </Button>
+                      )}
+                      {project.github && project.github !== "#" && (
+                        <Button variant="outline" size="sm" asChild className="glass-effect text-xs">
+                          <a href={project.github} target="_blank" rel="noopener noreferrer">
+                            {t.common.sourceCode} <Github className="w-3.5 h-3.5 ml-1.5 rtl:mr-1.5 rtl:ml-0" />
+                          </a>
+                        </Button>
+                      )}
+                    </div>
+                  </motion.div>
+                );
+              })}
             </AnimatePresence>
           </motion.div>
         )}
 
         {/* Project Details Modal Dialog */}
         <Dialog open={!!activeProject} onOpenChange={() => setActiveProject(null)}>
-          {activeProject && (
-            <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto glass-effect border border-border/50">
-              <DialogHeader>
-                <DialogTitle className="text-2xl font-bold font-display">{activeProject.title}</DialogTitle>
-              </DialogHeader>
-              <div className="space-y-6 mt-4">
-                {activeProject.img && (
-                  <div className="relative aspect-video rounded-2xl overflow-hidden bg-muted">
-                    <img
-                      src={typeof activeProject.img === 'string' ? activeProject.img : activeProject.img.src || activeProject.img}
-                      alt={activeProject.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                )}
-                <p className="text-sm text-muted-foreground leading-relaxed">{activeProject.description}</p>
-                <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider mb-2 text-foreground">{t.common.techStack}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {activeProject.tech?.map((tech, idx) => (
-                      <span key={idx} className="px-3 py-1 text-xs font-bold rounded-full bg-primary/10 text-primary border border-primary/20">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+          {activeProject && (() => {
+            const modalTitle = (isAr && activeProject.titleAr) ? activeProject.titleAr : activeProject.title;
+            const modalDesc = (isAr && activeProject.descriptionAr) ? activeProject.descriptionAr : activeProject.description;
+            const modalFeatures = (isAr && activeProject.featuresAr) ? activeProject.featuresAr : (activeProject.features || []);
 
-                {activeProject.features && (
+            return (
+              <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto glass-effect border border-border/50">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold font-display">{modalTitle}</DialogTitle>
+                </DialogHeader>
+                <div className="space-y-6 mt-4">
+                  {activeProject.img && (
+                    <div className="relative aspect-video rounded-2xl overflow-hidden bg-muted">
+                      <img
+                        src={typeof activeProject.img === 'string' ? activeProject.img : activeProject.img.src || activeProject.img}
+                        alt={modalTitle}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  )}
+                  <p className="text-sm text-muted-foreground leading-relaxed">{modalDesc}</p>
                   <div>
-                    <h4 className="text-xs font-bold uppercase tracking-wider mb-2 text-foreground">
-                      {isAr ? "الميزات الرئيسية" : "Key Features"}
-                    </h4>
-                    <ul className="space-y-1.5">
-                      {activeProject.features.map((feat, fIdx) => (
-                        <li key={fIdx} className="flex items-start text-xs text-muted-foreground">
-                          <Check className="w-4 h-4 text-primary mr-2 rtl:ml-2 rtl:mr-0 flex-shrink-0 mt-0.5" />
-                          <span>{feat}</span>
-                        </li>
+                    <h4 className="text-xs font-bold uppercase tracking-wider mb-2 text-foreground">{t.common.techStack}</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {activeProject.tech?.map((tech, idx) => (
+                        <span key={idx} className="px-3 py-1 text-xs font-bold rounded-full bg-primary/10 text-primary border border-primary/20">
+                          {tech}
+                        </span>
                       ))}
-                    </ul>
+                    </div>
                   </div>
-                )}
 
-                <div className="flex gap-4 pt-4 border-t border-border/30">
-                  {activeProject.demo && (
-                    <Button asChild size="lg" className="flex-1">
-                      <a href={activeProject.demo} target="_blank" rel="noopener noreferrer">
-                        {t.common.liveDemo} <ExternalLink className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" />
-                      </a>
-                    </Button>
+                  {modalFeatures && modalFeatures.length > 0 && (
+                    <div>
+                      <h4 className="text-xs font-bold uppercase tracking-wider mb-2 text-foreground">
+                        {isAr ? "الميزات الرئيسية" : "Key Features"}
+                      </h4>
+                      <ul className="space-y-1.5">
+                        {modalFeatures.map((feat, fIdx) => (
+                          <li key={fIdx} className="flex items-start text-xs text-muted-foreground">
+                            <Check className="w-4 h-4 text-primary mr-2 rtl:ml-2 rtl:mr-0 flex-shrink-0 mt-0.5" />
+                            <span>{feat}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   )}
-                  {activeProject.github && (
-                    <Button variant="outline" size="lg" asChild className="flex-1 glass-effect">
-                      <a href={activeProject.github} target="_blank" rel="noopener noreferrer">
-                        {t.common.sourceCode} <Github className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" />
-                      </a>
-                    </Button>
-                  )}
+
+                  <div className="flex gap-4 pt-4 border-t border-border/30">
+                    {activeProject.demo && (
+                      <Button asChild size="lg" className="flex-1">
+                        <a href={activeProject.demo} target="_blank" rel="noopener noreferrer">
+                          {t.common.liveDemo} <ExternalLink className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" />
+                        </a>
+                      </Button>
+                    )}
+                    {activeProject.github && activeProject.github !== "#" && (
+                      <Button variant="outline" size="lg" asChild className="flex-1 glass-effect">
+                        <a href={activeProject.github} target="_blank" rel="noopener noreferrer">
+                          {t.common.sourceCode} <Github className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" />
+                        </a>
+                      </Button>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </DialogContent>
-          )}
+              </DialogContent>
+            );
+          })()}
         </Dialog>
       </div>
     </div>
