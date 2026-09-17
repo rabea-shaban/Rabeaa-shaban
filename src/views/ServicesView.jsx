@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { process } from "@/Data/process";
 import { services } from "@/Data/services";
 import { useSEO } from "@/hooks/useSEO";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const ServicesView = () => {
   useSEO({
@@ -23,21 +24,13 @@ const ServicesView = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-20"
-        >
-          <span className="px-3.5 py-1.5 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full border border-primary/20">
-            Professional Offerings
-          </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold mt-4 mb-6 font-display">Services & Solutions</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I provide expert engineering services from database architecture and full-stack building 
-            to containerized deployments, Kubernetes orchestration, and cloud computing solutions.
-          </p>
-        </motion.div>
+        <SectionHeading
+          badge="PROFESSIONAL OFFERINGS"
+          title="Services & Solutions"
+          watermark="SERVICES"
+          subtitle="I provide expert engineering services from database architecture and full-stack building to containerized deployments, Kubernetes orchestration, and cloud computing solutions."
+          size="large"
+        />
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-28">
@@ -104,12 +97,13 @@ const ServicesView = () => {
           transition={{ duration: 0.6 }}
           className="mb-28"
         >
-          <div className="text-center mb-16">
-            <span className="px-3.5 py-1.5 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full border border-primary/20">
-              Workflow
-            </span>
-            <h2 className="text-3xl md:text-5xl font-bold font-display mt-4">Development Process</h2>
-          </div>
+          <SectionHeading
+            badge="WORKFLOW"
+            title="Development Process"
+            watermark="PROCESS"
+            subtitle="My step-by-step engineering methodology for bringing software from concept to deployment."
+            size="normal"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((step, index) => (

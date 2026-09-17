@@ -13,6 +13,7 @@ import {
   Infinity,
   GitFork
 } from "lucide-react";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const learningItems = [
   { 
@@ -94,22 +95,13 @@ const CurrentlyLearning = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <span className="px-3 py-1 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full">
-              Growth Mindset
-            </span>
-            <h2 className="mt-4 text-3xl font-bold md:text-5xl font-display">Currently Learning</h2>
-            <p className="max-w-2xl mx-auto mt-4 text-base md:text-lg text-muted-foreground leading-relaxed">
-              Technologies I'm actively learning and applying through labs, coursework, and hands-on practice.
-            </p>
-          </motion.div>
-        </div>
+        <SectionHeading
+          badge="GROWTH MINDSET"
+          title="Currently Learning"
+          watermark="SKILLS"
+          subtitle="Technologies I'm actively learning and applying through labs, coursework, and hands-on practice."
+          size="normal"
+        />
 
         <motion.div
           variants={containerVariants}

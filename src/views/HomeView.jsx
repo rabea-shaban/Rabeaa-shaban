@@ -12,6 +12,7 @@ import { featuredProjects } from "@/Data/featuredProjects";
 import { timelineData } from "@/Data/timelineData";
 import profilePic from "@/Img/Picsart_25-01-21_11-09-34-893.jpg";
 import { useSEO } from "@/hooks/useSEO";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const HomeView = () => {
   useSEO({
@@ -152,31 +153,27 @@ const HomeView = () => {
       </section>
 
       {/* Professional Journey Section */}
-      <section className="py-20 max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-16">
-          <span className="px-3.5 py-1.5 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full border border-primary/20">
-            TIMELINE
-          </span>
-          <h2 className="text-3xl font-bold font-display md:text-5xl mt-4">Professional Journey</h2>
-          <p className="mt-3 text-sm text-muted-foreground max-w-lg mx-auto">
-            A chronological overview of my professional experience, education, and milestones.
-          </p>
-        </div>
+      <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6">
+        <SectionHeading
+          badge="TIMELINE"
+          title="Professional Journey"
+          watermark="JOURNEY"
+          subtitle="A chronological overview of my professional experience, education, and milestones."
+          size="normal"
+        />
         <Timeline items={timelineData} />
       </section>
 
       {/* Featured Work Section */}
-      <section className="py-24 bg-muted/20 border-y border-border/40 relative">
+      <section className="py-20 bg-muted/20 border-y border-border/40 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="px-3.5 py-1.5 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full border border-primary/20">
-              PORTFOLIO
-            </span>
-            <h2 className="text-3xl font-bold font-display md:text-5xl mt-4">Featured Work</h2>
-            <p className="mt-3 text-sm text-muted-foreground max-w-lg mx-auto">
-              A selection of my key projects showcased together with demo, source code, and design.
-            </p>
-          </div>
+          <SectionHeading
+            badge="PORTFOLIO"
+            title="Featured Work"
+            watermark="PROJECTS"
+            subtitle="A selection of my key projects showcased together with demo, source code, and design."
+            size="normal"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProjects.map((project, idx) => (

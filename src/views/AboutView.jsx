@@ -22,6 +22,7 @@ import { experience } from "@/Data/experience";
 import { skills } from "@/Data/skills";
 import profilePhoto from "@/Img/rabea.jpg";
 import { useSEO } from "@/hooks/useSEO";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const highlightedSkills = [
   "Full Stack Software Engineer", "MERN Stack", "React.js", "Node.js", "TypeScript",
@@ -46,21 +47,13 @@ const AboutView = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20">
         
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center"
-        >
-          <span className="px-3.5 py-1.5 text-[11px] font-bold tracking-wider text-primary uppercase bg-primary/10 rounded-full border border-primary/20">
-            INTRODUCTION
-          </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold mt-4 mb-6 font-display">About Me</h1>
-          <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Full Stack Software Engineer specializing in building modern, scalable web applications using the MERN Stack. 
-            Passionate about Cloud Computing, DevOps, and creating secure, production-ready software with modern development practices.
-          </p>
-        </motion.div>
+        <SectionHeading
+          badge="INTRODUCTION"
+          title="About Me"
+          watermark="About Me"
+          subtitle="Full Stack Software Engineer specializing in building modern, scalable web applications using the MERN Stack. Passionate about Cloud Computing, DevOps, and creating secure, production-ready software with modern development practices."
+          size="large"
+        />
 
         {/* Get to Know Me Section */}
         <section className="space-y-8">
@@ -130,12 +123,13 @@ const AboutView = () => {
 
         {/* Technical Toolbox Section */}
         <section className="space-y-10">
-          <div className="text-center space-y-2">
-            <span className="px-3.5 py-1.5 text-[11px] font-bold tracking-wider text-primary uppercase bg-primary/10 rounded-full border border-primary/20">
-              TECH STACK
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold font-display text-foreground">Technical Toolbox</h2>
-          </div>
+          <SectionHeading
+            badge="TECH STACK"
+            title="Technical Toolbox"
+            watermark="TOOLBOX"
+            subtitle="The core languages, frameworks, databases, and DevOps tools I use daily."
+            size="normal"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((group, idx) => {

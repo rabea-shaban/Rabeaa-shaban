@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { certificates, certificateCategories } from "@/Data/certificates";
 import { useSEO } from "@/hooks/useSEO";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const CertificatesView = () => {
   useSEO({
@@ -44,20 +45,13 @@ const CertificatesView = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <span className="px-3.5 py-1.5 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full border border-primary/20">
-            Verified Credentials
-          </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold mt-4 mb-6 font-display">Certificates & Degrees</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Browse through my official academic degrees, professional specializations, cloud certifications, and technical program achievements.
-          </p>
-        </motion.div>
+        <SectionHeading
+          badge="VERIFIED CREDENTIALS"
+          title="Certificates & Degrees"
+          watermark="CREDENTIALS"
+          subtitle="Browse through my official academic degrees, professional specializations, cloud certifications, and technical program achievements."
+          size="large"
+        />
 
         {/* Filter Controls & Search */}
         <div className="mb-12 space-y-6">

@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const ContactView = () => {
   useSEO({
@@ -74,20 +75,13 @@ const ContactView = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <span className="px-3.5 py-1.5 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full border border-primary/20">
-            Let's Connect
-          </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold mt-4 mb-6 font-display">Get In Touch</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Have a new project, freelance opportunity, or technical inquiry? Send a message and let me know how I can help!
-          </p>
-        </motion.div>
+        <SectionHeading
+          badge="LET'S CONNECT"
+          title="Get In Touch"
+          watermark="CONTACT"
+          subtitle="Have a new project, freelance opportunity, or technical inquiry? Send a message and let me know how I can help!"
+          size="large"
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-start">
           {/* Info Column */}
