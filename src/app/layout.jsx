@@ -13,14 +13,16 @@ export const metadata = {
   metadataBase: new URL("https://rabea-shaban.vercel.app"),
   title: {
     default: "Rabea Shaban | ربيع شعبان - Full Stack Software Engineer",
-    template: "%s | Rabea Shaban - Full Stack Software Engineer",
+    template: "%s | Rabea Shaban | ربيع شعبان",
   },
   description:
-    "Rabea Shaban (ربيع شعبان) - Full Stack Software Engineer specializing in MERN Stack, React, Next.js, Node.js, Express, MongoDB, AWS Cloud, Docker, Kubernetes, and Terraform. Building scalable, secure, and production-ready applications.",
+    "Rabea Shaban (ربيع شعبان) - Full Stack Software Engineer specializing in MERN Stack, React, Next.js, Node.js, Express, MongoDB, AWS Cloud, Docker, Kubernetes, and Terraform. Building scalable, secure, and production-ready applications. مهندس برمجيات وتطوير ويب شامل.",
   keywords: [
     "Rabea Shaban",
     "ربيع شعبان",
     "Full Stack Software Engineer",
+    "مهندس برمجيات",
+    "مطور ويب شامل",
     "Full Stack Developer Egypt",
     "MERN Stack Developer",
     "React Developer",
@@ -32,7 +34,10 @@ export const metadata = {
     "Terraform IaC",
     "DevOps Engineer",
     "Freelance Web Developer",
-    "Software Engineer Portfolio"
+    "Software Engineer Portfolio",
+    "مطور React مصر",
+    "مطور Next.js",
+    "مهندس DevOps"
   ],
   authors: [{ name: "Rabea Shaban", url: "https://rabea-shaban.vercel.app" }],
   creator: "Rabea Shaban",
@@ -50,6 +55,14 @@ export const metadata = {
   },
   alternates: {
     canonical: "https://rabea-shaban.vercel.app",
+    languages: {
+      "en": "https://rabea-shaban.vercel.app",
+      "ar": "https://rabea-shaban.vercel.app",
+      "x-default": "https://rabea-shaban.vercel.app",
+    },
+  },
+  other: {
+    "content-language": "en, ar",
   },
   icons: {
     icon: "/logo.png",
@@ -59,17 +72,18 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
+    alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],
     url: "https://rabea-shaban.vercel.app",
-    siteName: "Rabea Shaban Portfolio",
+    siteName: "Rabea Shaban Portfolio | ربيع شعبان",
     title: "Rabea Shaban | ربيع شعبان - Full Stack Software Engineer",
     description:
-      "Full Stack Software Engineer building high-performance web applications with React, Next.js, Node.js, MongoDB, AWS, Docker, and Kubernetes.",
+      "Full Stack Software Engineer building high-performance web applications with React, Next.js, Node.js, MongoDB, AWS, Docker, and Kubernetes. مهندس برمجيات وتطوير ويب شامل.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Rabea Shaban - Full Stack Software Engineer",
+        alt: "Rabea Shaban | ربيع شعبان - Full Stack Software Engineer",
       },
     ],
   },
@@ -88,46 +102,64 @@ export const metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Rabea Shaban",
-  "alternateName": "ربيع شعبان",
-  "jobTitle": "Full Stack Software Engineer",
-  "url": "https://rabea-shaban.vercel.app",
-  "image": "https://rabea-shaban.vercel.app/logo.png",
-  "sameAs": [
-    "https://github.com/rabea-shaban",
-    "https://linkedin.com/in/rabea-sh-elzayat",
-    "https://instagram.com/rabea_sh_elzayat",
-    "https://upwork.com/freelancers/~01d2bd68b7d6e8fbce",
-    "https://mostaql.com/u/rabea_elzayat"
-  ],
-  "knowsAbout": [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "JavaScript",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "SQL Server",
-    "AWS",
-    "Docker",
-    "Kubernetes",
-    "Helm",
-    "Terraform",
-    "GitHub Actions",
-    "DevOps",
-    "System Design"
-  ],
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Freelance Software Engineering"
-  },
-  "alumniOf": {
-    "@type": "EducationalOrganization",
-    "name": "Higher Institute of Technology, Management and Information - Minya",
-    "degree": "Bachelor's degree in Management Information Systems (MIS)"
-  }
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://rabea-shaban.vercel.app/#person",
+      "name": "Rabea Shaban",
+      "alternateName": "ربيع شعبان",
+      "jobTitle": "Full Stack Software Engineer",
+      "url": "https://rabea-shaban.vercel.app",
+      "image": "https://rabea-shaban.vercel.app/logo.png",
+      "description": "Full Stack Software Engineer & Cloud DevOps Specialist | مهندس برمجيات وتطوير ويب شامل",
+      "inLanguage": ["en", "ar"],
+      "sameAs": [
+        "https://github.com/rabea-shaban",
+        "https://linkedin.com/in/rabea-sh-elzayat",
+        "https://instagram.com/rabea_sh_elzayat",
+        "https://upwork.com/freelancers/~01d2bd68b7d6e8fbce",
+        "https://mostaql.com/u/rabea_elzayat"
+      ],
+      "knowsAbout": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "SQL Server",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Helm",
+        "Terraform",
+        "GitHub Actions",
+        "DevOps",
+        "System Design"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance Software Engineering"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Higher Institute of Technology, Management and Information - Minya",
+        "degree": "Bachelor's degree in Management Information Systems (MIS)"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://rabea-shaban.vercel.app/#website",
+      "url": "https://rabea-shaban.vercel.app",
+      "name": "Rabea Shaban Portfolio | معرض أعمال ربيع شعبان",
+      "description": "Professional Full Stack Software Engineer Portfolio & Showcase",
+      "inLanguage": ["en", "ar"],
+      "publisher": {
+        "@id": "https://rabea-shaban.vercel.app/#person"
+      }
+    }
+  ]
 };
 
 export default function RootLayout({ children }) {
