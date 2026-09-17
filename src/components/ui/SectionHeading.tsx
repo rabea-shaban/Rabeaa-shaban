@@ -31,81 +31,78 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
   }[align];
 
   const sizeClasses = {
-    normal: 'text-3xl sm:text-5xl md:text-6xl lg:text-7xl',
-    large: 'text-4xl sm:text-6xl md:text-7xl lg:text-8xl',
-    xl: 'text-5xl sm:text-7xl md:text-8xl lg:text-9xl',
+    normal: 'text-3xl sm:text-5xl md:text-6xl font-black',
+    large: 'text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black',
+    xl: 'text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black',
   }[size];
 
   const watermarkSizeClasses = {
-    normal: 'text-5xl sm:text-7xl md:text-8xl lg:text-9xl',
-    large: 'text-6xl sm:text-8xl md:text-9xl lg:text-[10.5rem]',
-    xl: 'text-7xl sm:text-9xl md:text-[11rem] lg:text-[13rem]',
+    normal: 'text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]',
+    large: 'text-7xl sm:text-9xl md:text-[11rem] lg:text-[14rem]',
+    xl: 'text-8xl sm:text-[10rem] md:text-[13rem] lg:text-[16rem]',
   }[size];
 
   return (
-    <div className={`relative w-full overflow-hidden py-8 sm:py-12 flex flex-col ${alignClasses} ${className}`}>
-      {/* Subtle Background Decorative Lines & Radial Glow */}
-      <div className="absolute inset-0 pointer-events-none select-none flex items-center justify-center opacity-60">
-        <div className="absolute w-[450px] sm:w-[650px] h-[250px] sm:h-[350px] rounded-full bg-primary/10 blur-[100px] -top-12 pointer-events-none" />
-        
-        {/* Curved decorative lines with nodes (matching design mockup) */}
+    <div className={`relative w-full overflow-hidden py-10 sm:py-16 flex flex-col ${alignClasses} ${className}`}>
+      {/* 1. Ambient Background Glow & Minimalist Vector Curves */}
+      <div className="absolute inset-0 pointer-events-none select-none flex items-center justify-center overflow-hidden">
+        {/* Soft Radial Center Glow */}
+        <div className="absolute w-[500px] sm:w-[700px] h-[300px] sm:h-[400px] rounded-full bg-primary/10 dark:bg-primary/5 blur-[120px] -top-10 pointer-events-none" />
+
+        {/* Minimal Curved Graphic Lines matching reference image */}
         <svg
-          className="absolute w-full max-w-4xl h-48 sm:h-64 text-primary/20 overflow-visible pointer-events-none"
-          viewBox="0 0 900 250"
+          className="absolute w-full max-w-5xl h-48 sm:h-64 text-primary/30 overflow-visible pointer-events-none opacity-50 dark:opacity-30"
+          viewBox="0 0 1000 280"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
+          {/* Top curve */}
           <path
-            d="M50,190 Q220,10 450,125 T850,50"
-            stroke="currentColor"
-            strokeWidth="1.2"
-            strokeDasharray="4 4"
-            className="opacity-40"
-          />
-          <path
-            d="M100,50 C300,240 600,-20 820,190"
+            d="M50,220 C250,20 750,260 950,40"
             stroke="currentColor"
             strokeWidth="1"
-            className="opacity-30"
+            strokeDasharray="5 5"
           />
-          <circle cx="150" cy="175" r="3.5" className="fill-primary/60" />
-          <circle cx="780" cy="55" r="3.5" className="fill-primary/60" />
-          <circle cx="820" cy="190" r="2.5" className="fill-primary/40" />
+          {/* Bottom subtle wave */}
+          <path
+            d="M0,140 Q350,-20 700,160 T1000,100"
+            stroke="currentColor"
+            strokeWidth="1"
+          />
+          {/* Decorative nodes */}
+          <circle cx="120" cy="180" r="3.5" className="fill-primary" />
+          <circle cx="880" cy="65" r="3.5" className="fill-primary" />
         </svg>
       </div>
 
-      {/* 1. Small Uppercase Pill Badge */}
+      {/* 2. Top Pill Badge (e.g. INTRODUCTION) */}
       {badge && (
         <motion.div
-          initial={{ opacity: 0, y: -15 }}
+          initial={{ opacity: 0, y: -12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.45, ease: 'easeOut' }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
           className="relative z-20 mb-3 sm:mb-4"
         >
-          <div className="inline-flex items-center px-4 py-1.5 rounded-full text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase text-primary border border-primary/25 bg-primary/10 backdrop-blur-md shadow-sm shadow-primary/10">
+          <div className="inline-flex items-center px-4 sm:px-5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase text-primary border border-primary/30 bg-primary/10 backdrop-blur-md shadow-sm">
             {badge}
           </div>
         </motion.div>
       )}
 
-      {/* 2. Main Title Container with Giant 3D Watermark Text Behind */}
-      <div className="relative w-full flex items-center justify-center px-4">
-        {/* Large Translucent Background Text */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.94 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.1, ease: 'easeOut' }}
-          className={`absolute inset-0 flex items-center justify-center font-black font-display tracking-tighter whitespace-nowrap select-none pointer-events-none watermark-backdrop-text ${watermarkSizeClasses}`}
+      {/* 3. Main Stage: Giant Watermark in Back + Crisp Floating Heading in Front */}
+      <div className="relative w-full flex items-center justify-center px-4 py-2">
+        {/* Giant Ambient Watermark Backdrop */}
+        <span
+          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-black font-display leading-none whitespace-nowrap select-none pointer-events-none watermark-backdrop-text ${watermarkSizeClasses}`}
           aria-hidden="true"
         >
           {bgText}
-        </motion.div>
+        </span>
 
-        {/* Sharp Floating Foreground Heading */}
+        {/* Sharp High-Contrast Foreground Heading */}
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.05, ease: 'easeOut' }}
@@ -115,14 +112,14 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
         </motion.h2>
       </div>
 
-      {/* 3. Optional Subtitle */}
+      {/* 4. Subtitle */}
       {subtitle && (
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative z-10 mt-5 text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4 text-center"
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="relative z-10 mt-5 sm:mt-6 text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4 text-center"
         >
           {subtitle}
         </motion.p>

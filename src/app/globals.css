@@ -448,3 +448,38 @@ button.bg-primary:hover, a.bg-primary:hover {
   mask-composite: exclude;
   pointer-events: none;
 }
+
+/* ==========================================================================
+   3D Layered Section Heading Typography
+   ========================================================================== */
+
+.floating-heading-text {
+  color: #0f172a;
+  text-shadow: 
+    0 2px 4px rgba(15, 23, 42, 0.05),
+    0 10px 24px rgba(99, 102, 241, 0.12),
+    0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.dark .floating-heading-text,
+[data-theme="dark"] .floating-heading-text {
+  color: #ffffff;
+  text-shadow: 
+    0 2px 10px rgba(0, 0, 0, 0.9),
+    0 12px 30px rgba(0, 0, 0, 0.75),
+    0 0 35px hsla(var(--primary) / 0.25);
+}
+
+.watermark-backdrop-text {
+  color: hsla(var(--primary) / 0.08);
+  user-select: none;
+  pointer-events: none;
+  letter-spacing: -0.04em;
+  transform: translateZ(0);
+}
+
+.dark .watermark-backdrop-text,
+[data-theme="dark"] .watermark-backdrop-text {
+  color: rgba(255, 255, 255, 0.04);
+}
+
