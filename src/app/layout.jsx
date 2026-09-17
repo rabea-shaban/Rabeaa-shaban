@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import LoadingScreen from "@/components/LoadingScreen";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import { CustomizationButton, CustomizationPanel } from "@/components/customization";
 
 export const metadata = {
   metadataBase: new URL("https://rabea-shaban.vercel.app"),
@@ -146,6 +147,8 @@ export default function RootLayout({ children }) {
             <MobileDock />
             <BackToTop />
             <FloatingContact />
+            <CustomizationButton />
+            <CustomizationPanel />
             <main>{children}</main>
             <Footer />
             <Toaster />

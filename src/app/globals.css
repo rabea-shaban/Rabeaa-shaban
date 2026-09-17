@@ -1,28 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ==========================================================================
+   Base Theme Variables (Light by default, Dark via .dark)
+   ========================================================================== */
+
 :root {
-  /* BentoFolio Light Theme - Crisp White & Electric Royal Blue */
-  --background: 220 20% 97%; /* #F1F3F7 Soft Bento backdrop */
-  --foreground: 222 47% 11%; /* #0F172A Rich dark text */
+  /* Default Light: Crisp Bento Light */
+  --background: 220 20% 97%; /* #F1F3F7 */
+  --foreground: 222 47% 11%; /* #0F172A */
   
-  --card: 0 0% 100%; /* #FFFFFF Pure white cards */
+  --card: 0 0% 100%; /* #FFFFFF */
   --card-foreground: 222 47% 11%;
   
   --popover: 0 0% 100%;
   --popover-foreground: 222 47% 11%;
   
-  --primary: 228 92% 58%; /* #3B66F5 Electric Royal Blue */
-  --primary-foreground: 0 0% 100%; /* #FFFFFF White text */
+  /* Default Accent: Royal Blue (228 92% 58%) */
+  --primary: 228 92% 58%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 59, 102, 245;
   
-  --secondary: 220 14% 94%; /* #EBEFF5 */
+  --secondary: 220 14% 94%;
   --secondary-foreground: 222 47% 11%;
   
   --muted: 220 14% 94%;
-  --muted-foreground: 215 16% 47%; /* #64748B */
+  --muted-foreground: 215 16% 47%;
   
   --accent: 228 92% 58%;
   --accent-foreground: 0 0% 100%;
@@ -30,43 +36,238 @@
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 20% 98%;
   
-  --border: 220 13% 90%; /* #E2E8F0 Subtle card border */
+  --border: 220 13% 90%;
   --input: 220 13% 90%;
   --ring: 228 92% 58%;
   
-  --radius: 1rem;
+  --radius: 9999px;
 }
 
 .dark {
-  /* Dark Theme - Deep Rich Black & Golden Amber Yellow */
-  --background: 0 0% 7%; /* #111111 Deep Black */
-  --foreground: 0 0% 98%; /* #FAFAFA Crisp white text */
+  /* Default Dark: Deep Rich Charcoal & Black */
+  --background: 0 0% 7%; /* #111111 */
+  --foreground: 0 0% 98%; /* #FAFAFA */
   
-  --card: 0 0% 12%; /* #1E1E1E Charcoal Dark */
+  --card: 0 0% 12%; /* #1E1E1E */
   --card-foreground: 0 0% 98%;
   
-  --popover: 0 0% 12%; /* #1E1E1E */
+  --popover: 0 0% 12%;
   --popover-foreground: 0 0% 98%;
   
-  --primary: 43 100% 50%; /* #FFB400 Golden Yellow */
-  --primary-foreground: 0 0% 7%; /* #111111 Dark text on yellow */
+  /* Default Dark Accent: Blue */
+  --primary: 217 91% 60%; /* #3B82F6 */
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 59, 130, 246;
   
-  --secondary: 0 0% 15%; /* #262626 */
+  --secondary: 0 0% 15%;
   --secondary-foreground: 0 0% 98%;
   
   --muted: 0 0% 15%;
-  --muted-foreground: 0 0% 65%; /* #A6A6A6 */
+  --muted-foreground: 0 0% 65%;
   
-  --accent: 43 100% 50%;
-  --accent-foreground: 0 0% 7%;
+  --accent: 217 91% 60%;
+  --accent-foreground: 0 0% 100%;
   
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 210 40% 98%;
   
-  --border: 0 0% 18%; /* #2E2E2E */
+  --border: 0 0% 18%;
   --input: 0 0% 18%;
+  --ring: 217 91% 60%;
+}
+
+/* ==========================================================================
+   Dynamic Accent Colors (Blue, Purple, Green, Orange, Red, Yellow)
+   ========================================================================== */
+
+/* 1. BLUE */
+[data-accent="blue"] {
+  --primary: 228 92% 58%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 59, 102, 245;
+  --accent: 228 92% 58%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 228 92% 58%;
+}
+.dark[data-accent="blue"], [data-theme="dark"][data-accent="blue"] {
+  --primary: 217 91% 60%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 59, 130, 246;
+  --accent: 217 91% 60%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 217 91% 60%;
+}
+
+/* 2. PURPLE */
+[data-accent="purple"] {
+  --primary: 269 90% 55%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 139, 39, 242;
+  --accent: 269 90% 55%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 269 90% 55%;
+}
+.dark[data-accent="purple"], [data-theme="dark"][data-accent="purple"] {
+  --primary: 270 95% 65%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 168, 85, 247;
+  --accent: 270 95% 65%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 270 95% 65%;
+}
+
+/* 3. GREEN */
+[data-accent="green"] {
+  --primary: 158 64% 45%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 16, 185, 129;
+  --accent: 158 64% 45%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 158 64% 45%;
+}
+.dark[data-accent="green"], [data-theme="dark"][data-accent="green"] {
+  --primary: 150 100% 45%;
+  --primary-foreground: 0 0% 7%;
+  --primary-rgb: 0, 229, 153;
+  --accent: 150 100% 45%;
+  --accent-foreground: 0 0% 7%;
+  --ring: 150 100% 45%;
+}
+
+/* 4. ORANGE */
+[data-accent="orange"] {
+  --primary: 25 95% 53%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 249, 115, 22;
+  --accent: 25 95% 53%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 25 95% 53%;
+}
+.dark[data-accent="orange"], [data-theme="dark"][data-accent="orange"] {
+  --primary: 27 96% 55%;
+  --primary-foreground: 0 0% 7%;
+  --primary-rgb: 251, 146, 60;
+  --accent: 27 96% 55%;
+  --accent-foreground: 0 0% 7%;
+  --ring: 27 96% 55%;
+}
+
+/* 5. RED */
+[data-accent="red"] {
+  --primary: 350 89% 55%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 244, 63, 94;
+  --accent: 350 89% 55%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 350 89% 55%;
+}
+.dark[data-accent="red"], [data-theme="dark"][data-accent="red"] {
+  --primary: 350 92% 60%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 251, 113, 133;
+  --accent: 350 92% 60%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 350 92% 60%;
+}
+
+/* 6. YELLOW / GOLD */
+[data-accent="yellow"] {
+  --primary: 43 100% 48%;
+  --primary-foreground: 0 0% 7%;
+  --primary-rgb: 255, 180, 0;
+  --accent: 43 100% 48%;
+  --accent-foreground: 0 0% 7%;
+  --ring: 43 100% 48%;
+}
+.dark[data-accent="yellow"], [data-theme="dark"][data-accent="yellow"] {
+  --primary: 43 100% 50%;
+  --primary-foreground: 0 0% 7%;
+  --primary-rgb: 255, 180, 0;
+  --accent: 43 100% 50%;
+  --accent-foreground: 0 0% 7%;
   --ring: 43 100% 50%;
 }
+
+/* ==========================================================================
+   Typography Scale (Small, Medium, Large)
+   ========================================================================== */
+
+html[data-font-size="small"] {
+  font-size: 14.5px;
+}
+html[data-font-size="medium"] {
+  font-size: 16px;
+}
+html[data-font-size="large"] {
+  font-size: 17.5px;
+}
+
+/* ==========================================================================
+   Button Corner Radius Styles (Rounded, Medium, Sharp)
+   ========================================================================== */
+
+[data-button-style="rounded"] {
+  --radius: 9999px;
+}
+[data-button-style="medium"] {
+  --radius: 0.5rem;
+}
+[data-button-style="sharp"] {
+  --radius: 0.125rem;
+}
+
+[data-button-style="rounded"] button:not(.rounded-none):not(.rounded-sm),
+[data-button-style="rounded"] .btn,
+[data-button-style="rounded"] a.inline-flex:not(.rounded-none) {
+  border-radius: 9999px !important;
+}
+
+[data-button-style="medium"] button:not(.rounded-none):not(.rounded-sm),
+[data-button-style="medium"] .btn,
+[data-button-style="medium"] a.inline-flex:not(.rounded-none) {
+  border-radius: 0.5rem !important;
+}
+
+[data-button-style="sharp"] button:not(.rounded-none):not(.rounded-sm),
+[data-button-style="sharp"] .btn,
+[data-button-style="sharp"] a.inline-flex:not(.rounded-none) {
+  border-radius: 0.125rem !important;
+}
+
+/* ==========================================================================
+   RTL Typography & Direction Support
+   ========================================================================== */
+
+html[dir="rtl"] body {
+  font-family: 'Cairo', 'Outfit', sans-serif;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html[dir="rtl"] .font-display {
+  font-family: 'Cairo', 'Space Grotesk', sans-serif;
+}
+
+/* ==========================================================================
+   Animation Toggle (Off / Reduced Motion)
+   ========================================================================== */
+
+[data-animations="false"] *,
+[data-animations="false"] *::before,
+[data-animations="false"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* ==========================================================================
+   Global Base Typography & Layout
+   ========================================================================== */
 
 * {
   border-color: hsl(var(--border));
@@ -91,7 +292,10 @@ html {
   width: 100%;
 }
 
-/* Custom Scrollbar */
+/* ==========================================================================
+   Scrollbar & Selection
+   ========================================================================== */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -101,60 +305,44 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #3B66F5, #2563EB);
+  background: hsl(var(--primary));
   border-radius: 5px;
   border: 2px solid hsl(var(--background));
 }
 
-.dark ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #FFB400, #E59800);
-}
-
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #2563EB, #1D4ED8);
+  opacity: 0.85;
 }
 
-.dark ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #FFC107, #FFB400);
-}
-
-/* Scroll Progress Bar */
 .scroll-progress-bar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(135deg, #3B66F5, #60A5FA) !important;
+  background: hsl(var(--primary)) !important;
   transform-origin: 0%;
   z-index: 100;
 }
 
-.dark .scroll-progress-bar {
-  background: linear-gradient(135deg, #FFB400, #FFA000, #E59800) !important;
-}
-
-/* Custom Selection */
 ::selection {
-  background-color: rgba(59, 102, 245, 0.25);
-  color: #0F172A;
+  background-color: hsla(var(--primary) / 0.3);
+  color: hsl(var(--foreground));
 }
 
-.dark ::selection {
-  background-color: rgba(255, 180, 0, 0.3);
-  color: #FFFFFF;
-}
+/* ==========================================================================
+   Gradients, Glass & Overrides
+   ========================================================================== */
 
-/* Gradients & Glows */
 .gradient-text {
-  background: linear-gradient(135deg, #3B66F5, #2563EB, #0F172A);
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--foreground)));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .dark .gradient-text {
-  background: linear-gradient(135deg, #FFC107, #FFB400, #FFFFFF);
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -169,7 +357,7 @@ html {
 }
 
 .dark .glass-effect {
-  background: rgba(30, 30, 30, 0.8); /* #1E1E1E with opacity */
+  background: rgba(30, 30, 30, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -182,36 +370,17 @@ html {
   background-size: 40px 40px;
 }
 
-/* Primary Gradient overrides for buttons */
+/* Button & interactive accent styles */
 button.bg-primary, a.bg-primary, .bg-primary {
-  background: linear-gradient(135deg, #3B66F5, #2563EB) !important;
-  color: #FFFFFF !important;
+  background-color: hsl(var(--primary)) !important;
+  background-image: linear-gradient(135deg, hsl(var(--primary)), hsla(var(--primary) / 0.88)) !important;
+  color: hsl(var(--primary-foreground)) !important;
   font-weight: 700 !important;
 }
 
 button.bg-primary:hover, a.bg-primary:hover {
   opacity: 0.95;
-  box-shadow: 0 8px 25px rgba(59, 102, 245, 0.35) !important;
-}
-
-.dark button.bg-primary, .dark a.bg-primary, .dark .bg-primary {
-  background: linear-gradient(135deg, #FFB400, #FFA000) !important;
-  color: #111111 !important;
-  font-weight: 700 !important;
-}
-
-.dark button.bg-primary:hover, .dark a.bg-primary:hover {
-  opacity: 0.95;
-  box-shadow: 0 8px 25px rgba(255, 180, 0, 0.4) !important;
-}
-
-/* active navbar indicator */
-.bg-primary.h-0\.5 {
-  background: linear-gradient(135deg, #3B66F5, #2563EB) !important;
-}
-
-.dark .bg-primary.h-0\.5 {
-  background: linear-gradient(135deg, #FFB400, #FFA000) !important;
+  box-shadow: 0 8px 25px hsla(var(--primary) / 0.35) !important;
 }
 
 /* Animations */
@@ -233,24 +402,14 @@ button.bg-primary:hover, a.bg-primary:hover {
   content: '';
   position: absolute;
   inset: -50%;
-  background: radial-gradient(circle, rgba(59, 102, 245, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, hsla(var(--primary) / 0.2) 0%, transparent 70%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
 }
 
-.dark .glow-on-hover::after {
-  background: radial-gradient(circle, rgba(255, 180, 0, 0.2) 0%, transparent 70%);
-}
-
 .glow-on-hover:hover::after {
   opacity: 1;
-}
-
-/* Typing Caret Animation */
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
 }
 
 .typing-cursor::after {
@@ -258,6 +417,11 @@ button.bg-primary:hover, a.bg-primary:hover {
   margin-left: 2px;
   color: hsl(var(--primary));
   animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 /* Glass Card Gradient Border */
@@ -278,13 +442,9 @@ button.bg-primary:hover, a.bg-primary:hover {
   inset: 0;
   border-radius: 1rem;
   padding: 1.5px;
-  background: linear-gradient(135deg, #3B66F5, #2563EB, #E2E8F0);
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--border)));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
-}
-
-.dark .gradient-border-card::before {
-  background: linear-gradient(135deg, #FFB400, #FFA000, #2E2E2E);
 }
