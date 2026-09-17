@@ -6,8 +6,8 @@ export const timelineData = [
     icon: School,
     title: "Digilians Initiative (Presidential Digital Pioneers)",
     titleAr: "مبادرة الرواد الرقميون الرئاسية (Digilians)",
-    subtitle: "AI-Driven Software Development Diploma",
-    subtitleAr: "دبلومة تطوير البرمجيات بالذكاء الاصطناعي",
+    subtitle: "AI-Based Software Development Specialized Diploma",
+    subtitleAr: "الدبلومة التخصصية في تطوير البرمجيات القائمة على الذكاء الاصطناعي",
     date: "12/2025 – 08/2026",
     dateAr: "12/2025 – 08/2026",
     description:

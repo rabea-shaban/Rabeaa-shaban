@@ -19,7 +19,7 @@ export const experience = [
     ],
   },
   {
-    title: "AI-Driven Software Development Diploma (Digilians Initiative)",
+    title: "AI-Based Software Development Specialized Diploma (Digilians Initiative)",
     period: "12/2025 - 08/2026",
     description:
       "Full-time intensive residential diploma at the Egyptian Military Academy under MCIT. Advanced software engineering, AI workflow integration, MERN stack, cloud architecture (AWS), and DevOps container orchestration (Docker & Kubernetes).",

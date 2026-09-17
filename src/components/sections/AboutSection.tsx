@@ -55,7 +55,7 @@ export const AboutSection: React.FC = () => {
               </p>
 
               <p>
-                I'm currently enrolled in the <strong className="text-foreground">Digitans AI-Based Software Development Diploma</strong> at the Egyptian Military Academy in Heliopolis, Cairo, where I'm strengthening my skills in Software Engineering, Cloud Computing, Artificial Intelligence, and DevOps through intensive hands-on training.
+                I completed the <strong className="text-foreground">Digilians AI-Based Software Development Specialized Diploma</strong> at the Egyptian Military Academy in Heliopolis, Cairo, organized by MCIT, advancing my expertise in Software Engineering, Cloud Computing, Artificial Intelligence, and DevOps through intensive hands-on training.
               </p>
 
               {/* Highlighted Skills Pills */}

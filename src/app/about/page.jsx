@@ -3,14 +3,14 @@ import AboutView from "@/views/AboutView";
 export const metadata = {
   title: "About Me | من أنا - ربيع شعبان",
   description:
-    "Learn more about Rabea Shaban (ربيع شعبان), Full Stack Software Engineer. Graduated with a Bachelor's degree in Management Information Systems (MIS) with an Excellent grade (Imtiyaz). Enrolled in Egyptian Military Academy AI-Based Software Diploma. نبذة تعريفية عن ربيع شعبان والمسيرة المهنية والأكاديمية.",
+    "Learn more about Rabea Shaban (ربيع شعبان), Full Stack Software Engineer. Graduated with a Bachelor's degree in Management Information Systems (MIS) with an Excellent grade (Imtiyaz). Graduate of Egyptian Military Academy AI-Based Software Development Specialized Diploma. نبذة تعريفية عن ربيع شعبان والمسيرة المهنية والأكاديمية.",
   keywords: [
     "About Rabea Shaban",
     "من هو ربيع شعبان",
     "ربيع شعبان bio",
     "MIS Excellent grade",
     "Full Stack Software Engineer background",
-    "Egyptian Military Academy Digitans",
+    "Egyptian Military Academy Digilians",
     "Meta Front-End Developer",
     "DEPI MCIT",
     "NTI Egypt"
