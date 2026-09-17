@@ -16,18 +16,18 @@ export const metadata = {
     "Udacity MCIT"
   ],
   alternates: {
-    canonical: "https://rabea-shaban.vercel.app/certificates",
+    canonical: "https://www.rabea-shaban.com/certificates",
     languages: {
-      "en": "https://rabea-shaban.vercel.app/certificates",
-      "ar": "https://rabea-shaban.vercel.app/certificates",
-      "x-default": "https://rabea-shaban.vercel.app/certificates",
+      "en": "https://www.rabea-shaban.com/en/certificates",
+      "ar": "https://www.rabea-shaban.com/ar/certificates",
+      "x-default": "https://www.rabea-shaban.com/certificates",
     },
   },
   openGraph: {
     title: "Certificates & Credentials | الشهادات والاعتمادات | Rabea Shaban",
     description:
       "Browse through official academic degrees, professional specializations, cloud certifications, and technical achievements. الشهادات التقنية والأكاديمية المعتمدة.",
-    url: "https://rabea-shaban.vercel.app/certificates",
+    url: "https://www.rabea-shaban.com/certificates",
     locale: "en_US",
     alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],
     images: ["/og-image.jpg"],

@@ -118,7 +118,7 @@ export const projects = [
     descriptionAr: "الموقع الشخصي التفاعلي لمعرض أعمالي ومهاراتي التقنية وشهاداتي ومسيرتي المهنية بتصميم عصري فائق السرعة وتأثيرات حركية تفاعلية ودعم كامل للغتين العربية والإنجليزية.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     category: ["React", "website"],
-    demo: "https://rabea-shaban.vercel.app/",
+    demo: "https://www.rabea-shaban.com/",
     github: "https://github.com/rabea-shaban/portfolio-2026",
     featured: true,
     features: [

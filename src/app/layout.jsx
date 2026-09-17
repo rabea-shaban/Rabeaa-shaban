@@ -10,7 +10,7 @@ import { ThemeProvider } from "@/contexts/ThemeContext";
 import { CustomizationButton, CustomizationPanel } from "@/components/customization";
 
 export const metadata = {
-  metadataBase: new URL("https://rabea-shaban.vercel.app"),
+  metadataBase: new URL("https://www.rabea-shaban.com"),
   title: {
     default: "Rabea Shaban | ربيع شعبان - Full Stack Software Engineer",
     template: "%s | Rabea Shaban | ربيع شعبان",
@@ -39,7 +39,7 @@ export const metadata = {
     "مطور Next.js",
     "مهندس DevOps"
   ],
-  authors: [{ name: "Rabea Shaban", url: "https://rabea-shaban.vercel.app" }],
+  authors: [{ name: "Rabea Shaban", url: "https://www.rabea-shaban.com" }],
   creator: "Rabea Shaban",
   publisher: "Rabea Shaban",
   robots: {
@@ -54,11 +54,11 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "https://rabea-shaban.vercel.app",
+    canonical: "https://www.rabea-shaban.com",
     languages: {
-      "en": "https://rabea-shaban.vercel.app",
-      "ar": "https://rabea-shaban.vercel.app",
-      "x-default": "https://rabea-shaban.vercel.app",
+      "en": "https://www.rabea-shaban.com/en",
+      "ar": "https://www.rabea-shaban.com/ar",
+      "x-default": "https://www.rabea-shaban.com",
     },
   },
   other: {
@@ -73,7 +73,7 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],
-    url: "https://rabea-shaban.vercel.app",
+    url: "https://www.rabea-shaban.com",
     siteName: "Rabea Shaban Portfolio | ربيع شعبان",
     title: "Rabea Shaban | ربيع شعبان - Full Stack Software Engineer",
     description:
@@ -105,12 +105,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://rabea-shaban.vercel.app/#person",
+      "@id": "https://www.rabea-shaban.com/#person",
       "name": "Rabea Shaban",
       "alternateName": "ربيع شعبان",
       "jobTitle": "Full Stack Software Engineer",
-      "url": "https://rabea-shaban.vercel.app",
-      "image": "https://rabea-shaban.vercel.app/logo.png",
+      "url": "https://www.rabea-shaban.com",
+      "image": "https://www.rabea-shaban.com/logo.png",
       "description": "Full Stack Software Engineer & Cloud DevOps Specialist | مهندس برمجيات وتطوير ويب شامل",
       "inLanguage": ["en", "ar"],
       "sameAs": [
@@ -150,13 +150,13 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://rabea-shaban.vercel.app/#website",
-      "url": "https://rabea-shaban.vercel.app",
+      "@id": "https://www.rabea-shaban.com/#website",
+      "url": "https://www.rabea-shaban.com",
       "name": "Rabea Shaban Portfolio | معرض أعمال ربيع شعبان",
       "description": "Professional Full Stack Software Engineer Portfolio & Showcase",
       "inLanguage": ["en", "ar"],
       "publisher": {
-        "@id": "https://rabea-shaban.vercel.app/#person"
+        "@id": "https://www.rabea-shaban.com/#person"
       }
     }
   ]

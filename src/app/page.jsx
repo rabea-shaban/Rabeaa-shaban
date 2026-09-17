@@ -19,18 +19,18 @@ export const metadata = {
     "Software Portfolio"
   ],
   alternates: {
-    canonical: "https://rabea-shaban.vercel.app",
+    canonical: "https://www.rabea-shaban.com",
     languages: {
-      "en": "https://rabea-shaban.vercel.app",
-      "ar": "https://rabea-shaban.vercel.app",
-      "x-default": "https://rabea-shaban.vercel.app",
+      "en": "https://www.rabea-shaban.com/en",
+      "ar": "https://www.rabea-shaban.com/ar",
+      "x-default": "https://www.rabea-shaban.com",
     },
   },
   openGraph: {
     title: "Rabea Shaban | ربيع شعبان - Full Stack Software Engineer",
     description:
       "Full Stack Software Engineer specializing in MERN Stack, Next.js, Node.js, REST APIs, Microservices, and Cloud Infrastructure. مهندس برمجيات وتطوير ويب شامل.",
-    url: "https://rabea-shaban.vercel.app",
+    url: "https://www.rabea-shaban.com",
     locale: "en_US",
     alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],
     images: ["/og-image.jpg"],

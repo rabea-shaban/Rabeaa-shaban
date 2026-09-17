@@ -1,45 +1,54 @@
 export async function GET() {
-  const baseUrl = "https://rabea-shaban.vercel.app";
+  const baseUrl = "https://www.rabea-shaban.com";
   const currentDate = new Date().toISOString();
 
-  const pages = [
-    {
-      loc: `${baseUrl}/`,
-      lastmod: currentDate,
-      changefreq: "daily",
-      priority: "1.0",
-    },
-    {
-      loc: `${baseUrl}/about`,
-      lastmod: currentDate,
-      changefreq: "weekly",
-      priority: "0.9",
-    },
-    {
-      loc: `${baseUrl}/projects`,
-      lastmod: currentDate,
-      changefreq: "weekly",
-      priority: "0.9",
-    },
-    {
-      loc: `${baseUrl}/services`,
-      lastmod: currentDate,
-      changefreq: "weekly",
-      priority: "0.8",
-    },
-    {
-      loc: `${baseUrl}/certificates`,
-      lastmod: currentDate,
-      changefreq: "weekly",
-      priority: "0.9",
-    },
-    {
-      loc: `${baseUrl}/contact`,
-      lastmod: currentDate,
-      changefreq: "monthly",
-      priority: "0.8",
-    },
+  const routes = [
+    { path: "", priority: "1.0", changefreq: "daily" },
+    { path: "/about", priority: "0.9", changefreq: "weekly" },
+    { path: "/projects", priority: "0.9", changefreq: "weekly" },
+    { path: "/services", priority: "0.8", changefreq: "weekly" },
+    { path: "/certificates", priority: "0.9", changefreq: "weekly" },
+    { path: "/contact", priority: "0.8", changefreq: "monthly" },
   ];
+
+  const pages = [];
+
+  routes.forEach((r) => {
+    const cleanPath = r.path;
+    const defaultUrl = `${baseUrl}${cleanPath || "/"}`;
+    const enUrl = `${baseUrl}/en${cleanPath}`;
+    const arUrl = `${baseUrl}/ar${cleanPath}`;
+
+    // Root page entry
+    pages.push({
+      loc: defaultUrl,
+      enLoc: enUrl,
+      arLoc: arUrl,
+      lastmod: currentDate,
+      changefreq: r.changefreq,
+      priority: r.priority,
+    });
+
+    // Dedicated /en entry
+    pages.push({
+      loc: enUrl,
+      enLoc: enUrl,
+      arLoc: arUrl,
+      lastmod: currentDate,
+      changefreq: r.changefreq,
+      priority: (parseFloat(r.priority) * 0.95).toFixed(2),
+    });
+
+    // Dedicated /ar entry
+    pages.push({
+      loc: arUrl,
+      enLoc: enUrl,
+      arLoc: arUrl,
+      lastmod: currentDate,
+      changefreq: r.changefreq,
+      priority: (parseFloat(r.priority) * 0.95).toFixed(2),
+    });
+  });
 
   const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
@@ -48,9 +57,9 @@ ${pages
   .map(
     (page) => `  <url>
     <loc>${page.loc}</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="${page.loc}" />
-    <xhtml:link rel="alternate" hreflang="ar" href="${page.loc}" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="${page.loc}" />
+    <xhtml:link rel="alternate" hreflang="en" href="${page.enLoc}" />
+    <xhtml:link rel="alternate" hreflang="ar" href="${page.arLoc}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${baseUrl}" />
     <lastmod>${page.lastmod}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>

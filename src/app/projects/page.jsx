@@ -18,18 +18,18 @@ export const metadata = {
     "Node.js portfolio projects"
   ],
   alternates: {
-    canonical: "https://rabea-shaban.vercel.app/projects",
+    canonical: "https://www.rabea-shaban.com/projects",
     languages: {
-      "en": "https://rabea-shaban.vercel.app/projects",
-      "ar": "https://rabea-shaban.vercel.app/projects",
-      "x-default": "https://rabea-shaban.vercel.app/projects",
+      "en": "https://www.rabea-shaban.com/en/projects",
+      "ar": "https://www.rabea-shaban.com/ar/projects",
+      "x-default": "https://www.rabea-shaban.com/projects",
     },
   },
   openGraph: {
     title: "Projects Showcase | معرض المشروعات | Rabea Shaban",
     description:
       "A comprehensive portfolio of web applications, enterprise SaaS platforms, e-commerce stores, and cloud backend APIs. معرض المشروعات والتطبيقات الحديثة.",
-    url: "https://rabea-shaban.vercel.app/projects",
+    url: "https://www.rabea-shaban.com/projects",
     locale: "en_US",
     alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],
     images: ["/og-image.jpg"],

@@ -16,18 +16,18 @@ export const metadata = {
     "Kubernetes Orchestration"
   ],
   alternates: {
-    canonical: "https://rabea-shaban.vercel.app/services",
+    canonical: "https://www.rabea-shaban.com/services",
     languages: {
-      "en": "https://rabea-shaban.vercel.app/services",
-      "ar": "https://rabea-shaban.vercel.app/services",
-      "x-default": "https://rabea-shaban.vercel.app/services",
+      "en": "https://www.rabea-shaban.com/en/services",
+      "ar": "https://www.rabea-shaban.com/ar/services",
+      "x-default": "https://www.rabea-shaban.com/services",
     },
   },
   openGraph: {
     title: "Services & Solutions | الخدمات والحلول البرمجية | Rabea Shaban",
     description:
       "Expert engineering services from database architecture and full-stack building to containerized deployments, Kubernetes orchestration, and cloud solutions. خدمات برمجية احترافية.",
-    url: "https://rabea-shaban.vercel.app/services",
+    url: "https://www.rabea-shaban.com/services",
     locale: "en_US",
     alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],
     images: ["/og-image.jpg"],

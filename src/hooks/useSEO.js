@@ -59,13 +59,18 @@ export const useSEO = ({ title, description, keywords, canonicalUrl }) => {
 
     // 5. Canonical and Hreflang Alternates
     const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
-    const currentBase = "https://rabea-shaban.vercel.app";
-    const targetUrl = canonicalUrl || `${currentBase}${currentPath}`;
+    const cleanPath = currentPath.replace(/^\/(ar|en)/, '');
+    const currentBase = "https://www.rabea-shaban.com";
+    
+    const canonicalTarget = canonicalUrl || `${currentBase}${currentPath}`;
+    const enUrl = `${currentBase}/en${cleanPath}`;
+    const arUrl = `${currentBase}/ar${cleanPath}`;
+    const defaultUrl = `${currentBase}${cleanPath || '/'}`;
 
-    setLinkTag("canonical", null, targetUrl);
-    setLinkTag("alternate", "en", targetUrl);
-    setLinkTag("alternate", "ar", targetUrl);
-    setLinkTag("alternate", "x-default", targetUrl);
+    setLinkTag("canonical", null, canonicalTarget);
+    setLinkTag("alternate", "en", enUrl);
+    setLinkTag("alternate", "ar", arUrl);
+    setLinkTag("alternate", "x-default", defaultUrl);
 
     // 6. Sync HTML attributes
     document.documentElement.setAttribute("lang", isAr ? "ar" : "en");

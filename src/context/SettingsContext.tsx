@@ -67,7 +67,7 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [mounted, setMounted] = useState(false);
   const [systemIsDark, setSystemIsDark] = useState(false);
 
-  // Initialize from localStorage safely after mount
+  // Initialize from localStorage and URL pathname safely after mount
   useEffect(() => {
     try {
       const stored = localStorage.getItem(SETTINGS_STORAGE_KEY);
@@ -77,6 +77,16 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       }
     } catch (e) {
       console.warn('Failed to parse settings from localStorage', e);
+    }
+
+    // Check URL pathname for /ar or /en prefix
+    if (typeof window !== 'undefined') {
+      const path = window.location.pathname;
+      if (path.startsWith('/ar')) {
+        setSettings((prev) => ({ ...prev, language: 'ar' }));
+      } else if (path.startsWith('/en')) {
+        setSettings((prev) => ({ ...prev, language: 'en' }));
+      }
     }
 
     // System dark mode listener
@@ -138,12 +148,32 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   const setTheme = useCallback((theme: Theme) => updateSetting('theme', theme), [updateSetting]);
   const setAccentColor = useCallback((accentColor: AccentColor) => updateSetting('accentColor', accentColor), [updateSetting]);
-  const setLanguage = useCallback((language: Language) => updateSetting('language', language), [updateSetting]);
+  
+  const setLanguage = useCallback((language: Language) => {
+    updateSetting('language', language);
+    if (typeof window !== 'undefined') {
+      const pathname = window.location.pathname;
+      if (pathname.startsWith('/ar') || pathname.startsWith('/en')) {
+        const cleanPath = pathname.replace(/^\/(ar|en)/, '') || '/';
+        const newPath = `/${language}${cleanPath === '/' ? '' : cleanPath}`;
+        window.history.pushState(null, '', newPath);
+      }
+    }
+  }, [updateSetting]);
+
   const toggleLanguage = useCallback(() => {
-    setSettings((prev) => ({
-      ...prev,
-      language: prev.language === 'ar' ? 'en' : 'ar',
-    }));
+    setSettings((prev) => {
+      const nextLang = prev.language === 'ar' ? 'en' : 'ar';
+      if (typeof window !== 'undefined') {
+        const pathname = window.location.pathname;
+        if (pathname.startsWith('/ar') || pathname.startsWith('/en')) {
+          const cleanPath = pathname.replace(/^\/(ar|en)/, '') || '/';
+          const newPath = `/${nextLang}${cleanPath === '/' ? '' : cleanPath}`;
+          window.history.pushState(null, '', newPath);
+        }
+      }
+      return { ...prev, language: nextLang };
+    });
   }, []);
   const setButtonStyle = useCallback((buttonStyle: ButtonStyle) => updateSetting('buttonStyle', buttonStyle), [updateSetting]);
   const setFontSize = useCallback((fontSize: FontSize) => updateSetting('fontSize', fontSize), [updateSetting]);

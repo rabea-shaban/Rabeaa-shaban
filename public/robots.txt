@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rabea-shaban.vercel.app/sitemap.xml
+Sitemap: https://www.rabea-shaban.com/sitemap.xml

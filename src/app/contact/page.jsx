@@ -14,18 +14,18 @@ export const metadata = {
     "Freelance Developer Contact"
   ],
   alternates: {
-    canonical: "https://rabea-shaban.vercel.app/contact",
+    canonical: "https://www.rabea-shaban.com/contact",
     languages: {
-      "en": "https://rabea-shaban.vercel.app/contact",
-      "ar": "https://rabea-shaban.vercel.app/contact",
-      "x-default": "https://rabea-shaban.vercel.app/contact",
+      "en": "https://www.rabea-shaban.com/en/contact",
+      "ar": "https://www.rabea-shaban.com/ar/contact",
+      "x-default": "https://www.rabea-shaban.com/contact",
     },
   },
   openGraph: {
     title: "Contact Me | تواصل معي | Rabea Shaban - Full Stack Software Engineer",
     description:
       "Send a direct message or connect on LinkedIn, GitHub, WhatsApp, or Email for software engineering projects and full-time hiring. تواصل معي مباشرة.",
-    url: "https://rabea-shaban.vercel.app/contact",
+    url: "https://www.rabea-shaban.com/contact",
     locale: "en_US",
     alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],
     images: ["/og-image.jpg"],

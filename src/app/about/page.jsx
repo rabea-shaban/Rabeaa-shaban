@@ -16,18 +16,18 @@ export const metadata = {
     "NTI Egypt"
   ],
   alternates: {
-    canonical: "https://rabea-shaban.vercel.app/about",
+    canonical: "https://www.rabea-shaban.com/about",
     languages: {
-      "en": "https://rabea-shaban.vercel.app/about",
-      "ar": "https://rabea-shaban.vercel.app/about",
-      "x-default": "https://rabea-shaban.vercel.app/about",
+      "en": "https://www.rabea-shaban.com/en/about",
+      "ar": "https://www.rabea-shaban.com/ar/about",
+      "x-default": "https://www.rabea-shaban.com/about",
     },
   },
   openGraph: {
     title: "About Me | من أنا | Rabea Shaban - Full Stack Software Engineer",
     description:
       "Passionate Software Engineer holding a Bachelor's degree in MIS (Excellent grade) and professional certificates from Meta and AWS. مهندس برمجيات وتطوير ويب شامل.",
-    url: "https://rabea-shaban.vercel.app/about",
+    url: "https://www.rabea-shaban.com/about",
     locale: "en_US",
     alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],
     images: ["/og-image.jpg"],

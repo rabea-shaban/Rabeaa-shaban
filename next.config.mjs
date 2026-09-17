@@ -35,6 +35,27 @@ const nextConfig = {
       },
     ];
   },
+  // Bilingual SEO rewrites for /ar and /en routes
+  async rewrites() {
+    return [
+      {
+        source: '/ar',
+        destination: '/',
+      },
+      {
+        source: '/en',
+        destination: '/',
+      },
+      {
+        source: '/ar/:path*',
+        destination: '/:path*',
+      },
+      {
+        source: '/en/:path*',
+        destination: '/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
