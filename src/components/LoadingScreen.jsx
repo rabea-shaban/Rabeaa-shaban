@@ -46,7 +46,7 @@ const LoadingScreen = () => {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#030014] text-white"
+          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#111111] text-white"
         >
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
@@ -54,7 +54,7 @@ const LoadingScreen = () => {
             transition={{ duration: 1, ease: "easeOut" }}
             className="flex flex-col items-center gap-4"
           >
-            <div className="relative flex items-center justify-center w-24 h-24 rounded-2xl bg-gradient-to-br from-primary/30 to-purple-600/20 border border-primary/40 shadow-[0_0_50px_rgba(124,58,237,0.3)] p-4 overflow-hidden">
+            <div className="relative flex items-center justify-center w-24 h-24 rounded-2xl bg-gradient-to-br from-primary/30 to-amber-500/20 border border-primary/40 shadow-[0_0_50px_rgba(255,180,0,0.3)] p-4 overflow-hidden">
               <img
                 src="/logoWhite.png"
                 alt="Rabea Shaban Logo"
@@ -65,7 +65,7 @@ const LoadingScreen = () => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="text-xl font-bold tracking-widest uppercase bg-gradient-to-r from-white via-purple-200 to-primary bg-clip-text text-transparent font-display"
+              className="text-xl font-bold tracking-widest uppercase bg-gradient-to-r from-white via-amber-100 to-primary bg-clip-text text-transparent font-display"
             >
               Rabea Shaban
             </motion.h2>

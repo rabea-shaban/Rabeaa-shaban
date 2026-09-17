@@ -43,7 +43,7 @@ const HomeView = () => {
             transition={{ duration: 0.5 }}
             className="relative group"
           >
-            <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-purple-500 to-indigo-500 blur-md opacity-75 group-hover:opacity-100 transition duration-500"></div>
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-amber-400 to-yellow-500 blur-md opacity-75 group-hover:opacity-100 transition duration-500"></div>
             <img
               src={profilePic.src || profilePic}
               alt="Rabea Shaban Profile"
@@ -94,7 +94,7 @@ const HomeView = () => {
             transition={{ duration: 0.5, delay: 0.25 }}
             className="flex flex-wrap justify-center gap-3 pt-2"
           >
-            <Button asChild size="lg" className="group shadow-[0_4px_20px_rgba(124,58,237,0.3)] bg-primary text-white hover:bg-primary/95">
+            <Button asChild size="lg" className="group shadow-[0_4px_20px_rgba(255,180,0,0.3)] bg-primary text-black font-bold hover:bg-primary/95">
               <Link href="/projects">
                 View Projects
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
@@ -220,7 +220,7 @@ const HomeView = () => {
           </div>
 
           <div className="mt-16 text-center">
-            <Button asChild size="lg" className="shadow-[0_4px_20px_rgba(124,58,237,0.15)]">
+            <Button asChild size="lg" className="shadow-[0_4px_20px_rgba(255,180,0,0.2)]">
               <Link href="/projects">
                 View All Projects
                 <ArrowRight className="w-4 h-4 ml-2" />

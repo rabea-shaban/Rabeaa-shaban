@@ -84,9 +84,9 @@ const FloatingContact = () => {
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.95 }}
-        className="w-14 h-14 rounded-full flex items-center justify-center text-white shadow-[0_8px_30px_rgba(139,39,242,0.4)] pointer-events-auto relative z-10 border border-white/10"
+        className="w-14 h-14 rounded-full flex items-center justify-center text-black font-bold shadow-[0_8px_30px_rgba(255,180,0,0.45)] pointer-events-auto relative z-10 border border-white/10"
         style={{
-          background: "linear-gradient(135deg, #8B27F2, #6A35F7)",
+          background: "linear-gradient(135deg, #FFB400, #FFA000)",
         }}
         aria-label="Toggle contact menu"
       >

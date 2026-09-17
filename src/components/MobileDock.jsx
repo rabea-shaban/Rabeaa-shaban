@@ -73,7 +73,7 @@ const MobileDock = () => {
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
                     className="absolute -top-10 px-2.5 py-1 text-[10px] font-bold tracking-wider rounded-md shadow-lg pointer-events-none whitespace-nowrap bg-primary text-white border border-primary/20"
                     style={{
-                      boxShadow: "0 4px 15px rgba(139, 39, 242, 0.3)",
+                      boxShadow: "0 4px 15px rgba(255, 180, 0, 0.4)",
                     }}
                   >
                     {item.label}
@@ -93,9 +93,9 @@ const MobileDock = () => {
                 {isActive && (
                   <motion.div
                     layoutId="activeDockCircle"
-                    className="absolute inset-0 rounded-full shadow-[0_0_20px_rgba(139,39,242,0.4)]"
+                    className="absolute inset-0 rounded-full shadow-[0_0_20px_rgba(255,180,0,0.45)]"
                     style={{
-                      background: "linear-gradient(135deg, #8B27F2, #6A35F7)",
+                      background: "linear-gradient(135deg, #FFB400, #FFA000)",
                     }}
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
@@ -108,7 +108,7 @@ const MobileDock = () => {
                   }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`relative z-10 ${isActive ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+                  className={`relative z-10 ${isActive ? "text-black font-bold" : "text-muted-foreground hover:text-foreground"}`}
                 >
                   <Icon className="w-5 h-5 transition-colors" />
                 </motion.div>

@@ -115,7 +115,7 @@ const AboutView = () => {
             {/* Photo Column (Right) */}
             <div className="lg:col-span-4 flex justify-center">
               <div className="relative group max-w-xs w-full">
-                <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-primary via-purple-500 to-indigo-500 blur-lg opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-primary via-amber-400 to-yellow-500 blur-lg opacity-40 group-hover:opacity-75 transition duration-500"></div>
                 <div className="relative rounded-2xl overflow-hidden border-2 border-border/50 bg-card shadow-2xl">
                   <img
                     src={profilePhoto.src || profilePhoto}
@@ -253,7 +253,7 @@ const AboutView = () => {
                   </span>
                 </div>
 
-                <div className="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-bold border border-purple-500/20">
+                <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">
                   Currently Enrolled
                 </div>
 

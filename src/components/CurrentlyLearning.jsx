@@ -125,7 +125,7 @@ const CurrentlyLearning = () => {
                 key={index}
                 variants={cardVariants}
                 whileHover={{ y: -6, scale: 1.02 }}
-                className="group relative p-6 rounded-xl glass-effect border border-border/50 hover:border-primary/40 hover:shadow-[0_8px_30px_rgba(124,58,237,0.08)] transition-all overflow-hidden flex flex-col justify-between"
+                className="group relative p-6 rounded-xl glass-effect border border-border/50 hover:border-primary/40 hover:shadow-[0_8px_30px_rgba(255,180,0,0.12)] transition-all overflow-hidden flex flex-col justify-between"
               >
                 {/* Background Gradient Hover glow */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
