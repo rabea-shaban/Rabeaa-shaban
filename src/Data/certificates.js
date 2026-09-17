@@ -11,6 +11,25 @@ import {
 
 export const certificates = [
   {
+    id: 100,
+    title: "AI-Driven Software Development Diploma",
+    titleAr: "دبلومة تطوير البرمجيات بالذكاء الاصطناعي",
+    issuer: "Digilians Initiative – Ministry of Communications & IT (MCIT)",
+    issuerAr: "مبادرة الرواد الرقميون (Digilians) – وزارة الاتصالات وتكنولوجيا المعلومات",
+    date: "12/2025 – 08/2026",
+    type: "diploma",
+    grade: "Completed with Distinction",
+    gradeAr: "إتمام معتمد بتقدير امتياز",
+    description:
+      "Comprehensive full-time residential diploma at the Egyptian Military Academy organized by MCIT. Specializing in advanced software engineering, AI workflow integration, MERN stack, AWS Cloud, Docker, Kubernetes, microservices architecture, and DevOps automation.",
+    descriptionAr:
+      "دبلومة مكثفة بدوام كامل بالأكاديمية العسكرية المصرية تحت إشراف وزارة الاتصالات (MCIT). متخصصة في هندسة البرمجيات المتقدمة، دمج نماذج الذكاء الاصطناعي، وتطوير MERN Stack، والحوسبة السحابية AWS، و Docker و Kubernetes، والأنظمة التوزيعية وحلول DevOps والأتمتة.",
+    icon: Code,
+    category: "Programming",
+    categoryAr: "البرمجة والتطوير",
+    verified: true,
+  },
+  {
     id: 1,
     title: "Bachelor's in Management Information Systems (MIS)",
     titleAr: "بكالوريوس نظم المعلومات الإدارية (MIS)",

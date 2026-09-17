@@ -5,11 +5,11 @@ export const timelineData = [
     type: "education",
     icon: School,
     title: "Digilians Initiative (Presidential Digital Pioneers)",
-    titleAr: "مبادرة رواد مصر الرقمية الرئاسية (Digilians)",
-    subtitle: "AI-Based Software Development Diploma",
-    subtitleAr: "دبلومة هندسة البرمجيات وتطبيقات الذكاء الاصطناعي",
-    date: "2026 – Present",
-    dateAr: "2026 – حتى الآن",
+    titleAr: "مبادرة الرواد الرقميون الرئاسية (Digilians)",
+    subtitle: "AI-Driven Software Development Diploma",
+    subtitleAr: "دبلومة تطوير البرمجيات بالذكاء الاصطناعي",
+    date: "12/2025 – 08/2026",
+    dateAr: "12/2025 – 08/2026",
     description:
       "Full-time intensive residential training under the Presidential Pioneers Initiative at the Egyptian Military Academy (Heliopolis, Cairo), organized by MCIT. Focuses on advanced software engineering, MERN stack, AI models integration, cloud platforms, DevOps architecture, agile lifecycles, and leadership communication.",
     descriptionAr:
