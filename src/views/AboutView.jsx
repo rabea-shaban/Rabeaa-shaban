@@ -23,6 +23,7 @@ import { skills } from "@/Data/skills";
 import profilePhoto from "@/Img/rabea.jpg";
 import { useSEO } from "@/hooks/useSEO";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { useSettings } from "@/context/SettingsContext";
 
 const highlightedSkills = [
   "Full Stack Software Engineer", "MERN Stack", "React.js", "Node.js", "TypeScript",
@@ -32,10 +33,15 @@ const highlightedSkills = [
 ];
 
 const AboutView = () => {
+  const { t, settings } = useSettings();
+  const isAr = settings.language === 'ar';
+
   useSEO({
-    title: "About Me",
-    description: "Rabea Shaban - Full Stack Software Engineer based in Minya, Egypt. Bachelor's degree in MIS (Excellent grade). Passionate about Cloud Computing, DevOps, and modern software development.",
-    keywords: "About Rabea Shaban, Software Engineer bio, MIS Excellent grade, MERN Stack, Next.js, Egyptian Military Academy, DEPI, NTI, Meta Certified"
+    title: isAr ? "من أنا | ربيع شعبان" : "About Me",
+    description: isAr 
+      ? "ربيع شعبان - مهندس برمجيات وتطوير ويب شامل مقيم في المنيا / القاهرة، مصر. حاصل على بكالوريوس نظم المعلومات الإدارية بتقدير ممتاز."
+      : "Rabea Shaban - Full Stack Software Engineer based in Minya, Egypt. Bachelor's degree in MIS (Excellent grade). Passionate about Cloud Computing, DevOps, and modern software development.",
+    keywords: "About Rabea Shaban, Software Engineer bio, MIS Excellent grade, MERN Stack, Next.js, Egyptian Military Academy, DEPI, NTI, Meta Certified, من أنا ربيع شعبان"
   });
 
   return (
@@ -48,10 +54,10 @@ const AboutView = () => {
         
         {/* Header */}
         <SectionHeading
-          badge="INTRODUCTION"
-          title="About Me"
-          watermark="About Me"
-          subtitle="Full Stack Software Engineer specializing in building modern, scalable web applications using the MERN Stack. Passionate about Cloud Computing, DevOps, and creating secure, production-ready software with modern development practices."
+          badge={t.about.badge}
+          title={t.about.title}
+          watermark={t.about.watermark}
+          subtitle={t.about.subtitle}
           size="large"
         />
 
@@ -59,39 +65,22 @@ const AboutView = () => {
         <section className="space-y-8">
           <div className="flex items-center gap-3">
             <div className="w-1.5 h-7 bg-primary rounded-full"></div>
-            <h2 className="text-2xl font-bold font-display text-foreground">Get to Know Me</h2>
+            <h2 className="text-2xl font-bold font-display text-foreground">{t.about.getKnowMe}</h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             {/* Text Bio Column (Left) */}
             <div className="lg:col-span-8 space-y-5 text-muted-foreground text-xs sm:text-sm leading-relaxed">
-              <p>
-                I'm <strong className="text-foreground">Rabea Shaban</strong>, a Full Stack Software Engineer based in Minya, Egypt. I graduated in 2024 with a Bachelor's degree in Management Information Systems (MIS), earning an <strong className="text-primary">Excellent grade</strong>.
-              </p>
-
-              <p>
-                I specialize in developing end-to-end web applications using <strong className="text-foreground">MongoDB, Express.js, React.js, Node.js, Next.js, and TypeScript</strong>. My experience includes designing responsive user interfaces, building secure RESTful APIs, implementing JWT authentication, and creating maintainable applications following clean architecture principles.
-              </p>
-
-              <p>
-                Alongside Full Stack development, I'm expanding my expertise in <strong className="text-foreground">Cloud Computing and DevOps</strong>. I work with <strong className="text-foreground">Docker</strong> for containerization, <strong className="text-foreground">Kubernetes and Helm</strong> for container orchestration, <strong className="text-foreground">Terraform</strong> for Infrastructure as Code (IaC), <strong className="text-foreground">GitHub Actions</strong> for CI/CD automation, and AWS and Linux as part of modern cloud-native development.
-              </p>
-
-              <p>
-                I'm currently enrolled in the <strong className="text-foreground">Digitans AI-Based Software Development Diploma</strong> at the Egyptian Military Academy in Heliopolis, Cairo, where I'm strengthening my skills in Software Engineering, Cloud Computing, Artificial Intelligence, and DevOps through intensive hands-on training.
-              </p>
-
-              <p>
-                I've contributed to projects for clients in Egypt and the Gulf region, delivering responsive websites, business dashboards, booking systems, and modern web applications with a strong focus on performance, scalability, accessibility, and user experience.
-              </p>
-
-              <p>
-                I'm committed to continuous learning, writing clean and maintainable code, and building reliable, production-ready software that follows modern engineering best practices.
-              </p>
+              <p>{t.about.p1}</p>
+              <p>{t.about.p2}</p>
+              <p>{t.about.p3}</p>
+              <p>{t.about.p4}</p>
+              <p>{t.about.p5}</p>
+              <p>{t.about.p6}</p>
 
               {/* Highlighted Skills Pills */}
               <div className="pt-4 space-y-3">
-                <h3 className="text-xs font-bold uppercase tracking-wider text-foreground">HIGHLIGHTED SKILLS:</h3>
+                <h3 className="text-xs font-bold uppercase tracking-wider text-foreground">{t.about.highlightedSkills}</h3>
                 <div className="flex flex-wrap gap-2">
                   {highlightedSkills.map((skill, idx) => (
                     <span
@@ -124,10 +113,10 @@ const AboutView = () => {
         {/* Technical Toolbox Section */}
         <section className="space-y-10">
           <SectionHeading
-            badge="TECH STACK"
-            title="Technical Toolbox"
-            watermark="TOOLBOX"
-            subtitle="The core languages, frameworks, databases, and DevOps tools I use daily."
+            badge={t.about.toolboxBadge}
+            title={t.about.toolboxTitle}
+            watermark={t.about.toolboxWatermark}
+            subtitle={t.about.toolboxSubtitle}
             size="normal"
           />
 
@@ -174,7 +163,7 @@ const AboutView = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-1.5 h-7 bg-primary rounded-full"></div>
-              <h2 className="text-2xl font-bold font-display text-foreground">Experience</h2>
+              <h2 className="text-2xl font-bold font-display text-foreground">{t.about.experienceTitle}</h2>
             </div>
 
             <div className="space-y-6">
@@ -210,7 +199,7 @@ const AboutView = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-1.5 h-7 bg-primary rounded-full"></div>
-              <h2 className="text-2xl font-bold font-display text-foreground">Education</h2>
+              <h2 className="text-2xl font-bold font-display text-foreground">{t.about.educationTitle}</h2>
             </div>
 
             <div className="space-y-6">
@@ -227,13 +216,13 @@ const AboutView = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold font-display text-foreground">
-                      AI-Based Software Development Diploma
+                      {t.about.aiDiplomaTitle}
                     </h3>
                     <p className="text-xs font-semibold text-primary">
-                      Digitans Initiative / Professional Digital Pioneers
+                      {t.about.aiDiplomaOrg}
                     </p>
                     <p className="text-xs text-muted-foreground">
-                      Egyptian Military Academy • Dept of IT and Information Technology (MCIT)
+                      {t.about.aiDiplomaLocation}
                     </p>
                   </div>
                 </div>
@@ -248,12 +237,12 @@ const AboutView = () => {
                 </div>
 
                 <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">
-                  Currently Enrolled
+                  {t.common.currentlyEnrolled}
                 </div>
 
                 <div className="flex flex-wrap gap-1.5 pt-1">
                   <span className="px-2.5 py-0.5 rounded text-[10px] font-semibold bg-muted text-muted-foreground">
-                    Currently Enrolled
+                    {t.common.currentlyEnrolled}
                   </span>
                   <span className="px-2.5 py-0.5 rounded text-[10px] font-semibold bg-muted text-muted-foreground">
                     Egyptian Military Academy
@@ -278,10 +267,10 @@ const AboutView = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold font-display text-foreground">
-                      Bachelor of Management Information Systems (MIS)
+                      {t.about.bachelorTitle}
                     </h3>
                     <p className="text-xs font-semibold text-primary">
-                      Higher Institute of Technology, Management and Information - Minya
+                      {t.about.bachelorOrg}
                     </p>
                   </div>
                 </div>
@@ -296,13 +285,13 @@ const AboutView = () => {
                 </div>
 
                 <div className="inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold border border-emerald-500/20">
-                  Excellent Grade (Imtiyaz)
+                  {t.about.bachelorGrade}
                 </div>
 
                 <div className="p-3 rounded-xl bg-primary/5 border border-primary/15 text-xs space-y-1">
-                  <strong className="text-foreground block uppercase text-[10px] tracking-wider text-primary">GRADUATION PROJECT</strong>
+                  <strong className="text-foreground block uppercase text-[10px] tracking-wider text-primary">{t.about.graduationProject}</strong>
                   <p className="text-muted-foreground font-medium">
-                    Crime Prediction System using React & Firebase (Accredited Excellent)
+                    {t.about.graduationProjectDesc}
                   </p>
                 </div>
 

@@ -13,7 +13,12 @@ import {
   Phone,
 } from "lucide-react";
 
+import { useSettings } from "@/context/SettingsContext";
+
 const Footer = () => {
+  const { t, settings } = useSettings();
+  const isAr = settings.language === 'ar';
+
   const socialLinks = [
     { icon: Github, href: "https://github.com/rabea-shaban", label: "GitHub" },
     {
@@ -42,12 +47,12 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "Home", path: "/" },
-    { name: "About Me", path: "/about" },
-    { name: "Projects", path: "/projects" },
-    { name: "Services", path: "/services" },
-    { name: "Contact", path: "/contact" },
-    { name: "Certificates", path: "/certificates" },
+    { name: t.nav.home, path: "/" },
+    { name: t.nav.about, path: "/about" },
+    { name: t.nav.projects, path: "/projects" },
+    { name: t.nav.services, path: "/services" },
+    { name: t.nav.contact, path: "/contact" },
+    { name: t.nav.certificates, path: "/certificates" },
   ];
 
   const techStack = [
@@ -68,12 +73,12 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="md:col-span-2">
             <Link href="/" className="text-2xl font-bold font-display gradient-text">
-              Rabea Shaban
+              {isAr ? "ربيع شعبان" : "Rabea Shaban"}
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground max-w-sm">
-              Full Stack Software Engineer designing high-performance web systems, 
-              containerized orchestration pipelines, and scalable cloud architectures. 
-              Delivering secure backend APIs and fluid frontends.
+              {isAr
+                ? "مهندس برمجيات وتطوير ويب شامل، متخصص في بناء الأنظمة السحابية والواجهات الحديثة والبنى التحتية المؤتمتة وفق أفضل المعايير الهندسية."
+                : "Full Stack Software Engineer designing high-performance web systems, containerized orchestration pipelines, and scalable cloud architectures."}
             </p>
             <div className="mt-6 flex flex-wrap gap-2.5">
               {socialLinks.map((link, index) => (
@@ -95,11 +100,13 @@ const Footer = () => {
 
           {/* Quick Links Column */}
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider text-foreground font-display">Quick Links</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-foreground font-display">
+              {t.common.quickLinks}
+            </h3>
             <div className="mt-4 flex flex-col gap-2.5 text-sm">
               {quickLinks.map((link) => (
                 <Link
-                  key={link.name}
+                  key={link.path}
                   href={link.path}
                   className="text-muted-foreground hover:text-primary transition-colors block"
                 >
@@ -111,7 +118,9 @@ const Footer = () => {
 
           {/* Tech Stack Column */}
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider text-foreground font-display">Tech Stack</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-foreground font-display">
+              {t.common.techStack}
+            </h3>
             <div className="mt-4 flex flex-col gap-2.5 text-sm text-muted-foreground">
               {techStack.map((tech, index) => (
                 <div key={index} className="flex items-center gap-2">
@@ -125,9 +134,9 @@ const Footer = () => {
 
         {/* Bottom Banner */}
         <div className="mt-12 pt-8 border-t border-border/30 text-center flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Rabea Shaban. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {isAr ? "ربيع شعبان" : "Rabea Shaban"}. {t.common.allRightsReserved}</p>
           <p className="font-mono">
-            Built with Next.js, Tailwind CSS, Framer Motion
+            {t.common.builtWith}
           </p>
         </div>
       </div>

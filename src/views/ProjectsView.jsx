@@ -8,23 +8,29 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { projects } from "@/Data/projects";
 import { useSEO } from "@/hooks/useSEO";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-
-const projectCategories = [
-  { id: "all", label: "All Projects" },
-  { id: "Next.js", label: "Next.js" },
-  { id: "React", label: "React" },
-  { id: "Full Stack", label: "Full Stack" },
-  { id: "web-app", label: "Web Apps" },
-  { id: "e-commerce", label: "E-Commerce" },
-  { id: "website", label: "Websites" },
-];
+import { useSettings } from "@/context/SettingsContext";
 
 const ProjectsView = () => {
+  const { t, settings, isRtl } = useSettings();
+  const isAr = settings.language === 'ar';
+
   useSEO({
-    title: "Projects Showcase",
-    description: "Explore web development and software engineering projects built by Rabea Shaban using Next.js, React, Node.js, and cloud tools.",
-    keywords: "Full stack projects, EduSphere, Sa2yanti, AGRSUP, React showcase, Next.js applications"
+    title: isAr ? "معرض المشروعات | ربيع شعبان" : "Projects Showcase",
+    description: isAr
+      ? "استكشف أحدث تطبيقات الويب والأنظمة البرمجية التي طورها ربيع شعبان باستخدام Next.js و React و Node.js و Docker و Kubernetes."
+      : "Explore web development and software engineering projects built by Rabea Shaban using Next.js, React, Node.js, and cloud tools.",
+    keywords: "Full stack projects, EduSphere, Sa2yanti, AGRSUP, React showcase, Next.js applications, مشاريع ربيع شعبان"
   });
+
+  const projectCategories = [
+    { id: "all", label: isAr ? "جميع المشروعات" : "All Projects" },
+    { id: "Next.js", label: "Next.js" },
+    { id: "React", label: "React" },
+    { id: "Full Stack", label: isAr ? "تطوير شامل" : "Full Stack" },
+    { id: "web-app", label: isAr ? "تطبيقات ويب" : "Web Apps" },
+    { id: "e-commerce", label: isAr ? "متاجر إلكترونية" : "E-Commerce" },
+    { id: "website", label: isAr ? "مواقع ويب" : "Websites" },
+  ];
 
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
@@ -50,10 +56,10 @@ const ProjectsView = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <SectionHeading
-          badge="SELECTED WORKS"
-          title="Projects Showcase"
-          watermark="PROJECTS"
-          subtitle="A comprehensive portfolio of web applications, enterprise SaaS platforms, e-commerce stores, and cloud backend APIs."
+          badge={t.projects.badge}
+          title={t.projects.title}
+          watermark={t.projects.watermark}
+          subtitle={t.projects.subtitle}
           size="large"
         />
 
@@ -61,18 +67,20 @@ const ProjectsView = () => {
         <div className="mb-12 space-y-6">
           {/* Search Box */}
           <div className="max-w-md mx-auto relative">
-            <Search className="w-5 h-5 absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground" />
+            <Search className={`w-5 h-5 absolute top-1/2 -translate-y-1/2 text-muted-foreground ${isRtl ? 'right-3.5' : 'left-3.5'}`} />
             <input
               type="text"
-              placeholder="Search projects by title, technology, or keywords..."
+              placeholder={isAr ? "ابحث عن مشروع بالاسم، التقنية، أو الكلمات المفتاحية..." : "Search projects by title, technology, or keywords..."}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-11 pr-4 py-3 rounded-full border border-border/50 bg-card/60 glass-effect focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all text-sm"
+              className={`w-full py-3 rounded-full border border-border/50 bg-card/60 glass-effect focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all text-sm ${
+                isRtl ? 'pr-11 pl-4' : 'pl-11 pr-4'
+              }`}
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery("")}
-                className="absolute right-3.5 top-1/2 -translate-y-1/2 p-1 text-muted-foreground hover:text-foreground"
+                className={`absolute top-1/2 -translate-y-1/2 p-1 text-muted-foreground hover:text-foreground ${isRtl ? 'left-3.5' : 'right-3.5'}`}
               >
                 <X className="w-4 h-4" />
               </button>
@@ -104,8 +112,10 @@ const ProjectsView = () => {
         {filteredProjects.length === 0 ? (
           <div className="text-center py-16 glass-effect rounded-2xl border border-border/40 max-w-md mx-auto">
             <Layers className="w-12 h-12 text-muted-foreground mx-auto mb-4 opacity-50" />
-            <h3 className="text-lg font-bold">No projects matched</h3>
-            <p className="text-sm text-muted-foreground mt-1">Try tweaking your search term or filter category.</p>
+            <h3 className="text-lg font-bold">{isAr ? "لم يتم العثور على مشروعات" : "No projects matched"}</h3>
+            <p className="text-sm text-muted-foreground mt-1">
+              {isAr ? "جرب تعديل كلمة البحث أو اختيار تصنيف آخر." : "Try tweaking your search term or filter category."}
+            </p>
           </div>
         ) : (
           <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -140,12 +150,12 @@ const ProjectsView = () => {
                       )}
                       {project.featured && (
                         <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary text-white text-[10px] font-bold shadow-md">
-                          Featured
+                          {isAr ? "مشروع مميز" : "Featured"}
                         </span>
                       )}
                       <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span className="px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold">
-                          View Project Details
+                          {isAr ? "عرض التفاصيل الكاملة" : "View Project Details"}
                         </span>
                       </div>
                     </div>
@@ -164,9 +174,9 @@ const ProjectsView = () => {
 
                       {/* Tech Pills */}
                       <div className="flex flex-wrap gap-1.5 mb-4">
-                        {project.tech?.slice(0, 4).map((t, tIdx) => (
+                        {project.tech?.slice(0, 4).map((tech, tIdx) => (
                           <span key={tIdx} className="px-2.5 py-0.5 text-[10px] font-bold rounded-md bg-primary/10 text-primary border border-primary/20">
-                            {t}
+                            {tech}
                           </span>
                         ))}
                         {project.tech?.length > 4 && (
@@ -183,14 +193,14 @@ const ProjectsView = () => {
                     {project.demo && (
                       <Button asChild size="sm" className="flex-1 shadow-sm text-xs">
                         <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                          Live Demo <ExternalLink className="w-3.5 h-3.5 ml-1.5" />
+                          {t.common.liveDemo} <ExternalLink className="w-3.5 h-3.5 ml-1.5 rtl:mr-1.5 rtl:ml-0" />
                         </a>
                       </Button>
                     )}
                     {project.github && (
                       <Button variant="outline" size="sm" asChild className="glass-effect text-xs">
                         <a href={project.github} target="_blank" rel="noopener noreferrer">
-                          Code <Github className="w-3.5 h-3.5 ml-1.5" />
+                          {t.common.sourceCode} <Github className="w-3.5 h-3.5 ml-1.5 rtl:mr-1.5 rtl:ml-0" />
                         </a>
                       </Button>
                     )}
@@ -201,34 +211,44 @@ const ProjectsView = () => {
           </motion.div>
         )}
 
-        {/* Project Detail Modal */}
+        {/* Project Details Modal Dialog */}
         <Dialog open={!!activeProject} onOpenChange={() => setActiveProject(null)}>
-          <DialogContent className="max-w-3xl glass-effect border border-border/50 max-h-[85vh] overflow-y-auto">
-            {activeProject && (
-              <div>
-                <DialogHeader className="mb-4">
-                  <DialogTitle className="text-2xl font-bold font-display">{activeProject.title}</DialogTitle>
-                  <p className="text-xs text-muted-foreground mt-1">{activeProject.description}</p>
-                </DialogHeader>
-
-                <div className="relative aspect-video rounded-xl overflow-hidden bg-muted/40 mb-6 border border-border/40">
-                  {activeProject.img && (
+          {activeProject && (
+            <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto glass-effect border border-border/50">
+              <DialogHeader>
+                <DialogTitle className="text-2xl font-bold font-display">{activeProject.title}</DialogTitle>
+              </DialogHeader>
+              <div className="space-y-6 mt-4">
+                {activeProject.img && (
+                  <div className="relative aspect-video rounded-2xl overflow-hidden bg-muted">
                     <img
                       src={typeof activeProject.img === 'string' ? activeProject.img : activeProject.img.src || activeProject.img}
                       alt={activeProject.title}
                       className="w-full h-full object-cover"
                     />
-                  )}
+                  </div>
+                )}
+                <p className="text-sm text-muted-foreground leading-relaxed">{activeProject.description}</p>
+                <div>
+                  <h4 className="text-xs font-bold uppercase tracking-wider mb-2 text-foreground">{t.common.techStack}</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {activeProject.tech?.map((tech, idx) => (
+                      <span key={idx} className="px-3 py-1 text-xs font-bold rounded-full bg-primary/10 text-primary border border-primary/20">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
-                {/* Key Features */}
                 {activeProject.features && (
-                  <div className="mb-6">
-                    <h4 className="text-sm font-bold uppercase tracking-wider mb-3 font-display">Key Features</h4>
-                    <ul className="space-y-2">
+                  <div>
+                    <h4 className="text-xs font-bold uppercase tracking-wider mb-2 text-foreground">
+                      {isAr ? "الميزات الرئيسية" : "Key Features"}
+                    </h4>
+                    <ul className="space-y-1.5">
                       {activeProject.features.map((feat, fIdx) => (
                         <li key={fIdx} className="flex items-start text-xs text-muted-foreground">
-                          <Check className="w-4 h-4 text-primary mr-2 flex-shrink-0 mt-0.5" />
+                          <Check className="w-4 h-4 text-primary mr-2 rtl:ml-2 rtl:mr-0 flex-shrink-0 mt-0.5" />
                           <span>{feat}</span>
                         </li>
                       ))}
@@ -236,27 +256,25 @@ const ProjectsView = () => {
                   </div>
                 )}
 
-                {/* Technical Challenges & Takeaways */}
-                {activeProject.challenges && (
-                  <div className="mb-4 p-4 rounded-xl bg-primary/5 border border-primary/15 text-xs text-muted-foreground leading-relaxed">
-                    <strong className="text-foreground block mb-1">Architecture & Challenges:</strong>
-                    {activeProject.challenges}
-                  </div>
-                )}
-
-                <div className="flex justify-end gap-3 pt-4 border-t border-border/30 mt-6">
-                  <Button variant="outline" onClick={() => setActiveProject(null)}>Close</Button>
+                <div className="flex gap-4 pt-4 border-t border-border/30">
                   {activeProject.demo && (
-                    <Button asChild>
+                    <Button asChild size="lg" className="flex-1">
                       <a href={activeProject.demo} target="_blank" rel="noopener noreferrer">
-                        Visit Live App <ExternalLink className="w-4 h-4 ml-2" />
+                        {t.common.liveDemo} <ExternalLink className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" />
+                      </a>
+                    </Button>
+                  )}
+                  {activeProject.github && (
+                    <Button variant="outline" size="lg" asChild className="flex-1 glass-effect">
+                      <a href={activeProject.github} target="_blank" rel="noopener noreferrer">
+                        {t.common.sourceCode} <Github className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" />
                       </a>
                     </Button>
                   )}
                 </div>
               </div>
-            )}
-          </DialogContent>
+            </DialogContent>
+          )}
         </Dialog>
       </div>
     </div>

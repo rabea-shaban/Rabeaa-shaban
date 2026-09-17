@@ -18,12 +18,18 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { certificates, certificateCategories } from "@/Data/certificates";
 import { useSEO } from "@/hooks/useSEO";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { useSettings } from "@/context/SettingsContext";
 
 const CertificatesView = () => {
+  const { t, settings, isRtl } = useSettings();
+  const isAr = settings.language === 'ar';
+
   useSEO({
-    title: "Certificates & Credentials",
-    description: "Verified certificates, course accomplishments, and professional credentials achieved by Rabea Shaban in Web Development, Cloud, and Software Engineering.",
-    keywords: "Certificates, Meta Front-End Developer, AWS Cloud Foundations, ITI, Udacity, MCIT, Rabea Shaban"
+    title: isAr ? "الشهادات والاعتمادات | ربيع شعبان" : "Certificates & Credentials",
+    description: isAr
+      ? "الشهادات المعتمدة، الإنجازات الأكاديمية، والاعتمادات التقنية التي حصل عليها ربيع شعبان من كبرى المؤسسات والمنصات العالمية."
+      : "Verified certificates, course accomplishments, and professional credentials achieved by Rabea Shaban in Web Development, Cloud, and Software Engineering.",
+    keywords: "Certificates, Meta Front-End Developer, AWS Cloud Foundations, ITI, Udacity, MCIT, Rabea Shaban, شهادات ربيع شعبان"
   });
 
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -46,10 +52,10 @@ const CertificatesView = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <SectionHeading
-          badge="VERIFIED CREDENTIALS"
-          title="Certificates & Degrees"
-          watermark="CREDENTIALS"
-          subtitle="Browse through my official academic degrees, professional specializations, cloud certifications, and technical program achievements."
+          badge={t.certificates.badge}
+          title={t.certificates.title}
+          watermark={t.certificates.watermark}
+          subtitle={t.certificates.subtitle}
           size="large"
         />
 
@@ -57,18 +63,20 @@ const CertificatesView = () => {
         <div className="mb-12 space-y-6">
           {/* Search Box */}
           <div className="max-w-md mx-auto relative">
-            <Search className="w-5 h-5 absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground" />
+            <Search className={`w-5 h-5 absolute top-1/2 -translate-y-1/2 text-muted-foreground ${isRtl ? 'right-3.5' : 'left-3.5'}`} />
             <input
               type="text"
-              placeholder="Search certificates by title, issuer, or topic..."
+              placeholder={isAr ? "ابحث عن شهادة بالاسم، الجهة، أو الموضوع..." : "Search certificates by title, issuer, or topic..."}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-11 pr-4 py-3 rounded-full border border-border/50 bg-card/60 glass-effect focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all text-sm"
+              className={`w-full py-3 rounded-full border border-border/50 bg-card/60 glass-effect focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all text-sm ${
+                isRtl ? 'pr-11 pl-4' : 'pl-11 pr-4'
+              }`}
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery("")}
-                className="absolute right-3.5 top-1/2 -translate-y-1/2 p-1 text-muted-foreground hover:text-foreground"
+                className={`absolute top-1/2 -translate-y-1/2 p-1 text-muted-foreground hover:text-foreground ${isRtl ? 'left-3.5' : 'right-3.5'}`}
               >
                 <X className="w-4 h-4" />
               </button>
@@ -102,8 +110,10 @@ const CertificatesView = () => {
         {filteredCertificates.length === 0 ? (
           <div className="text-center py-16 glass-effect rounded-2xl border border-border/40 max-w-md mx-auto">
             <Award className="w-12 h-12 text-muted-foreground mx-auto mb-4 opacity-50" />
-            <h3 className="text-lg font-bold">No certificates found</h3>
-            <p className="text-sm text-muted-foreground mt-1">Try adjusting your search query or filter selection.</p>
+            <h3 className="text-lg font-bold">{isAr ? "لم يتم العثور على شهادات" : "No certificates found"}</h3>
+            <p className="text-sm text-muted-foreground mt-1">
+              {isAr ? "جرب تعديل كلمة البحث أو اختيار تصنيف آخر." : "Try adjusting your search query or filter selection."}
+            </p>
           </div>
         ) : (
           <motion.div
@@ -143,12 +153,12 @@ const CertificatesView = () => {
                         )}
                         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                           <span className="px-3 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold flex items-center gap-1.5">
-                            <ZoomIn className="w-4 h-4" /> View Certificate
+                            <ZoomIn className="w-4 h-4" /> {isAr ? "عرض الشهادة" : "View Certificate"}
                           </span>
                         </div>
                         {cert.verified && (
                           <span className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-emerald-500/90 text-white text-[10px] font-bold flex items-center gap-1 shadow-md">
-                            <CheckCircle2 className="w-3 h-3" /> Verified
+                            <CheckCircle2 className="w-3 h-3" /> {isAr ? "معتمدة" : "Verified"}
                           </span>
                         )}
                       </div>
@@ -183,7 +193,7 @@ const CertificatesView = () => {
                           rel="noopener noreferrer"
                           className="text-xs font-bold text-primary hover:underline flex items-center gap-1"
                         >
-                          <Download className="w-3.5 h-3.5" /> PDF
+                          <Download className="w-3.5 h-3.5" /> {isAr ? "تحميل PDF" : "PDF"}
                         </a>
                       )}
                     </div>
@@ -216,11 +226,13 @@ const CertificatesView = () => {
                   {activeCertificate.description}
                 </p>
                 <div className="flex justify-end gap-3">
-                  <Button variant="outline" onClick={() => setActiveCertificate(null)}>Close</Button>
+                  <Button variant="outline" onClick={() => setActiveCertificate(null)}>
+                    {isAr ? "إغلاق" : "Close"}
+                  </Button>
                   {activeCertificate.pdf && (
                     <Button asChild>
                       <a href={activeCertificate.pdf} target="_blank" rel="noopener noreferrer">
-                        <Download className="w-4 h-4 mr-2" /> Download Document
+                        <Download className="w-4 h-4 mr-2 rtl:ml-2 rtl:mr-0" /> {isAr ? "تحميل الوثيقة" : "Download Document"}
                       </a>
                     </Button>
                   )}

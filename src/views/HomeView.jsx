@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowRight, ExternalLink, Github, Linkedin, Mail, Phone, Mouse } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowLeft, ExternalLink, Github, Linkedin, Mail, Phone, Mouse } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Timeline from "@/components/Timeline";
 import ScrollProgress from "@/components/ScrollProgress";
@@ -13,12 +13,18 @@ import { timelineData } from "@/Data/timelineData";
 import profilePic from "@/Img/Picsart_25-01-21_11-09-34-893.jpg";
 import { useSEO } from "@/hooks/useSEO";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { useSettings } from "@/context/SettingsContext";
 
 const HomeView = () => {
+  const { t, settings, isRtl } = useSettings();
+  const isAr = settings.language === 'ar';
+
   useSEO({
-    title: "Full Stack Software Engineer",
-    description: "Rabea Shaban - Full Stack Software Engineer. I build scalable, secure, and high-performance web applications using React, Next.js, Node.js, Express, MongoDB, and SQL Server.",
-    keywords: "Full Stack Software Engineer, MERN Stack, React Developer, Node.js Developer, Web Development Portfolio, Egypt Developer"
+    title: isAr ? "مهندس برمجيات وتطوير ويب شامل" : "Full Stack Software Engineer",
+    description: isAr 
+      ? "ربيع شعبان - مهندس برمجيات وتطوير ويب شامل متخصص في React و Next.js و Node.js و Express و MongoDB وهندسة DevOps السحابية."
+      : "Rabea Shaban - Full Stack Software Engineer. I build scalable, secure, and high-performance web applications using React, Next.js, Node.js, Express, MongoDB, and Cloud DevOps.",
+    keywords: "Full Stack Software Engineer, MERN Stack, React Developer, Node.js Developer, Web Development Portfolio, Egypt Developer, ربيع شعبان"
   });
 
   const socialLinks = [
@@ -59,7 +65,7 @@ const HomeView = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-display tracking-tight leading-tight"
           >
-            Hi, I'm <span className="gradient-text">Rabea Shaban</span>
+            {t.home.greeting} <span className="gradient-text">{isAr ? "ربيع شعبان" : "Rabea Shaban"}</span>
           </motion.h1>
 
           {/* Subtitle & Pill Badge */}
@@ -70,10 +76,10 @@ const HomeView = () => {
             className="space-y-2"
           >
             <h2 className="text-xl sm:text-2xl font-bold text-foreground font-display">
-              Full Stack Software Engineer
+              {t.home.role}
             </h2>
             <div className="inline-block px-4 py-1 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full border border-primary/20">
-              MERN Stack & Next.js Expert
+              {t.home.pill}
             </div>
           </motion.div>
 
@@ -84,8 +90,7 @@ const HomeView = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-            I build scalable, secure, and high-performance web applications using React, Next.js, 
-            Node.js, Express, MongoDB, and SQL Server.
+            {t.home.bio}
           </motion.p>
 
           {/* Core Page CTA Actions */}
@@ -97,22 +102,26 @@ const HomeView = () => {
           >
             <Button asChild size="lg" className="group shadow-lg bg-primary text-primary-foreground font-bold hover:opacity-90">
               <Link href="/projects">
-                View Projects
-                <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                {t.common.viewProjects}
+                {isRtl ? (
+                  <ArrowLeft className="w-4 h-4 mr-2 transition-transform group-hover:-translate-x-1" />
+                ) : (
+                  <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                )}
               </Link>
             </Button>
 
             <Button variant="outline" asChild size="lg" className="group glass-effect border-border/50 hover:bg-primary/10">
               <a href="https://flowcv.com/resume/a7n0o85l8o65" target="_blank" rel="noopener noreferrer">
-                Download Resume
-                <ArrowDown className="w-4 h-4 ml-2 transition-transform group-hover:translate-y-0.5" />
+                {t.common.downloadResume}
+                <ArrowDown className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0 transition-transform group-hover:translate-y-0.5" />
               </a>
             </Button>
 
             <Button variant="outline" asChild size="lg" className="group glass-effect border-border/50 hover:bg-primary/10">
               <Link href="/contact">
-                Contact Me
-                <Mail className="w-4 h-4 ml-2" />
+                {t.common.contactMe}
+                <Mail className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" />
               </Link>
             </Button>
           </motion.div>
@@ -155,10 +164,10 @@ const HomeView = () => {
       {/* Professional Journey Section */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6">
         <SectionHeading
-          badge="TIMELINE"
-          title="Professional Journey"
-          watermark="JOURNEY"
-          subtitle="A chronological overview of my professional experience, education, and milestones."
+          badge={t.home.timelineBadge}
+          title={t.home.timelineTitle}
+          watermark={t.home.timelineWatermark}
+          subtitle={t.home.timelineSubtitle}
           size="normal"
         />
         <Timeline items={timelineData} />
@@ -168,10 +177,10 @@ const HomeView = () => {
       <section className="py-20 bg-muted/20 border-y border-border/40 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            badge="PORTFOLIO"
-            title="Featured Work"
-            watermark="PROJECTS"
-            subtitle="A selection of my key projects showcased together with demo, source code, and design."
+            badge={t.home.projectsBadge}
+            title={t.home.projectsTitle}
+            watermark={t.home.projectsWatermark}
+            subtitle={t.home.projectsSubtitle}
             size="normal"
           />
 
@@ -219,8 +228,12 @@ const HomeView = () => {
           <div className="mt-16 text-center">
             <Button asChild size="lg" className="shadow-[0_4px_20px_rgba(255,180,0,0.2)]">
               <Link href="/projects">
-                View All Projects
-                <ArrowRight className="w-4 h-4 ml-2" />
+                {t.home.viewAllProjects}
+                {isRtl ? (
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                ) : (
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                )}
               </Link>
             </Button>
           </div>
@@ -241,16 +254,21 @@ const HomeView = () => {
             className="p-12 glass-effect rounded-3xl border border-border/40 shadow-xl"
           >
             <h2 className="mb-4 text-3xl font-bold md:text-5xl font-display">
-              Ready to Start Your Project?
+              {isAr ? "هل أنت مستعد لبدء مشروعك القادم؟" : "Ready to Start Your Project?"}
             </h2>
-            <p className="mb-8 max-w-lg mx-auto text-md md:text-lg text-muted-foreground">
-              Let's work together to bring your ideas to life with modern web
-              technologies, containerized deployments, and clean cloud setups.
+            <p className="mb-8 max-w-lg mx-auto text-md md:text-lg text-muted-foreground leading-relaxed">
+              {isAr
+                ? "دعنا نتعاون لتحويل أفكارك إلى واقع رقمي مبهر بتطبيقات ويب حديثة، بنى تحتية سحابية موثوقة، وأداء استثنائي."
+                : "Let's work together to bring your ideas to life with modern web technologies, containerized deployments, and clean cloud setups."}
             </p>
             <Button asChild size="lg" className="shadow-lg">
               <Link href="/contact">
-                Get In Touch
-                <ArrowRight className="w-4 h-4 ml-2" />
+                {t.common.contactMe}
+                {isRtl ? (
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                ) : (
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                )}
               </Link>
             </Button>
           </motion.div>

@@ -2,6 +2,8 @@
 
 import React, { createContext, useContext, useEffect, useState, useCallback } from 'react';
 
+import { translations, TranslationDict } from '@/translations/dictionary';
+
 export type Theme = 'light' | 'dark' | 'system';
 export type AccentColor = 'blue' | 'purple' | 'green' | 'orange' | 'red' | 'yellow';
 export type Language = 'en' | 'ar';
@@ -31,9 +33,12 @@ const SETTINGS_STORAGE_KEY = 'rabea_portfolio_settings';
 interface SettingsContextType {
   settings: Settings;
   resolvedTheme: 'light' | 'dark';
+  isRtl: boolean;
+  t: TranslationDict;
   setTheme: (theme: Theme) => void;
   setAccentColor: (accentColor: AccentColor) => void;
   setLanguage: (language: Language) => void;
+  toggleLanguage: () => void;
   setButtonStyle: (buttonStyle: ButtonStyle) => void;
   setFontSize: (fontSize: FontSize) => void;
   setAnimations: (animations: boolean) => void;
@@ -88,6 +93,9 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const resolvedTheme: 'light' | 'dark' =
     settings.theme === 'system' ? (systemIsDark ? 'dark' : 'light') : settings.theme;
 
+  const isRtl = settings.language === 'ar';
+  const t: TranslationDict = translations[settings.language] || translations.en;
+
   // Apply Settings to DOM attributes & CSS Variables whenever settings change
   useEffect(() => {
     if (!mounted || typeof document === 'undefined') return;
@@ -104,7 +112,7 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
     // 3. Language & Direction
     root.setAttribute('lang', settings.language);
-    root.setAttribute('dir', settings.language === 'ar' ? 'rtl' : 'ltr');
+    root.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
 
     // 4. Button Style (Radius)
     root.setAttribute('data-button-style', settings.buttonStyle);
@@ -121,7 +129,7 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     } catch (e) {
       console.warn('Failed to save settings to localStorage', e);
     }
-  }, [settings, resolvedTheme, mounted]);
+  }, [settings, resolvedTheme, isRtl, mounted]);
 
   const updateSetting = useCallback(<K extends keyof Settings>(key: K, value: Settings[K]) => {
     setSettings((prev) => ({ ...prev, [key]: value }));
@@ -130,6 +138,12 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const setTheme = useCallback((theme: Theme) => updateSetting('theme', theme), [updateSetting]);
   const setAccentColor = useCallback((accentColor: AccentColor) => updateSetting('accentColor', accentColor), [updateSetting]);
   const setLanguage = useCallback((language: Language) => updateSetting('language', language), [updateSetting]);
+  const toggleLanguage = useCallback(() => {
+    setSettings((prev) => ({
+      ...prev,
+      language: prev.language === 'ar' ? 'en' : 'ar',
+    }));
+  }, []);
   const setButtonStyle = useCallback((buttonStyle: ButtonStyle) => updateSetting('buttonStyle', buttonStyle), [updateSetting]);
   const setFontSize = useCallback((fontSize: FontSize) => updateSetting('fontSize', fontSize), [updateSetting]);
   const setAnimations = useCallback((animations: boolean) => updateSetting('animations', animations), [updateSetting]);
@@ -152,9 +166,12 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       value={{
         settings,
         resolvedTheme,
+        isRtl,
+        t,
         setTheme,
         setAccentColor,
         setLanguage,
+        toggleLanguage,
         setButtonStyle,
         setFontSize,
         setAnimations,
@@ -175,6 +192,18 @@ export const useSettings = (): SettingsContextType => {
     throw new Error('useSettings must be used within a SettingsProvider');
   }
   return context;
+};
+
+// Convenient useTranslation hook
+export const useTranslation = () => {
+  const context = useSettings();
+  return {
+    t: context.t,
+    language: context.settings.language,
+    isRtl: context.isRtl,
+    setLanguage: context.setLanguage,
+    toggleLanguage: context.toggleLanguage,
+  };
 };
 
 // Backward-compatibility hook for any component using useTheme

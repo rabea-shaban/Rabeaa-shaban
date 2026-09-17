@@ -4,21 +4,21 @@ import React, { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Home, User, Briefcase, Layers, Award, Mail } from "lucide-react";
-import { useTheme } from "../contexts/ThemeContext";
+import { useSettings } from "@/context/SettingsContext";
 
 const MobileDock = () => {
   const pathname = usePathname();
   const router = useRouter();
-  const { theme } = useTheme();
+  const { resolvedTheme, t } = useSettings();
   const [activeItem, setActiveItem] = useState("home");
 
   const menuItems = [
-    { id: "home", label: "Home", icon: Home, path: "/" },
-    { id: "about", label: "About", icon: User, path: "/about" },
-    { id: "projects", label: "Projects", icon: Briefcase, path: "/projects" },
-    { id: "services", label: "Services", icon: Layers, path: "/services" },
-    { id: "certificates", label: "Certificates", icon: Award, path: "/certificates" },
-    { id: "contact", label: "Contact", icon: Mail, path: "/contact" },
+    { id: "home", label: t.nav.home, icon: Home, path: "/" },
+    { id: "about", label: t.nav.about, icon: User, path: "/about" },
+    { id: "projects", label: t.nav.projects, icon: Briefcase, path: "/projects" },
+    { id: "services", label: t.nav.services, icon: Layers, path: "/services" },
+    { id: "certificates", label: t.nav.certificates, icon: Award, path: "/certificates" },
+    { id: "contact", label: t.nav.contact, icon: Mail, path: "/contact" },
   ];
 
   // Sync active state based on pathname for subpages
@@ -52,7 +52,7 @@ const MobileDock = () => {
       <div 
         className="flex items-center gap-1.5 sm:gap-2.5 px-2.5 sm:px-4 py-2 sm:py-3 rounded-full pointer-events-auto transition-colors duration-300 glass-effect border border-border/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)] bg-background/80"
         style={{
-          boxShadow: theme === "dark" 
+          boxShadow: resolvedTheme === "dark" 
             ? "0 20px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05)" 
             : "0 20px 45px rgba(23, 35, 55, 0.15)",
         }}

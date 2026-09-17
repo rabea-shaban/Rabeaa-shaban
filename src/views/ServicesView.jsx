@@ -3,18 +3,24 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle, MessageSquare } from "lucide-react";
+import { ArrowRight, ArrowLeft, CheckCircle, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { process } from "@/Data/process";
 import { services } from "@/Data/services";
 import { useSEO } from "@/hooks/useSEO";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { useSettings } from "@/context/SettingsContext";
 
 const ServicesView = () => {
+  const { t, settings, isRtl } = useSettings();
+  const isAr = settings.language === 'ar';
+
   useSEO({
-    title: "Professional Services",
-    description: "Professional software engineering services including MERN Stack apps, custom REST APIs, database scaling, Docker, Kubernetes, and Cloud setups.",
-    keywords: "Hire React developer, MERN freelance developer, WordPress site building, database optimization Egypt"
+    title: isAr ? "الخدمات والحلول | ربيع شعبان" : "Professional Services",
+    description: isAr
+      ? "خدمات هندسة برمجية شاملة تشمل تطبيقات MERN Stack، واجهات REST APIs، قواعد البيانات، وخدمات DevOps و Docker و Kubernetes و Cloud."
+      : "Professional software engineering services including MERN Stack apps, custom REST APIs, database scaling, Docker, Kubernetes, and Cloud setups.",
+    keywords: "Hire React developer, MERN freelance developer, database optimization Egypt, خدمات ربيع شعبان البرمجية"
   });
 
   return (
@@ -25,10 +31,10 @@ const ServicesView = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <SectionHeading
-          badge="PROFESSIONAL OFFERINGS"
-          title="Services & Solutions"
-          watermark="SERVICES"
-          subtitle="I provide expert engineering services from database architecture and full-stack building to containerized deployments, Kubernetes orchestration, and cloud computing solutions."
+          badge={t.services.badge}
+          title={t.services.title}
+          watermark={t.services.watermark}
+          subtitle={t.services.subtitle}
           size="large"
         />
 
@@ -64,11 +70,13 @@ const ServicesView = () => {
                   </p>
 
                   <div className="mb-6">
-                    <h4 className="text-xs font-bold text-foreground uppercase tracking-wider mb-3">Key Features:</h4>
+                    <h4 className="text-xs font-bold text-foreground uppercase tracking-wider mb-3">
+                      {isAr ? "الميزات المتضمنة:" : "Key Features:"}
+                    </h4>
                     <ul className="space-y-2">
                       {service.features?.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start text-xs text-muted-foreground">
-                          <CheckCircle className="h-3.5 w-3.5 text-primary mr-2 flex-shrink-0 mt-0.5" />
+                          <CheckCircle className="h-3.5 w-3.5 text-primary mr-2 rtl:ml-2 rtl:mr-0 flex-shrink-0 mt-0.5" />
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -79,8 +87,12 @@ const ServicesView = () => {
                 <div className="border-t border-border/30 pt-6 mt-6">
                   <Button variant="outline" className="w-full glass-effect hover:bg-primary/10 border-border/50 text-xs" asChild>
                     <Link href="/contact">
-                      Request Service
-                      <ArrowRight className="ml-2 h-4 w-4" />
+                      {isAr ? "طلب الخدمة الآن" : "Request Service"}
+                      {isRtl ? (
+                        <ArrowLeft className="mr-2 h-4 w-4" />
+                      ) : (
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      )}
                     </Link>
                   </Button>
                 </div>
@@ -98,10 +110,10 @@ const ServicesView = () => {
           className="mb-28"
         >
           <SectionHeading
-            badge="WORKFLOW"
-            title="Development Process"
-            watermark="PROCESS"
-            subtitle="My step-by-step engineering methodology for bringing software from concept to deployment."
+            badge={t.services.processBadge}
+            title={t.services.processTitle}
+            watermark={t.services.processWatermark}
+            subtitle={t.services.processSubtitle}
             size="normal"
           />
 
@@ -142,19 +154,28 @@ const ServicesView = () => {
         >
           <div className="glass-effect rounded-3xl p-12 max-w-4xl mx-auto border border-border/40 shadow-xl">
             <MessageSquare className="w-12 h-12 text-primary mx-auto mb-6 animate-pulse" />
-            <h2 className="text-3xl font-bold font-display mb-4">Need a Custom Solution?</h2>
+            <h2 className="text-3xl font-bold font-display mb-4">
+              {isAr ? "هل تحتاج إلى حل برمجي مخصص؟" : "Need a Custom Solution?"}
+            </h2>
             <p className="text-md text-muted-foreground mb-8 max-w-xl mx-auto leading-relaxed">
-              If your requirements don't fit into standard categories, let's hop on a call to design a customized plan for your project.
+              {isAr
+                ? "إذا كانت متطلبات مشروعك تحتاج إلى خطة مخصصة، دعنا نتواصل لمناقشة التفاصيل وتصميم الحل الأمثل."
+                : "If your requirements don't fit into standard categories, let's hop on a call to design a customized plan for your project."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="shadow-lg">
                 <Link href="/contact">
-                  Consultation Call <ArrowRight className="ml-2 h-4 w-4" />
+                  {isAr ? "حجز استشارة فنية" : "Consultation Call"}
+                  {isRtl ? (
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                  ) : (
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  )}
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild className="glass-effect border-border/50">
                 <a href="https://wa.me/201156807072" target="_blank" rel="noopener noreferrer">
-                  WhatsApp Me
+                  {isAr ? "تواصل عبر واتساب" : "WhatsApp Me"}
                 </a>
               </Button>
             </div>
