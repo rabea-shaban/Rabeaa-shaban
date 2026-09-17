@@ -1,17 +1,20 @@
 import ContactView from "@/views/ContactView";
 
 export const metadata = {
-  title: "Contact Me | تواصل معي - ربيع شعبان",
+  title: "Contact Rabea Shaban | تواصل معي - توظيف مهندس برمجيات وطلب الاستشارات - ربيع شعبان",
   description:
-    "Get in touch with Rabea Shaban (ربيع شعبان) for freelance projects, technical consulting, full-time positions, or collaboration. Email: rabea.elzayate@gmail.com, WhatsApp: +201156807072. تواصل مع ربيع شعبان لطلب الخدمات البرمجية والاستشارات التقنية.",
+    "Get in touch with Rabea Shaban (ربيع شعبان) for full-time software engineering roles, contract consulting, freelance project development, and technical collaboration. Email: rabea.elzayate@gmail.com, WhatsApp: +201156807072. تواصل لطلب الخدمات البرمجية وعروض التوظيف المباشرة.",
   keywords: [
     "Contact Rabea Shaban",
     "تواصل مع ربيع شعبان",
-    "Hire Rabea Shaban",
-    "توظيف ربيع شعبان",
+    "Hire Full Stack Engineer",
+    "توظيف مهندس برمجيات",
+    "Software Engineer WhatsApp Number",
+    "رقم واتساب مهندس برمجيات",
     "Software Engineer Contact Egypt",
     "rabea.elzayate@gmail.com",
-    "Freelance Developer Contact"
+    "Freelance Developer Contact",
+    "استشارات برمجية للشركات والناشئة"
   ],
   alternates: {
     canonical: "https://www.rabea-shaban.com/contact",

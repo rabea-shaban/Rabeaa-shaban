@@ -1,19 +1,23 @@
 import ServicesView from "@/views/ServicesView";
 
 export const metadata = {
-  title: "Services & Solutions | الخدمات والحلول - ربيع شعبان",
+  title: "Software Engineering Services | الخدمات والحلول البرمجية والاستشارات التقنية - ربيع شعبان",
   description:
-    "Expert freelance software engineering services by Rabea Shaban: Full Stack MERN Apps, Frontend React/Next.js UI, Node.js REST APIs, AWS Cloud Deployment, Docker, and Kubernetes. خدمات هندسة برمجية شاملة وتطوير تطبيقات الويب والسحابة.",
+    "Professional software engineering and freelance consulting services by Rabea Shaban: Full-Stack MERN Web Apps, High-Speed Next.js UI, Scalable REST APIs, AWS Cloud Architecture, Docker & Kubernetes DevOps, and AI Integrations. خدمات تطوير البرمجيات وحلول السحابة وأتمتة DevOps للشركات والمشاريع الناشئة.",
   keywords: [
     "Hire Full Stack Developer",
     "توظيف مطور برمجيات",
     "خدمات تطوير المواقع",
-    "Hire React Engineer",
+    "Hire React Engineer Egypt",
     "MERN Stack Freelancer",
-    "Node.js REST API Development",
-    "AWS Deployment Service",
-    "Docker Containerization",
-    "Kubernetes Orchestration"
+    "Node.js REST API Development Service",
+    "AWS Cloud Deployment Service",
+    "Docker Containerization Consulting",
+    "Kubernetes Orchestration",
+    "Custom Web App Development",
+    "استشارات DevOps مصر والسعودية",
+    "برمجة تطبيقات سحابية",
+    "بناء منصات التجارة الإلكترونية و SaaS"
   ],
   alternates: {
     canonical: "https://www.rabea-shaban.com/services",

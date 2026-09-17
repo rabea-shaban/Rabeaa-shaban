@@ -20,11 +20,15 @@ const HomeView = () => {
   const isAr = settings.language === 'ar';
 
   useSEO({
-    title: isAr ? "مهندس برمجيات وتطوير ويب شامل" : "Full Stack Software Engineer",
+    title: isAr 
+      ? "مهندس برمجيات وتطوير ويب شامل وخبير حلول سحابية وذكاء اصطناعي" 
+      : "Senior Full Stack Software Engineer & Cloud Architect (MERN, Next.js, AI)",
     description: isAr 
-      ? "ربيع شعبان - مهندس برمجيات وتطوير ويب شامل متخصص في React و Next.js و Node.js و Express و MongoDB وهندسة DevOps السحابية."
-      : "Rabea Shaban - Full Stack Software Engineer. I build scalable, secure, and high-performance web applications using React, Next.js, Node.js, Express, MongoDB, and Cloud DevOps.",
-    keywords: "Full Stack Software Engineer, MERN Stack, React Developer, Node.js Developer, Web Development Portfolio, Egypt Developer, ربيع شعبان"
+      ? "الموقع الرسمي للمهندس ربيع شعبان - مهندس برمجيات وتطوير ويب شامل (Full Stack Engineer) متخصص في MERN Stack، وتطبيقات Next.js السريعة، وهندسة السحابة AWS، و DevOps، وتطبيقات الذكاء الاصطناعي."
+      : "Rabea Shaban - Senior Full Stack Software Engineer specializing in MERN Stack, Next.js 16, Node.js, AWS Cloud, Docker, Kubernetes & AI integrations. Available for enterprise roles & freelance.",
+    keywords: isAr
+      ? "ربيع شعبان, مهندس برمجيات, مطور ويب شامل, توظيف مبرمج, خبير ريأكت, خبير نكست, مطور نود, مهندس حوسبة سحابية, مهندس ديف أوبس مصر والسعودية, مبرمج مواقع محترف"
+      : "Rabea Shaban, Hire Full Stack Developer, Senior Software Engineer Egypt, MERN Stack Developer, Next.js Expert, React Specialist, Node.js Backend Engineer, Cloud DevOps, AWS Certified, Remote Developer"
   });
 
   const socialLinks = [

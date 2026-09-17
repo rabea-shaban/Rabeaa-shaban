@@ -16,11 +16,15 @@ const ServicesView = () => {
   const isAr = settings.language === 'ar';
 
   useSEO({
-    title: isAr ? "الخدمات والحلول | ربيع شعبان" : "Professional Services",
+    title: isAr 
+      ? "الخدمات والحلول البرمجية | تطوير ويب مخصص، استشارات سحابية، وأتمتة DevOps" 
+      : "Software Engineering Services & Solutions | Full Stack, Cloud & DevOps by Rabea Shaban",
     description: isAr
-      ? "خدمات هندسة برمجية شاملة تشمل تطبيقات MERN Stack، واجهات REST APIs، قواعد البيانات، وخدمات DevOps و Docker و Kubernetes و Cloud."
-      : "Professional software engineering services including MERN Stack apps, custom REST APIs, database scaling, Docker, Kubernetes, and Cloud setups.",
-    keywords: "Hire React developer, MERN freelance developer, database optimization Egypt, خدمات ربيع شعبان البرمجية"
+      ? "خدمات هندسة برمجية متقدمة للشركات والناشئة: بناء تطبيقات الويب المخصصة، تطوير واجهات برمجة التطبيقات API، النشر السحابي على AWS، إدارة الحاويات بـ Docker و Kubernetes، وأتمتة خطوط الإنتاج CI/CD."
+      : "End-to-end software engineering services by Rabea Shaban: Custom Web App Development, Scalable REST APIs, Cloud Architecture (AWS), Docker & Kubernetes Containerization, Database Design, and AI integration.",
+    keywords: isAr
+      ? "خدمات تطوير البرمجيات, تصميم مواقع مخصصة, استشارات DevOps مصر والسعودية, بناء واجهات API, تطوير تطبيقات MERN, توظيف مهندس برمجيات"
+      : "Hire React Developer, Custom Software Development, Freelance Software Engineer Egypt, Cloud Migration AWS, Node.js API Service, Docker Kubernetes Consulting"
   });
 
   return (

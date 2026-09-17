@@ -26,11 +26,15 @@ const ContactView = () => {
   const isAr = settings.language === 'ar';
 
   useSEO({
-    title: isAr ? "تواصل معي | ربيع شعبان" : "Contact Me",
+    title: isAr 
+      ? "تواصل مع ربيع شعبان | لطلب الخدمات البرمجية، التوظيف، والاستشارات التقنية" 
+      : "Contact Rabea Shaban | Hire Full Stack Engineer & Technical Inquiries",
     description: isAr
-      ? "تواصل مع ربيع شعبان لمناقشة المشروعات البرمجية، فرص العمل، الاستشارات التقنية، أو العمل الحر."
-      : "Get in touch with Rabea Shaban for freelance projects, technical consulting, full-time positions, or collaboration.",
-    keywords: "Contact software engineer, Hire developer Egypt, Freelance MERN developer, تواصل مع ربيع شعبان"
+      ? "تواصل مباشرة مع المهندس ربيع شعبان لطلب تطوير المشاريع البرمجية، عروض التوظيف بدوام كامل أو عن بُعد، والاستشارات التقنية عبر الواتساب أو البريد الإلكتروني أو لينكد إن."
+      : "Get in touch with Rabea Shaban for full-time software engineering roles, contract consulting, or freelance project inquiries. Fast response via Email, WhatsApp (+201156807072), or LinkedIn.",
+    keywords: isAr
+      ? "تواصل مع ربيع شعبان, توظيف مهندس برمجيات, رقم واتساب مهندس برمجيات, طلب تطوير موقع, استشارات تقنية للشركات, مبرمج فريلانسر مصر"
+      : "Contact Rabea Shaban, Hire Full Stack Engineer, Software Engineer WhatsApp, Freelance Developer Egypt Contact, Software Engineer Email, Technical Inquiries"
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);

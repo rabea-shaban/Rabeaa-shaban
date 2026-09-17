@@ -1,19 +1,23 @@
 import AboutView from "@/views/AboutView";
 
 export const metadata = {
-  title: "About Me | من أنا - ربيع شعبان",
+  title: "About Rabea Shaban | من هو ربيع شعبان - المسيرة المهنية والأكاديمية وخريج مبادرة Digilians",
   description:
-    "Learn more about Rabea Shaban (ربيع شعبان), Full Stack Software Engineer. Graduated with a Bachelor's degree in Management Information Systems (MIS) with an Excellent grade (Imtiyaz). Graduate of Egyptian Military Academy AI-Based Software Development Specialized Diploma. نبذة تعريفية عن ربيع شعبان والمسيرة المهنية والأكاديمية.",
+    "Meet Rabea Shaban (ربيع شعبان) - Senior Full Stack Software Engineer. MIS Bachelor's Degree with Distinction (91.3% / Imtiyaz) & Graduate of Egyptian Military Academy AI-Based Software Development Specialized Diploma (Digilians / MCIT). سيرة ذاتية ومؤهلات ربيع شعبان الأكاديمية والمهنية وخبرات التطوير السحابي.",
   keywords: [
     "About Rabea Shaban",
     "من هو ربيع شعبان",
-    "ربيع شعبان bio",
-    "MIS Excellent grade",
-    "Full Stack Software Engineer background",
+    "سيرة ذاتية مهندس برمجيات",
+    "Digilians Initiative Graduate",
+    "خريج مبادرة الرواد الرقميون",
+    "MIS Degree Distinction",
+    "بكالوريوس نظم معلومات إدارية ممتاز",
     "Egyptian Military Academy Digilians",
-    "Meta Front-End Developer",
-    "DEPI MCIT",
-    "NTI Egypt"
+    "Full Stack Engineer Qualifications",
+    "Meta Front-End Developer Certified",
+    "AWS Certified Cloud Practitioner",
+    "DEPI MCIT Graduate",
+    "خبرات ربيع شعبان البرمجية"
   ],
   alternates: {
     canonical: "https://www.rabea-shaban.com/about",
@@ -24,9 +28,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "About Me | من أنا | Rabea Shaban - Full Stack Software Engineer",
+    title: "About Rabea Shaban | من أنا | Rabea Shaban - Full Stack Software Engineer",
     description:
-      "Passionate Software Engineer holding a Bachelor's degree in MIS (Excellent grade) and professional certificates from Meta and AWS. مهندس برمجيات وتطوير ويب شامل.",
+      "Passionate Software Engineer holding a Bachelor's degree in MIS (Excellent grade) and AI-Based Software Development Specialized Diploma from Egyptian Military Academy (Digilians). مهندس برمجيات وتطوير ويب شامل.",
     url: "https://www.rabea-shaban.com/about",
     locale: "en_US",
     alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],

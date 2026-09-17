@@ -15,11 +15,15 @@ const ProjectsView = () => {
   const isAr = settings.language === 'ar';
 
   useSEO({
-    title: isAr ? "معرض المشروعات | ربيع شعبان" : "Projects Showcase",
+    title: isAr 
+      ? "معرض المشروعات والأعمال البرمجية | سابقة أعمال ربيع شعبان" 
+      : "Projects & Software Case Studies | Full Stack & Cloud Web Apps by Rabea Shaban",
     description: isAr
-      ? "استكشف أحدث تطبيقات الويب والأنظمة البرمجية التي طورها ربيع شعبان باستخدام Next.js و React و Node.js و Docker و Kubernetes."
-      : "Explore web development and software engineering projects built by Rabea Shaban using Next.js, React, Node.js, and cloud tools.",
-    keywords: "Full stack projects, EduSphere, Sa2yanti, AGRSUP, React showcase, Next.js applications, مشاريع ربيع شعبان"
+      ? "استعرض سابقة أعمال ومشاريع برمجية متكاملة تشمل منصات التجارة الإلكترونية، أنظمة إدارة الأعمال، واجهات RESTful APIs، وتطبيقات الذكاء الاصطناعي مع روابط المعاينة الحية وكود المصدر GitHub."
+      : "Explore enterprise web applications, production SaaS platforms, REST API architectures, and AI integrations built by Rabea Shaban with live previews and open GitHub repositories.",
+    keywords: isAr
+      ? "سابقة أعمال ربيع شعبان, مشاريع ويب حقيقية, منصة EduSphere, تطبيق صيانتي, متجر AGRSUP, كود مصدر برمجيات, معرض أعمال React و Node.js"
+      : "Software Engineering Portfolio, Production Next.js Projects, MERN Stack Case Studies, Enterprise Web Apps, Full Stack GitHub Projects, React SaaS Apps"
   });
 
   const projectCategories = [

@@ -129,24 +129,33 @@ const jsonLd = {
         "Express.js",
         "MongoDB",
         "SQL Server",
-        "AWS",
+        "AWS Cloud",
         "Docker",
         "Kubernetes",
         "Helm",
         "Terraform",
         "GitHub Actions",
         "DevOps",
-        "System Design"
+        "AI-Driven Software Development",
+        "System Design",
+        "RESTful APIs"
       ],
       "worksFor": {
         "@type": "Organization",
-        "name": "Freelance Software Engineering"
+        "name": "Freelance Software Engineering & Enterprise Consulting"
       },
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Higher Institute of Technology, Management and Information - Minya",
-        "degree": "Bachelor's degree in Management Information Systems (MIS)"
-      }
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Egyptian Military Academy & MCIT",
+          "description": "AI-Based Software Development Specialized Diploma (Digilians)"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Higher Institute of Technology, Management and Information - Minya",
+          "description": "Bachelor's degree in Management Information Systems (MIS) - Excellent Grade"
+        }
+      ]
     },
     {
       "@type": "WebSite",

@@ -25,11 +25,15 @@ const CertificatesView = () => {
   const isAr = settings.language === 'ar';
 
   useSEO({
-    title: isAr ? "الشهادات والاعتمادات | ربيع شعبان" : "Certificates & Credentials",
+    title: isAr 
+      ? "الشهادات والاعتمادات الرسمية المعتمدة | أمازون AWS، ميتا Meta، معهد ITI، ورواد مصر الرقمية" 
+      : "Verified Technical Credentials & Certifications | AWS, Meta, ITI & Digilians MCIT",
     description: isAr
-      ? "الشهادات المعتمدة، الإنجازات الأكاديمية، والاعتمادات التقنية التي حصل عليها ربيع شعبان من كبرى المؤسسات والمنصات العالمية."
-      : "Verified certificates, course accomplishments, and professional credentials achieved by Rabea Shaban in Web Development, Cloud, and Software Engineering.",
-    keywords: "Certificates, Meta Front-End Developer, AWS Cloud Foundations, ITI, Udacity, MCIT, Rabea Shaban, شهادات ربيع شعبان"
+      ? "الشهادات المهنية المعتمدة والاعتمادات الدولية الحاصل عليها ربيع شعبان من أمازون AWS، شركة Meta العالمية، معهد تكنولوجيا المعلومات ITI، منصة Udacity، ودبلومة مبادرة الرواد الرقميون MCIT."
+      : "Official technical certifications and verified academic credentials of Rabea Shaban: AWS Certified Cloud Practitioner, Meta Front-End Developer Specialization, MIS Distinction Degree, MCIT Digilians Diploma, and ITI certificates.",
+    keywords: isAr
+      ? "شهادات معتمدة ربيع شعبان, شهادة أمازون السحابية, شهادة مطور واجهات ميتا, شهادات معهد تكنولوجيا المعلومات, اعتمادات مهندس برمجيات"
+      : "AWS Certified Cloud Practitioner, Meta Certified Front-End Developer, ITI Certified Developer, MCIT Digilians Certificate, Verified Software Engineer Credentials"
   });
 
   const [selectedCategory, setSelectedCategory] = useState("all");

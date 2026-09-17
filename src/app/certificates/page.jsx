@@ -1,19 +1,22 @@
 import CertificatesView from "@/views/CertificatesView";
 
 export const metadata = {
-  title: "Certificates & Credentials | الشهادات والاعتمادات - ربيع شعبان",
+  title: "Verified Technical Credentials & Certifications | الشهادات والاعتمادات الرسمية - ربيع شعبان",
   description:
-    "Verified technical credentials and degrees of Rabea Shaban: AWS Academy Cloud Foundations, Meta Front-End Developer Specialization, MIS Bachelor's Degree (Excellent Grade), ITI, Udacity, and DEPI MCIT. الشهادات المعتمدة والدرجات الأكاديمية.",
+    "Official technical certifications and verified academic credentials of Rabea Shaban: AWS Certified Cloud Practitioner, Meta Front-End Developer Specialization, MIS Distinction Degree (91.3% Imtiyaz), Digilians AI-Based Software Diploma, and ITI certificates. استعراض الشهادات المعتمدة والاعتمادات الدولية لربيع شعبان.",
   keywords: [
     "Rabea Shaban Certificates",
-    "شهادات ربيع شعبان",
-    "AWS Academy Cloud Foundations",
+    "شهادات ربيع شعبان المعتمدة",
+    "AWS Certified Cloud Practitioner",
     "Meta Front-End Developer Certificate",
     "شهادة مطور واجهات ميتا",
-    "MIS Bachelor Degree Excellent",
-    "بكالوريوس نظم معلومات ممتاز",
-    "Mahara-Tech ITI",
-    "Udacity MCIT"
+    "Digilians AI Diploma MCIT",
+    "شهادة مبادرة الرواد الرقميون",
+    "MIS Bachelor Degree Excellent Grade",
+    "بكالوريوس نظم معلومات امتياز",
+    "Mahara-Tech ITI Certification",
+    "Udacity MCIT Developer Track",
+    "Verified Software Engineer Credentials"
   ],
   alternates: {
     canonical: "https://www.rabea-shaban.com/certificates",

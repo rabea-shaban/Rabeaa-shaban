@@ -37,11 +37,15 @@ const AboutView = () => {
   const isAr = settings.language === 'ar';
 
   useSEO({
-    title: isAr ? "من أنا | ربيع شعبان" : "About Me",
+    title: isAr 
+      ? "من هو ربيع شعبان | المسيرة المهنية، دبلومة الرواد الرقميون، وبكالوريوس نظم المعلومات" 
+      : "About Rabea Shaban | Software Engineer Journey, Digilians Diploma & MIS Distinction",
     description: isAr 
-      ? "ربيع شعبان - مهندس برمجيات وتطوير ويب شامل مقيم في المنيا / القاهرة، مصر. حاصل على بكالوريوس نظم المعلومات الإدارية بتقدير ممتاز."
-      : "Rabea Shaban - Full Stack Software Engineer based in Minya, Egypt. Bachelor's degree in MIS (Excellent grade). Passionate about Cloud Computing, DevOps, and modern software development.",
-    keywords: "About Rabea Shaban, Software Engineer bio, MIS Excellent grade, MERN Stack, Next.js, Egyptian Military Academy, DEPI, NTI, Meta Certified, من أنا ربيع شعبان"
+      ? "تعرف على المسيرة المهنية والتعليمية للمهندس ربيع شعبان، خريج دبلومة تطوير البرمجيات بالذكاء الاصطناعي بالأكاديمية العسكرية (مبادرة Digilians) وبكالوريوس نظم المعلومات بتقدير ممتاز مع مرتبة الشرف، وفلسفته في بناء وتطوير الأنظمة البرمجية الحديثة."
+      : "Discover the professional journey, academic distinction (MIS 91.3% / Imtiyaz), and Egyptian Military Academy AI-Based Software Diploma (Digilians / MCIT) of Rabea Shaban. Learn about his engineering philosophy and cloud tech stack.",
+    keywords: isAr
+      ? "من هو ربيع شعبان, سيرة ذاتية مهندس برمجيات, خريج مبادرة الرواد الرقميون, بكالوريوس نظم معلومات إدارية ممتاز, مؤهلات ربيع شعبان, مهندس برمجيات القاهرة"
+      : "About Rabea Shaban, Software Engineer Background, Digilians Initiative Graduate, MIS Degree Excellent Grade, Full Stack Qualifications, Egyptian Military Academy Diploma"
   });
 
   return (
