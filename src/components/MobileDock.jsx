@@ -9,7 +9,7 @@ import { useSettings } from "@/context/SettingsContext";
 const MobileDock = () => {
   const pathname = usePathname();
   const router = useRouter();
-  const { resolvedTheme, t } = useSettings();
+  const { resolvedTheme, theme = resolvedTheme, t } = useSettings();
   const [activeItem, setActiveItem] = useState("home");
 
   const menuItems = [

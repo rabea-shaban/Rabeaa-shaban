@@ -33,6 +33,7 @@ const SETTINGS_STORAGE_KEY = 'rabea_portfolio_settings';
 interface SettingsContextType {
   settings: Settings;
   resolvedTheme: 'light' | 'dark';
+  theme: 'light' | 'dark';
   isRtl: boolean;
   t: TranslationDict;
   setTheme: (theme: Theme) => void;
@@ -166,6 +167,7 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       value={{
         settings,
         resolvedTheme,
+        theme: resolvedTheme,
         isRtl,
         t,
         setTheme,
