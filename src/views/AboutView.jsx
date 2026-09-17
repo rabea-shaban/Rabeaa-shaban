@@ -229,21 +229,18 @@ const AboutView = () => {
 
                 <div className="flex flex-wrap gap-3 text-xs text-muted-foreground border-t border-border/20 pt-3">
                   <span className="flex items-center gap-1">
-                    <Calendar className="w-3.5 h-3.5 text-primary" /> 2026 - Present
+                    <Calendar className="w-3.5 h-3.5 text-primary" /> {t.about.aiDiplomaPeriod}
                   </span>
                   <span className="flex items-center gap-1">
                     <MapPin className="w-3.5 h-3.5 text-primary" /> Heliopolis, Cairo, Egypt
                   </span>
                 </div>
 
-                <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">
-                  {t.common.currentlyEnrolled}
+                <div className="inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-bold border border-emerald-500/20">
+                  {t.about.aiDiplomaStatus}
                 </div>
 
                 <div className="flex flex-wrap gap-1.5 pt-1">
-                  <span className="px-2.5 py-0.5 rounded text-[10px] font-semibold bg-muted text-muted-foreground">
-                    {t.common.currentlyEnrolled}
-                  </span>
                   <span className="px-2.5 py-0.5 rounded text-[10px] font-semibold bg-muted text-muted-foreground">
                     Egyptian Military Academy
                   </span>

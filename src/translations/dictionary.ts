@@ -1,4 +1,4 @@
-﻿export interface NavTranslations {
+export interface NavTranslations {
   home: string;
   about: string;
   projects: string;
@@ -62,6 +62,8 @@ export interface AboutTranslations {
   aiDiplomaTitle: string;
   aiDiplomaOrg: string;
   aiDiplomaLocation: string;
+  aiDiplomaPeriod: string;
+  aiDiplomaStatus: string;
   bachelorTitle: string;
   bachelorOrg: string;
   bachelorGrade: string;
@@ -183,7 +185,7 @@ export const translations: Record<'en' | 'ar', TranslationDict> = {
       p1: "I'm Rabea Shaban, a Full Stack Software Engineer based in Minya, Egypt. I graduated in 2024 with a Bachelor's degree in Management Information Systems (MIS), earning an Excellent grade.",
       p2: "I specialize in developing end-to-end web applications using MongoDB, Express.js, React.js, Node.js, Next.js, and TypeScript. My experience includes designing responsive user interfaces, building secure RESTful APIs, implementing JWT authentication, and creating maintainable applications following clean architecture principles.",
       p3: "Alongside Full Stack development, I'm expanding my expertise in Cloud Computing and DevOps. I work with Docker for containerization, Kubernetes and Helm for container orchestration, Terraform for Infrastructure as Code (IaC), GitHub Actions for CI/CD automation, and AWS and Linux as part of modern cloud-native development.",
-      p4: "I'm currently enrolled in the Digitans AI-Based Software Development Diploma at the Egyptian Military Academy in Heliopolis, Cairo, where I'm strengthening my skills in Software Engineering, Cloud Computing, Artificial Intelligence, and DevOps through intensive hands-on training.",
+      p4: "I completed the Digilians AI-Driven Software Development Diploma at the Egyptian Military Academy in Heliopolis, Cairo, organized by MCIT, advancing my expertise in Software Engineering, Cloud Computing, Artificial Intelligence, and DevOps through intensive hands-on training.",
       p5: "I've contributed to projects for clients in Egypt and the Gulf region, delivering responsive websites, business dashboards, booking systems, and modern web applications with a strong focus on performance, scalability, accessibility, and user experience.",
       p6: "I'm committed to continuous learning, writing clean and maintainable code, and building reliable, production-ready software that follows modern engineering best practices.",
       highlightedSkills: "HIGHLIGHTED SKILLS:",
@@ -193,9 +195,11 @@ export const translations: Record<'en' | 'ar', TranslationDict> = {
       toolboxSubtitle: "The core languages, frameworks, databases, and DevOps tools I use daily.",
       experienceTitle: "Experience",
       educationTitle: "Education",
-      aiDiplomaTitle: "AI-Based Software Development Diploma",
-      aiDiplomaOrg: "Digitans Initiative / Professional Digital Pioneers",
-      aiDiplomaLocation: "Egyptian Military Academy • Dept of IT and Information Technology (MCIT)",
+      aiDiplomaTitle: "AI-Driven Software Development Diploma",
+      aiDiplomaOrg: "Digilians Initiative – Ministry of Communications & IT (MCIT)",
+      aiDiplomaLocation: "Egyptian Military Academy • Dept of Information Technology (MCIT)",
+      aiDiplomaPeriod: "12/2025 – 08/2026",
+      aiDiplomaStatus: "Completed with Distinction",
       bachelorTitle: "Bachelor of Management Information Systems (MIS)",
       bachelorOrg: "Higher Institute of Technology, Management and Information - Minya",
       bachelorGrade: "Excellent Grade (Imtiyaz)",
@@ -301,7 +305,7 @@ export const translations: Record<'en' | 'ar', TranslationDict> = {
       p1: "أنا ربيع شعبان، مهندس برمجيات وتطوير ويب شامل (Full Stack Software Engineer) مقيم في المنيا / القاهرة، مصر. تخرجت في عام 2024 بدرجة البكالوريوس في نظم المعلومات الإدارية (MIS) بتقدير عام ممتاز.",
       p2: "أتخصص في تطوير تطبيقات الويب المتكاملة من البداية للنهاية باستخدام MongoDB، Express.js، React.js، Node.js، Next.js، و TypeScript. تشمل خبراتي تصميم واجهات مستخدم تفاعلية متجاوبة، بناء وتأمين واجهات برمجة التطبيقات REST APIs، تطبيق بروتوكولات المصادقة JWT، وتطوير برمجيات نظيفة وقابلة للصيانة وفق Clean Architecture.",
       p3: "إلى جانب التطوير البرمجي، أعمل على تعزيز خبراتي في الحوسبة السحابية وهندسة DevOps، حيث أستخدم Docker للحاويات البرمجية، Kubernetes و Helm لإدارة الحاويات، Terraform للبنية التحتية ككود (IaC)، و GitHub Actions لأتمتة CI/CD بالإضافة لخدمات AWS وبيئة Linux.",
-      p4: "ملتحق حالياً بدبلومة تطوير البرمجيات القائمة على الذكاء الاصطناعي (Digitans AI-Based Software Development Diploma) بالأكاديمية العسكرية المصرية في مصر الجديدة بالقاهرة، لصقل مهاراتي في هندسة البرمجيات والأنظمة السحابية والذكاء الاصطناعي.",
+      p4: "أتممت بنجاح دبلومة تطوير البرمجيات بالذكاء الاصطناعي (Digilians AI-Driven Software Development Diploma) بمقر الأكاديمية العسكرية المصرية في مصر الجديدة بالقاهرة تحت إشراف وزارة الاتصالات وتكنولوجيا المعلومات (MCIT)، لصقل وتطوير مهاراتي المتقدمة في هندسة البرمجيات والأنظمة السحابية والذكاء الاصطناعي وحلول DevOps.",
       p5: "ساهمت في إنجاز مشروعات متنوعة لعملاء في مصر ودول الخليج، تشمل مواقع تفاعلية، لوحات تحكم أعمال، أنظمة حجز وإدارة، وتطبيقات حديثة تركز على الأداء، التوسع، وتجربة المستخدم السلسة.",
       p6: "ألتزم بالتعلم المستمر، كتابة كود نظيف وقابل للتطوير، وبناء برمجيات قوية وجاهزة للإنتاج تتبع أفضل المعايير الهندسية الحديثة.",
       highlightedSkills: "أبرز المهارات والتقنيات:",
@@ -312,8 +316,10 @@ export const translations: Record<'en' | 'ar', TranslationDict> = {
       experienceTitle: "الخبرات العملية",
       educationTitle: "التعليم والشهادات الأكاديمية",
       aiDiplomaTitle: "دبلومة تطوير البرمجيات بالذكاء الاصطناعي",
-      aiDiplomaOrg: "مبادرة رواد مصر الرقمية (Digitans / DEPI)",
+      aiDiplomaOrg: "مبادرة الرواد الرقميون (Digilians) – وزارة الاتصالات (MCIT)",
       aiDiplomaLocation: "الأكاديمية العسكرية المصرية • وزارة الاتصالات وتكنولوجيا المعلومات (MCIT)",
+      aiDiplomaPeriod: "12/2025 – 08/2026",
+      aiDiplomaStatus: "إتمام معتمد بتقدير امتياز",
       bachelorTitle: "بكالوريوس نظم المعلومات الإدارية (MIS)",
       bachelorOrg: "المعهد العالي لتكنولوجيا الإدارة والمعلومات بالمنيا",
       bachelorGrade: "تقدير عام ممتاز (امتياز)",
