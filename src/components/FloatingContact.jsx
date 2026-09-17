@@ -84,10 +84,7 @@ const FloatingContact = () => {
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.95 }}
-        className="w-14 h-14 rounded-full flex items-center justify-center text-black font-bold shadow-[0_8px_30px_rgba(255,180,0,0.45)] pointer-events-auto relative z-10 border border-white/10"
-        style={{
-          background: "linear-gradient(135deg, #FFB400, #FFA000)",
-        }}
+        className="w-14 h-14 rounded-full flex items-center justify-center bg-primary text-primary-foreground font-bold shadow-xl pointer-events-auto relative z-10 border border-white/10"
         aria-label="Toggle contact menu"
       >
         <motion.div

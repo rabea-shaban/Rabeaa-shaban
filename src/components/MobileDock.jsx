@@ -93,10 +93,7 @@ const MobileDock = () => {
                 {isActive && (
                   <motion.div
                     layoutId="activeDockCircle"
-                    className="absolute inset-0 rounded-full shadow-[0_0_20px_rgba(255,180,0,0.45)]"
-                    style={{
-                      background: "linear-gradient(135deg, #FFB400, #FFA000)",
-                    }}
+                    className="absolute inset-0 rounded-full shadow-lg bg-primary"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -108,7 +105,7 @@ const MobileDock = () => {
                   }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`relative z-10 ${isActive ? "text-black font-bold" : "text-muted-foreground hover:text-foreground"}`}
+                  className={`relative z-10 ${isActive ? "text-primary-foreground font-bold" : "text-muted-foreground hover:text-foreground"}`}
                 >
                   <Icon className="w-5 h-5 transition-colors" />
                 </motion.div>
