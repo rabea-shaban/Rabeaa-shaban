@@ -38,9 +38,19 @@ const CertificatesView = () => {
 
   const filteredCertificates = certificates.filter((cert) => {
     const matchesCategory = selectedCategory === "all" || cert.category === selectedCategory;
-    const matchesSearch = cert.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          cert.issuer.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          cert.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const query = searchQuery.toLowerCase().trim();
+    if (!query) return matchesCategory;
+
+    const matchesSearch =
+      (cert.title && cert.title.toLowerCase().includes(query)) ||
+      (cert.titleAr && cert.titleAr.toLowerCase().includes(query)) ||
+      (cert.issuer && cert.issuer.toLowerCase().includes(query)) ||
+      (cert.issuerAr && cert.issuerAr.toLowerCase().includes(query)) ||
+      (cert.description && cert.description.toLowerCase().includes(query)) ||
+      (cert.descriptionAr && cert.descriptionAr.toLowerCase().includes(query)) ||
+      (cert.category && cert.category.toLowerCase().includes(query)) ||
+      (cert.categoryAr && cert.categoryAr.toLowerCase().includes(query));
+
     return matchesCategory && matchesSearch;
   });
 
@@ -88,6 +98,7 @@ const CertificatesView = () => {
             {certificateCategories.map((cat) => {
               const IconComp = cat.icon;
               const isSelected = selectedCategory === cat.id;
+              const catName = isAr && cat.nameAr ? cat.nameAr : cat.name;
               return (
                 <button
                   key={cat.id}
@@ -99,7 +110,7 @@ const CertificatesView = () => {
                   }`}
                 >
                   <IconComp className="w-3.5 h-3.5" />
-                  <span>{cat.name}</span>
+                  <span>{catName}</span>
                 </button>
               );
             })}
@@ -123,6 +134,12 @@ const CertificatesView = () => {
             <AnimatePresence>
               {filteredCertificates.map((cert) => {
                 const IconComponent = cert.icon || Award;
+                const title = isAr && cert.titleAr ? cert.titleAr : cert.title;
+                const issuer = isAr && cert.issuerAr ? cert.issuerAr : cert.issuer;
+                const description = isAr && cert.descriptionAr ? cert.descriptionAr : cert.description;
+                const category = isAr && cert.categoryAr ? cert.categoryAr : cert.category;
+                const grade = isAr && cert.gradeAr ? cert.gradeAr : cert.grade;
+
                 return (
                   <motion.div
                     key={cert.id}
@@ -140,7 +157,7 @@ const CertificatesView = () => {
                         {cert.image ? (
                           <img
                             src={cert.image}
-                            alt={cert.title}
+                            alt={title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             onError={(e) => {
                               e.target.style.display = 'none';
@@ -169,22 +186,30 @@ const CertificatesView = () => {
                           <Calendar className="w-3.5 h-3.5" />
                           <span>{cert.date}</span>
                           <span className="text-muted-foreground">•</span>
-                          <span className="text-muted-foreground">{cert.issuer}</span>
+                          <span className="text-muted-foreground">{issuer}</span>
                         </div>
 
                         <h3 className="text-xl font-bold font-display leading-snug mb-3 group-hover:text-primary transition-colors">
-                          {cert.title}
+                          {title}
                         </h3>
 
                         <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3 mb-4">
-                          {cert.description}
+                          {description}
                         </p>
+
+                        {grade && (
+                          <div className="mb-3">
+                            <span className="text-[11px] font-medium text-emerald-500 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20">
+                              {grade}
+                            </span>
+                          </div>
+                        )}
                       </div>
                     </div>
 
                     <div className="px-6 pb-6 pt-0 flex items-center justify-between border-t border-border/20 mt-auto">
                       <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
-                        {cert.category}
+                        {category}
                       </span>
                       {cert.pdf && (
                         <a
@@ -210,20 +235,24 @@ const CertificatesView = () => {
             {activeCertificate && (
               <div>
                 <DialogHeader className="mb-4">
-                  <DialogTitle className="text-2xl font-bold font-display">{activeCertificate.title}</DialogTitle>
-                  <p className="text-sm text-primary font-medium">{activeCertificate.issuer} — {activeCertificate.date}</p>
+                  <DialogTitle className="text-2xl font-bold font-display">
+                    {isAr && activeCertificate.titleAr ? activeCertificate.titleAr : activeCertificate.title}
+                  </DialogTitle>
+                  <p className="text-sm text-primary font-medium">
+                    {isAr && activeCertificate.issuerAr ? activeCertificate.issuerAr : activeCertificate.issuer} — {activeCertificate.date}
+                  </p>
                 </DialogHeader>
                 <div className="relative aspect-video rounded-xl overflow-hidden bg-muted/40 mb-4 border border-border/40">
                   {activeCertificate.image && (
                     <img
                       src={activeCertificate.image}
-                      alt={activeCertificate.title}
+                      alt={isAr && activeCertificate.titleAr ? activeCertificate.titleAr : activeCertificate.title}
                       className="w-full h-full object-contain"
                     />
                   )}
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                  {activeCertificate.description}
+                  {isAr && activeCertificate.descriptionAr ? activeCertificate.descriptionAr : activeCertificate.description}
                 </p>
                 <div className="flex justify-end gap-3">
                   <Button variant="outline" onClick={() => setActiveCertificate(null)}>
