@@ -37,6 +37,7 @@ interface SettingsContextType {
   isRtl: boolean;
   t: TranslationDict;
   setTheme: (theme: Theme) => void;
+  toggleTheme: () => void;
   setAccentColor: (accentColor: AccentColor) => void;
   setLanguage: (language: Language) => void;
   toggleLanguage: () => void;
@@ -147,6 +148,13 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   }, []);
 
   const setTheme = useCallback((theme: Theme) => updateSetting('theme', theme), [updateSetting]);
+  const toggleTheme = useCallback(() => {
+    setSettings((prev) => {
+      const currentResolved = prev.theme === 'system' ? (systemIsDark ? 'dark' : 'light') : prev.theme;
+      const nextTheme: Theme = currentResolved === 'dark' ? 'light' : 'dark';
+      return { ...prev, theme: nextTheme };
+    });
+  }, [systemIsDark]);
   const setAccentColor = useCallback((accentColor: AccentColor) => updateSetting('accentColor', accentColor), [updateSetting]);
   
   const setLanguage = useCallback((language: Language) => {
@@ -201,6 +209,7 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         isRtl,
         t,
         setTheme,
+        toggleTheme,
         setAccentColor,
         setLanguage,
         toggleLanguage,

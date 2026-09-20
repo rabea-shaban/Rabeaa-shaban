@@ -1,8 +1,7 @@
 'use client';
 
-import { Button } from "@/components/ui/button";
 import { useSettings } from "@/context/SettingsContext";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Moon, Sun, Globe } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
@@ -72,60 +71,85 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <div className="flex items-center gap-1.5 pl-2 rtl:pl-0 rtl:pr-2 border-l rtl:border-l-0 rtl:border-r border-border/30">
+          <div className="flex items-center gap-2 pl-2 rtl:pl-0 rtl:pr-2 border-l rtl:border-l-0 rtl:border-r border-border/30">
             {/* Quick Language Toggle Button */}
-            <button
+            <motion.button
+              whileTap={{ scale: 0.95 }}
               onClick={toggleLanguage}
               type="button"
-              className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-colors border border-border/40"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-bold text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-all border border-border/40 bg-card/40"
               title={settings.language === 'ar' ? 'Switch to English' : 'التحويل للعربية'}
               aria-label="Toggle language"
             >
               <Globe className="w-3.5 h-3.5 text-primary" />
               <span>{settings.language === 'ar' ? 'EN' : 'عربي'}</span>
-            </button>
+            </motion.button>
 
             {/* Theme Toggle Button */}
-            <Button
-              variant="ghost"
-              size="icon"
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.05 }}
               onClick={toggleTheme}
-              className="rounded-full w-8 h-8 hover:bg-primary/10"
+              className="w-8 h-8 rounded-full flex items-center justify-center border border-border/40 bg-card/40 text-muted-foreground hover:text-foreground hover:bg-primary/10 hover:border-primary/40 transition-colors duration-200 overflow-hidden"
               aria-label={t.nav.toggleTheme}
+              title={resolvedTheme === "dark" ? (settings.language === 'ar' ? 'التحويل للوضع الفاتح' : 'Switch to Light Mode') : (settings.language === 'ar' ? 'التحويل للوضع الليلي' : 'Switch to Dark Mode')}
             >
-              {resolvedTheme === "dark" ? (
-                <Sun className="h-4 w-4" />
-              ) : (
-                <Moon className="h-4 w-4" />
-              )}
-            </Button>
+              <AnimatePresence mode="wait" initial={false}>
+                <motion.div
+                  key={resolvedTheme}
+                  initial={{ y: -10, opacity: 0, rotate: -90 }}
+                  animate={{ y: 0, opacity: 1, rotate: 0 }}
+                  exit={{ y: 10, opacity: 0, rotate: 90 }}
+                  transition={{ duration: 0.2 }}
+                  className="flex items-center justify-center"
+                >
+                  {resolvedTheme === "dark" ? (
+                    <Sun className="w-4 h-4 text-amber-400" />
+                  ) : (
+                    <Moon className="w-4 h-4 text-primary" />
+                  )}
+                </motion.div>
+              </AnimatePresence>
+            </motion.button>
           </div>
         </div>
   
         {/* Mobile Actions (Language & Theme) */}
-        <div className="md:hidden flex items-center gap-1.5">
-          <button
+        <div className="md:hidden flex items-center gap-2">
+          <motion.button
+            whileTap={{ scale: 0.95 }}
             onClick={toggleLanguage}
             type="button"
-            className="flex items-center gap-1 px-2 py-1 rounded-full text-[11px] font-bold text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-colors border border-border/40"
+            className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-all border border-border/40 bg-card/40"
             aria-label="Toggle language"
           >
             <span>{settings.language === 'ar' ? 'EN' : 'عربي'}</span>
-          </button>
+          </motion.button>
 
-          <Button 
-            variant="ghost" 
-            size="icon" 
+          <motion.button 
+            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.05 }}
             onClick={toggleTheme} 
-            className="rounded-full w-8 h-8"
+            className="w-8 h-8 rounded-full flex items-center justify-center border border-border/40 bg-card/40 text-muted-foreground hover:text-foreground hover:bg-primary/10 hover:border-primary/40 transition-colors duration-200 overflow-hidden"
             aria-label={t.nav.toggleTheme}
           >
-            {resolvedTheme === "dark" ? (
-              <Sun className="h-4 w-4" />
-            ) : (
-              <Moon className="h-4 w-4" />
-            )}
-          </Button>
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div
+                key={resolvedTheme}
+                initial={{ y: -10, opacity: 0, rotate: -90 }}
+                animate={{ y: 0, opacity: 1, rotate: 0 }}
+                exit={{ y: 10, opacity: 0, rotate: 90 }}
+                transition={{ duration: 0.2 }}
+                className="flex items-center justify-center"
+              >
+                {resolvedTheme === "dark" ? (
+                  <Sun className="w-4 h-4 text-amber-400" />
+                ) : (
+                  <Moon className="w-4 h-4 text-primary" />
+                )}
+              </motion.div>
+            </AnimatePresence>
+          </motion.button>
         </div>
       </motion.nav>
     </div>

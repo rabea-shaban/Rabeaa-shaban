@@ -19,11 +19,11 @@ const ProjectsView = () => {
       ? "معرض المشروعات والأعمال البرمجية | سابقة أعمال ربيع شعبان" 
       : "Projects & Software Case Studies | Full Stack & Cloud Web Apps by Rabea Shaban",
     description: isAr
-      ? "استعرض سابقة أعمال ومشاريع برمجية متكاملة تشمل منصات التجارة الإلكترونية، أنظمة إدارة الأعمال، واجهات RESTful APIs، وتطبيقات الذكاء الاصطناعي مع روابط المعاينة الحية وكود المصدر GitHub."
-      : "Explore enterprise web applications, production SaaS platforms, REST API architectures, and AI integrations built by Rabea Shaban with live previews and open GitHub repositories.",
+      ? "استعرض سابقة أعمال ومشاريع برمجية متكاملة تشمل منصات LMS التعليمية، أنظمة نقاط البيع وإدارة الصيدليات POS، مواقع الأعمال والشركات، وتطبيقات الويب الحديثة مع روابط المعاينة الحية وكود المصدر GitHub."
+      : "Explore enterprise full-stack web applications, LMS education platforms, POS pharmacy systems, business websites, and digital portals built by Rabea Shaban with live previews and open GitHub repositories.",
     keywords: isAr
-      ? "سابقة أعمال ربيع شعبان, مشاريع ويب حقيقية, منصة EduSphere, تطبيق صيانتي, متجر AGRSUP, كود مصدر برمجيات, معرض أعمال React و Node.js"
-      : "Software Engineering Portfolio, Production Next.js Projects, MERN Stack Case Studies, Enterprise Web Apps, Full Stack GitHub Projects, React SaaS Apps"
+      ? "سابقة أعمال ربيع شعبان, مشاريع ويب حقيقية, منصة EduSphere, نظام Pharmacy POS, منصة Zein Hub, تطبيق صيانِتك, حدائق الراقي, صيدليات الزيات, حدائق الريان, منصة أثر, كود مصدر برمجيات, معرض أعمال Next.js و Node.js"
+      : "Software Engineering Portfolio, EduSphere LMS, Pharmacy POS, Zein Hub, Sy2antek, Production Next.js Projects, MERN Stack Case Studies, Enterprise Web Apps, Full Stack GitHub Projects, React SaaS Apps"
   });
 
   const projectCategories = [

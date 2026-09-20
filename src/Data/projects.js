@@ -1,166 +1,338 @@
 import Shahn365 from "../Img/365.jpg";
-import AboRaslan from "../Img/AboRaslan.jpg";
-import AddToDo from "../Img/AddToDo.png";
 import AlAmar from "../Img/AlAmar.jpg";
 import AlaYman from "../Img/AlaYman.jpg";
 import AlertSestem from "../Img/AlertSestem.png";
-import ALRamaADS from "../Img/ALRamaADS.jpg";
 import ApiCountryImg from "../Img/ApiCountryImg.jpg";
-import BasmatAlwafa from "../Img/BasmatAlwafa.jpg";
 import CarRent from "../Img/CarRent.jpg";
-import HadayiqAlMarjan from "../Img/HadayiqAlMarjan.jpg";
-import Kashf3laj from "../Img/Kashf3laj.jpg";
-import KayanGardens from "../Img/KayanGardens.jpg";
 import Latest_Products from "../Img/Latest_Products.jpg";
 import Programming from "../Img/Programming.jpg";
 import SolidaritySolarImg from "../Img/SolidaritySolarImg.jpg";
 import SpiderMan from "../Img/Spider-Man.jpg";
-import TakseerSA from "../Img/TakseerSA.jpg";
 import TaksirWatarmim from "../Img/TaksirWatarmim.jpg";
-import TansiqGarden from "../Img/TansiqGarden.jpg";
 import TaskOenUpskilling from "../Img/TaskOenUpskilling.jpg";
 import UMS from "../Img/UMS.jpg";
-import Sa2yanti from "../Img/Screenshot 2026-08-02 180424.png";
-import EduSphere from "../Img/EduSphere.jpg";
 
 export const projects = [
+  // =========================================================================
+  // 1. PRIMARY FEATURED FULL-STACK PLATFORMS (الأعمال المميزة الأولى)
+  // =========================================================================
   {
     title: "EduSphere",
-    titleAr: "منصة EduSphere التعليمية السحابية",
-    description: "Cloud-based Enterprise SaaS E-Learning & Communication Platform facilitating interactive digital learning between teachers and students, with real-time messaging, WebRTC audio/video calls, and admin management tools.",
-    descriptionAr: "منصة تعليمية وتواصل سحابية تفاعلية للشركات والمؤسسات (SaaS) تربط المعلمين والطلاب مع دعم المحادثات الفورية، ومكالمات الصوت والفيديو عبر WebRTC، وأدوات إدارة متقدمة للدروس والواجبات.",
-    tech: ["Next.js", "React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Socket.io", "WebRTC", "Tailwind CSS", "Cloudflare R2"],
-    category: ["Next.js", "Full Stack", "web-app"],
-    demo: "https://education-spheree.vercel.app/",
+    titleAr: "منصة EduSphere التعليمية الذكية",
+    projectType: "Full Stack LMS / Education Management Platform",
+    projectTypeAr: "منصة تعليمية ذكية متكاملة (LMS)",
+    description: "A comprehensive full-stack LMS & educational management platform connecting students, instructors, and admins with courses, live sessions, real-time messaging, assessments, certificates, payments, and rich analytics.",
+    descriptionAr: "منصة تعليمية ذكية متكاملة (Full Stack LMS) لإدارة العملية التعليمية والربط بين الطلاب والمعلمين والإدارة، مع دعم الدروس، والاختبارات، والشهادات، والجلسات المباشرة، والتواصل الفوري، وبوابات الدفع والتحليلات المتقدمة.",
+    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Mongoose", "Socket.IO", "Stripe", "JWT", "Swagger"],
+    technologies: ["Next.js", "React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Socket.IO", "Stripe"],
+    category: ["Full Stack", "Next.js", "web-app"],
+    demo: "https://edusphere-theta-woad.vercel.app/",
     github: "https://github.com/rabea-shaban/EduSphere",
     featured: true,
+    img: "/new project/eduspher.png",
     features: [
-      "Real-time 1-on-1 & Group Messaging with Read Receipts (✓✓).",
-      "Native WebRTC peer-to-peer Voice & Video Calling without third-party media servers.",
-      "In-app Voice Recording & Custom Electronic Waveform Audio Player.",
-      "Cloudflare R2 S3-compatible cloud storage for course media, recordings, and assignments.",
-      "Role-based access control (JWT authentication) with MongoDB & Mongoose ORM models."
+      "Student Dashboard, Teacher Dashboard, and Admin Dashboard with Role-Based Access Control (RBAC).",
+      "Comprehensive Course, Module, and Lesson management with TipTap rich text and media upload.",
+      "Real-time communication & live interactive learning sessions via Socket.IO.",
+      "Quizzes, automated assignments grading, and verifiable completion certificates.",
+      "Secure Stripe payments integration and advanced statistical analytics charts."
     ],
     featuresAr: [
-      "محادثات فورية فردية وجماعية مع علامات استلام وقراءة الرسائل (✓✓).",
-      "مكالمات صوت وفيديو مباشرة بتقنية WebRTC دون الحاجة لخوادم وسائط خارجية.",
-      "تسجيل رسائل صوتية داخل التطبيق مع مشغل موجات صوتية إلكتروني مخصص.",
-      "تخزين سحابي للوسائط والتسجيلات والواجبات عبر Cloudflare R2 المتوافق مع S3.",
-      "نظام صلاحيات ومصادقة محمي برمز JWT وقواعد بيانات MongoDB و Mongoose."
+      "لوحات تحكم متطورة ومخصصة لكل من الطالب، المعلم، والإدارة (RBAC).",
+      "إدارة متكاملة للدورات والوحدات والدروس ومحرر نصوص غني بالوسائط.",
+      "تواصل فوري وجلسات بث مباشر تفاعلية مدعومة بـ Socket.IO.",
+      "نظام اختبارات وتقييم واجبات وإصدار شهادات إتمام معتمدة.",
+      "بوابة دفع إلكتروني متكاملة مع Stripe وتحليلات بيانية دقيقة."
+    ]
+  },
+  {
+    title: "Pharmacy POS",
+    titleAr: "نظام إدارة الصيدليات ونقاط البيع (Pharmacy POS)",
+    projectType: "Full Stack POS / Pharmacy Management System",
+    projectTypeAr: "نظام إدارة الصيدليات ونقاط البيع",
+    description: "An end-to-end full-stack Pharmacy Management and Point of Sale (POS) system handling daily operations from medicine inventory, barcode sales, branches, employee permissions, and database backups.",
+    descriptionAr: "نظام متكامل لإدارة الصيدليات ونقاط البيع (POS)، تم تصميمه لإدارة العمليات اليومية من مخزون الأدوية، وإدارة الفروع، والمبيعات، وصلاحيات الموظفين، والنسخ الاحتياطي للبيانات.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "Prisma ORM", "MySQL", "JWT", "RBAC"],
+    technologies: ["React", "TypeScript", "Node.js", "Express.js", "Prisma ORM", "MySQL", "Tailwind CSS"],
+    category: ["Full Stack", "React", "web-app"],
+    demo: "https://pharmacy-pos-pharmacy-pos-frontend-ten.vercel.app/#/login",
+    github: "https://github.com/rabea-shaban/-PHARMACY-POS",
+    featured: true,
+    img: "/new project/PHARMO.png",
+    features: [
+      "Point of Sale (POS) fast checkout and real-time stock sync.",
+      "Comprehensive medicine inventory and stock expiry tracking.",
+      "Multi-branch and staff management with Role-Based Access Control.",
+      "Database migration, seed data, and automated backup routines.",
+      "Bulk medicine data import and detailed operational reporting."
     ],
-    challenges: "Building low-latency WebRTC RTCPeerConnection signaling and presence handling via Socket.io while managing media streams across diverse client networks.",
-    challengesAr: "بناء إشارات WebRTC RTCPeerConnection فائقة السرعة ومعالجة حالة الاتصال عبر Socket.io مع إدارة تدفقات الوسائط عبر شبكات العملاء المختلفة.",
-    lessons: "Mastered real-time communication architectures, Web Audio API synthesis, and Cloudflare R2 object storage integration in Next.js App Router.",
-    lessonsAr: "إتقان معماريات التواصل اللحظي وتوليد ومعالجة الصوتيات عبر Web Audio API والتكامل مع سحابة Cloudflare R2 في Next.js App Router.",
-    img: EduSphere,
+    featuresAr: [
+      "نقطة بيع سريعة (POS) مع مزامنة فورية لحركة المخزون.",
+      "إدارة شاملة لمخزون الأدوية وتتبع تواريخ الصلاحية والتنبيهات.",
+      "إدارة الفروع والموظفين بنظام صلاحيات دقيق (Role-Based Access Control).",
+      "إدارة قواعد البيانات مع دعم الترحيل (Migrations)، والبيانات التجريبية، والنسخ الاحتياطي.",
+      "إمكانية استيراد بيانات الأدوية وتقارير تفصيلية عن العمليات والمبيعات."
+    ]
+  },
+  {
+    title: "Zein Hub",
+    titleAr: "منصة زين هب (Zein Hub)",
+    projectType: "Full Stack Media & Learning Platform",
+    projectTypeAr: "منصة وسائط وتعليم شاملة",
+    description: "A full-stack media and educational platform uniting training programs, lessons, instructor profiles, live sessions, assignments, attendance tracking, and certificates with a secure REST API backend.",
+    descriptionAr: "منصة متكاملة للمحتوى التعليمي والإعلامي، تجمع بين البرامج التدريبية، والدروس، وملفات المدربين، والجلسات المباشرة، والواجبات، والحضور والشهادات مع واجهة برمجية REST API آمنة.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Swagger"],
+    technologies: ["Next.js", "React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Mongoose", "Swagger"],
+    category: ["Full Stack", "Next.js", "web-app"],
+    demo: "https://zein-hub.vercel.app/",
+    github: "https://github.com/rabea-shaban/Zein-Hub",
+    featured: true,
+    img: "/new project/zienHup.png",
+    features: [
+      "User Authentication & Granular User Management.",
+      "Instructor Profiles, Courses/Programs, Modules, and Interactive Lessons.",
+      "Student Enrollment, Assignments, Attendance tracking, and Verified Certificates.",
+      "Live Interactive Sessions and Contact/Application management.",
+      "Security Middleware: Rate Limiting, Input Sanitization, Error Handling, and Swagger Docs."
+    ],
+    featuresAr: [
+      "نظام مصادقة متقدم وإدارة حسابات المستخدمين.",
+      "ملفات تعريف للمدربين، برامج تدريبية، وحدات تعليمية ودروس تفاعلية.",
+      "تسجيل الطلاب، متابعة الحضور، تسليم الواجبات وإصدار الشهادات.",
+      "جلسات بث مباشر، وإدارة طلبات التقديم والرسائل الواردة.",
+      "حماية برمجية متكاملة: Rate Limiting، تنقية المدخلات، وتوثيق كامل عبر Swagger."
+    ]
+  },
+  {
+    title: "Sy2antek",
+    titleAr: "منصة صيانِتك (Sy2antek)",
+    projectType: "Full Stack Car Maintenance Platform",
+    projectTypeAr: "منصة خدمات صيانة السيارات",
+    description: "A full-stack digital automotive service and maintenance platform connecting vehicle owners with professional mechanics, featuring service catalogs, technician assignment, admin dashboard, and order lifecycle management.",
+    descriptionAr: "منصة رقمية متكاملة لخدمات صيانة السيارات، تربط أصحاب السيارات بالفنيين المعتمدين ومراكز الصيانة، مع إدارة شاملة للطلبات وتعيين الفنيين ولوحة تحكم إدارية تفاعلية.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Axios", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "bcrypt"],
+    technologies: ["React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind CSS"],
+    category: ["Full Stack", "React", "web-app"],
+    demo: "https://sy2antek.vercel.app/",
+    github: "https://github.com/rabea-shaban/Sa2yanti",
+    featured: true,
+    img: "/new project/Syantik.png",
+    features: [
+      "User registration, authentication with HTTPOnly cookies, and RBAC.",
+      "Interactive customer booking pipeline with service categories and filtering.",
+      "Technician management dashboard, technician assignment, and order status updates.",
+      "Comprehensive Admin dashboard: statistics, blocking/activating users, and system settings.",
+      "Full pagination, search, and granular filtering across all resources."
+    ],
+    featuresAr: [
+      "تسجيل ومصادقة مستخدمين آمنة عبر كوكيز HTTPOnly ونظام صلاحيات RBAC.",
+      "مسار حجز متكامل للعملاء مع تصنيفات الخدمات وتحديد نوع العطل.",
+      "لوحة إدارة الفنيين، تعيين الفني للطلب، وتحديث دورة حياة الخدمة.",
+      "لوحة تحكم للمدير: إحصائيات دقيقة، تجميد/تفعيل الحسابات، وإعدادات المنصة.",
+      "نظام بحث وفلترة متقدم وتقسيم صفحات (Pagination) لجميع البيانات."
+    ]
   },
 
+  // =========================================================================
+  // 2. PRIMARY BUSINESS & COMMERCIAL PROJECTS (مشاريع الأعمال والشركات)
+  // =========================================================================
   {
-    title: "Sa2yanti",
-    titleAr: "تطبيق صيانتي لصيانة السيارات",
-    description: "Car maintenance request and booking application. Connects car owners with mechanics, supporting real-time location mapping, request pipelines, and pricing estimates.",
-    descriptionAr: "تطبيق لطلب وحجز خدمات صيانة السيارات يربط بين أصحاب السيارات والفنيين ومراكز الصيانة، مع دعم تتبع الموقع الجغرافي وتقدير التكلفة ومتابعة مسار الطلب.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "Google Maps", "JWT"],
-    category: ["React", "web-app"],
-    demo: "https://sy2antek.vercel.app/",
-    github: "https://github.com/rabea-shaban/sa2yanti",
-    featured: true,
+    title: "Raqi Gardens",
+    titleAr: "حدائق الراقي — Raqi Gardens",
+    projectType: "Business Website / Landscaping Services",
+    projectTypeAr: "موقع أعمال / خدمات تنسيق حدائق",
+    description: "A modern, responsive business website for a landscaping and garden design company, featuring rich visual project showcases, services catalog, and optimized Arabic UI.",
+    descriptionAr: "موقع إلكتروني احترافي لشركة متخصصة في تصميم وتنسيق الحدائق والمساحات الخضراء، يعرض الخدمات والأعمال السابقة بطريقة بصرية عصرية ومتجاوبة بالكامل.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Responsive Design"],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    category: ["Next.js", "website"],
+    demo: "https://raqi-gardens.vercel.app/",
+    github: "https://github.com/rabea-shaban/raqi-gardens",
+    featured: false,
+    img: "/new project/Raqi Gardens.png",
     features: [
-      "Location-based search functionality to display near car maintenance centers.",
-      "Technician dashboard to view, accept, and update service request pipelines.",
-      "User request pipeline allowing clients to details issues and receive price estimates.",
-      "Dynamic map visualizers integrated with Google Maps APIs."
+      "Visual catalog for landscaping, artificial grass, and garden design services.",
+      "Interactive project portfolio and photo gallery showcase.",
+      "Arabic-first, mobile-friendly responsive layout optimized for conversion.",
+      "Dedicated service overview landing pages and fast contact channels."
     ],
     featuresAr: [
-      "بحث قائم على الموقع الجغرافي لعرض أقرب مراكز وفنيي الصيانة.",
-      "لوحة تحكم للفنيين لاستعراض وقبول وتحديث مراحل طلبات الصيانة.",
-      "مسار طلبات تفاعلي يتيح للعميل توضيح الأعطال واستلام عروض الأسعار التقديرية.",
-      "خرائط تفاعلية متكاملة مع واجهات برمجة تطبيقات Google Maps."
-    ],
-    challenges: "Implementing precise coordinates lookup calculations and querying MongoDB geospatial indexes correctly on small mobile viewports.",
-    challengesAr: "تنفيذ حسابات إحداثيات المواقع بدقة عالية والاستعلام عن فهارس MongoDB الجغرافية المكانية بكفاءة على شاشات الهواتف.",
-    lessons: "Acquired experience consuming third-party mapping APIs, handling asynchronous coordinate lookups, and building fluid mobile touch targets.",
-    lessonsAr: "اكتساب خبرة عميقة في التعامل مع واجهات خرائط Google Maps والتعامل مع استعلامات الإحداثيات وبناء واجهات سلسة للهواتف الذكية.",
-    img: Sa2yanti,
+      "عرض متكامل لخدمات تصميم وتنسيق الحدائق والمساحات الخضراء.",
+      "معرض أعمال وصور مرئي عالي الجودة للمشاريع المنفذة.",
+      "واجهة عربية عصرية وسلسة متوافقة تماماً مع مختلف الشاشات والأجهزة.",
+      "صفحات تعريفية بالخدمات وتسهيل تواصل العملاء وطلب المعاينات."
+    ]
   },
   {
-    title: "AGRSUP",
-    titleAr: "متجر AGRSUP للمستلزمات الزراعية",
-    description: "A full-stack e-commerce platform for agricultural supplies featuring secure authentication, user roles, product management, shopping cart, and online payment integration using Stripe.",
-    descriptionAr: "منصة تجارة إلكترونية متكاملة للمستلزمات الزراعية تدعم المصادقة الآمنة، وتعدد أدوار المستخدمين، وإدارة المنتجات، وسلة التسوق، والدفع الإلكتروني المباشر عبر Stripe.",
-    tech: ["React", ".NET Core", "SQL Server", "Stripe", "REST APIs"],
-    category: ["React", "e-commerce"],
-    demo: "https://agrsup.vercel.app/",
-    github: "https://github.com/rabea-shaban/AGRSUP",
-    featured: true,
+    title: "Elzayat Pharmacies",
+    titleAr: "صيدليات الزيات — Elzayat Pharmacies",
+    projectType: "Corporate Pharmacy Website",
+    projectTypeAr: "موقع مؤسسي لسلسلة صيدليات",
+    description: "A clean corporate website for a pharmacy chain, highlighting brand identity, medical services, featured products, and branch locations with a modern medical UI and Framer Motion animations.",
+    descriptionAr: "موقع إلكتروني احترافي لسلسلة صيدليات، مصمم لعرض هوية المؤسسة والخدمات الطبية والمنتجات وعناوين الفروع بتصميم طبي حديث وتأثيرات حركية تفاعلية.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    category: ["Next.js", "website"],
+    demo: "https://elzayat-pharmacies.vercel.app/",
+    github: "https://github.com/rabea-shaban/elzayat-pharmacies",
+    featured: false,
+    img: "/new project/Elzayat Pharmicy.png",
     features: [
-      "Full e-commerce catalog featuring filters, categorizations, and query searches.",
-      "Secure backend payment processing pipeline integrated with Stripe checkout flows.",
-      "Persisted shopping cart and user order history management.",
-      "Granular user roles for inventory managers, store admins, and regular clients."
+      "Medical services showcase and product display sections.",
+      "Branch locator and detailed institutional profile.",
+      "Fluid UI animations and page transitions with Framer Motion.",
+      "Responsive, mobile-first design with high accessibility standards."
     ],
     featuresAr: [
-      "كتالوج تجارة إلكترونية متكامل مع فلاتر ذكية وتصنيفات وبحث فوري.",
-      "بوابة دفع إلكتروني آمنة مدمجة مع واجهات الدفع Stripe Checkout.",
-      "سلة تسوق دائمة مع إدارة كاملة لسجل الطلبات السابقة للمستخدم.",
-      "أدوار مستخدمين وصلاحيات دقيقة لمديري المخزون ومسؤولي المتجر والعملاء."
-    ],
-    challenges: "Configuring state-handling checkout webhooks via Stripe to securely confirm inventory and payments, and mapping relational tables in SQL Server using Entity Framework Core.",
-    challengesAr: "إعداد خطافات الويب (Webhooks) في Stripe للتحقق الآمن من الدفع والمخزون، وتصميم الجداول العلائقية في SQL Server عبر Entity Framework Core.",
-    lessons: "Gained hands-on experience structuring RESTful APIs in .NET Core, implementing repository patterns, and integrating third-party payment gateways.",
-    lessonsAr: "بناء واجهات برمجة تطبيقات RESTful قوية في .NET Core وتطبيق أنماط التصميم المستودعية (Repository Pattern) وربط بوابات الدفع.",
-    img: Latest_Products,
+      "عرض خدمات الصيدلية والمنتجات الطبية والتجميلية.",
+      "دليل فروع الصيدليات ومعلومات المؤسسة والتواصل.",
+      "تحريكات بصرية تفاعلية وانتقالات سلسة باستخدام Framer Motion.",
+      "تصميم متجاوب وسهل الاستخدام مهيأ لتصفح الهواتف الذكية."
+    ]
   },
   {
-    title: "Portfolio Website",
-    titleAr: "موقعي الشخصي التفاعلي",
-    description: "My personal portfolio showcasing my projects, technical skills, certifications, and professional journey with modern UI, responsive design, and smooth animations.",
-    descriptionAr: "الموقع الشخصي التفاعلي لمعرض أعمالي ومهاراتي التقنية وشهاداتي ومسيرتي المهنية بتصميم عصري فائق السرعة وتأثيرات حركية تفاعلية ودعم كامل للغتين العربية والإنجليزية.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    title: "Hadiqat Al-Rayan",
+    titleAr: "حدائق الريان — Hadiqat Al-Rayan",
+    projectType: "Landscaping Business Website",
+    projectTypeAr: "موقع أعمال لخدمات وتنسيق الحدائق",
+    description: "A modern, visually engaging business website for Hadiqat Al-Rayan landscaping services, showcasing garden designs, artificial grass, waterfalls, pergolas, and project galleries.",
+    descriptionAr: "موقع إلكتروني احترافي لشركة حدائق الريان لتصميم وتنسيق الحدائق والمساحات الخضراء، واستعراض مشاريع الثيل الصناعي والشلالات والبرجولات مع تجربة مستخدم سريعة ومتجاوبة.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Lucide React"],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    category: ["Next.js", "website"],
+    demo: "https://hadiqat-alrayan.com/",
+    github: "https://github.com/rabea-shaban/futuregardens",
+    featured: false,
+    img: "/new project/hadieqAlrayan.png",
+    features: [
+      "Landscaping, artificial turf, and outdoor decoration showcase.",
+      "Interactive visual gallery of completed garden projects.",
+      "Arabic-first, mobile-friendly responsive design.",
+      "Optimized performance with fast loading and direct contact channels."
+    ],
+    featuresAr: [
+      "عرض خدمات تنسيق وتصميم الحدائق والشلالات والمظلات.",
+      "معرض صور مرئي غني للمشاريع السابقة وتفاصيل التنفيذ.",
+      "واجهة عربية عصرية وسلسة متوافقة تماماً مع مختلف الشاشات والأجهزة.",
+      "أداء فائق السرعة وأزرار تواصل مباشر وسريع."
+    ]
+  },
+  {
+    title: "Zahret Al-Wurood",
+    titleAr: "زهرة الورود — Zahret Al-Wurood",
+    projectType: "Landscaping & Gardening Business Website",
+    projectTypeAr: "موقع أعمال لتصميم وتنسيق الحدائق",
+    description: "A modern, image-heavy website for a landscaping and garden contracting firm, featuring before/after showcases, interactive layouts, and fluid motion.",
+    descriptionAr: "موقع إلكتروني احترافي لشركة متخصصة في تنسيق وتصميم الحدائق، تم تطويره لعرض الخدمات ومعرض صور قبل/بعد للمشاريع المنفذة بتصميم بصري جذاب.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide React"],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    category: ["Next.js", "website"],
+    demo: "https://zahret-al-wurood.vercel.app/",
+    github: "https://github.com/rabea-shaban/zahret-al-wurood",
+    featured: false,
+    img: "/new project/ZaharetAlwrod.png",
+    features: [
+      "Extensive project gallery with before/after visual comparisons.",
+      "Interactive layout with Framer Motion scroll and entry animations.",
+      "Mobile-first responsive experience tailored for regional clientele.",
+      "Fast, lightweight Arabic interface with clear calls to action."
+    ],
+    featuresAr: [
+      "معرض مشاريع غني بصور قبل وبعد التنفيذ لإبراز جودة العمل.",
+      "تأثيرات حركية تفاعلية وانتقالات مميزة بـ Framer Motion.",
+      "تجربة استخدام متجاوبة ومريحة للهواتف الذكية موجهة للجمهور العربي.",
+      "أداء فائق السرعة وأزرار تواصل وطلب عروض أسعار سريعة."
+    ]
+  },
+  {
+    title: "Nahj Alraqamia",
+    titleAr: "نهج الرقمية — Nahj Alraqamia",
+    projectType: "Digital Agency Website",
+    projectTypeAr: "موقع وكالة رقمية وتقنية",
+    description: "Official landing page and corporate portal for a tech and digital services agency, featuring multi-language internationalization (i18n), dark/light themes, and sleek agency UI.",
+    descriptionAr: "الموقع الرسمي لوكالة نهج الرقمية المتخصصة في تقديم الخدمات التقنية والحلول البرمجية، يدعم تعدد اللغات (i18n) والوضع الليلي وتصميم رقمي عصري.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "next-intl", "next-themes"],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "next-intl"],
+    category: ["Next.js", "website"],
+    demo: "https://nahjalraqamia.vercel.app/",
+    github: "https://github.com/rabea-shaban/nahjalraqamia",
+    featured: false,
+    img: "/new project/Nahj.png",
+    features: [
+      "Digital services portfolio and company case studies showcase.",
+      "Full internationalization & localization support with next-intl.",
+      "Seamless dark and light theme switching via next-themes.",
+      "Modern, high-converting digital agency landing page layout."
+    ],
+    featuresAr: [
+      "استعراض شامل للخدمات الرقمية والحلول البرمجية للشركة.",
+      "دعم كامل لتعدد اللغات والترجمة الفورية باستخدام next-intl.",
+      "التبديل بين الوضع الليلي والنهاري بسلاسة عبر next-themes.",
+      "تصميم عصري وجذاب مخصص للشركات التقنية والوكالات الرقمية."
+    ]
+  },
+
+  // =========================================================================
+  // 3. PRIMARY PERSONAL & SPECIAL PLATFORMS (المنصات والمشاريع الخاصة)
+  // =========================================================================
+  {
+    title: "Athar",
+    titleAr: "منصة أَثَر — Athar",
+    projectType: "Islamic Digital Platform",
+    projectTypeAr: "منصة إسلامية رقمية شاملة",
+    description: "An Arabic-first Islamic digital portal consolidating Quran reading/listening, audio broadcasting, Hadith, Azkar, prayer times, Islamic library, and daily progress tracking.",
+    descriptionAr: "منصة رقمية إسلامية شاملة تجمع مصادر المحتوى الإسلامي في مكان واحد: القرآن الكريم، التلاوات الصوتية، الإذاعة، الأذكار، الحديث الشريف، مواقيت الصلاة، والمكتبة الإسلامية.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Lucide React"],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+    category: ["Next.js", "web-app"],
+    demo: "https://athar-sigma-jet.vercel.app/",
+    github: "https://github.com/rabea-shaban/athar",
+    featured: false,
+    img: "/new project/Ather.png",
+    features: [
+      "Holy Quran browser with fast search and audio recitation streaming.",
+      "Quran radio, Hadith collections, Islamic explanations, and library.",
+      "Daily Azkar, Tasbeeh counter, prayer timings, and reading progress tracking.",
+      "Dark / Light mode support and clean, soothing Arabic typography."
+    ],
+    featuresAr: [
+      "تصفح وبحث فوري في سور وآيات القرآن الكريم مع مشغل تلاوات صوتية.",
+      "إذاعة القرآن الكريم، أحاديث نبوية، شروحات ودروس، ومكتبة إسلامية شاملة.",
+      "أذكار الصباح والمساء، سبحة إلكترونية، مواقيت الصلاة، ومتابعة تقدم القراءة.",
+      "دعم الوضع الليلي والنهاري مع واجهة عربية هادئة ومريحة للعين."
+    ]
+  },
+  {
+    title: "LinkStack",
+    titleAr: "LinkStack — صفحة الروابط الشخصية",
+    projectType: "Personal Branding / Link-in-Bio Website",
+    projectTypeAr: "صفحة روابط شخصية وتفاعلية",
+    description: "A sleek, interactive personal branding and link-in-bio hub consolidating all social profiles, portfolio links, and developer presence into a single fast-loading destination.",
+    descriptionAr: "صفحة شخصية تفاعلية وسريعة لتجميع كافة الروابط والحسابات الاجتماعية ومعرض الأعمال في مكان واحد، مثالية لمشاركتها عبر المنصات الاجتماعية والمهنية.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "React Icons"],
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion"],
     category: ["React", "website"],
-    demo: "https://www.rabea-shaban.com/",
-    github: "https://github.com/rabea-shaban/portfolio-2026",
-    featured: true,
+    demo: "https://link-stack-eta.vercel.app/",
+    github: "https://github.com/rabea-shaban/LinkStack",
+    featured: false,
+    img: "/new project/link-stack.png",
     features: [
-      "Theme switching between verified Light and Dark modes.",
-      "Centered floating glassmorphism header & bottom mobile dock.",
-      "Dynamic timeline entries and certificate modals.",
-      "Responsive layout optimized for iPhone and Android viewports."
+      "Consolidated social media, GitHub, LinkedIn, and personal portfolio links.",
+      "Interactive animations and micro-interactions powered by Framer Motion.",
+      "Mobile-first, ultra-lightweight design optimized for rapid loading.",
+      "Clean modern aesthetic suited for developer personal branding."
     ],
     featuresAr: [
-      "التبديل الفوري بين المظهر الفاتح والداكن وتخصيص الألوان.",
-      "شريط علوي زجاجي عائم وقائمة سفلية حديثة للهواتف الذكية.",
-      "خط زمني تفاعلي ونوافذ منبثقة تفاعلية للشهادات والمشاريع.",
-      "تصميم متجاوب وسلس متوافق تماماً مع جميع شاشات الجوال والحواسيب."
-    ],
-    challenges: "Resolving transform conflicts where Framer Motion translateY animations collided with CSS translate-x centering classes on mobile pills.",
-    challengesAr: "حل تعارضات التحريك وتوسيط المكونات الزجاجية العائمة والتجاوب الكامل مع الوضع العربي (RTL).",
-    lessons: "Mastered building highly responsive, reusable components in React with clean separation of layout and animation containers.",
-    lessonsAr: "إتقان بناء مكونات برمجية نظيفة وقابلة لإعادة الاستخدام مع عزل كامل لمنطق التحريك عن التخطيط الهيكلي.",
-    img: TaskOenUpskilling,
+      "تجميع لكافة حسابات التواصل، رابط GitHub، LinkedIn، والموقع الشخصي.",
+      "تأثيرات حركية تفاعلية جذابة باستخدام Framer Motion و React Icons.",
+      "تصميم Mobile-First فائق السرعة وخفيف الوزن.",
+      "واجهة عصرية تعزز الهوية الشخصية الرقمية والمهنية."
+    ]
   },
-  {
-    title: "AI Email Classification",
-    titleAr: "نظام تصنيف البريد الذكي بالذكاء الاصطناعي",
-    description: "An automated email classifier that analyzes incoming emails using OpenAI, categorizes them (Inquiry, Support, Spam, Billing), and drafts contextual auto-responses.",
-    descriptionAr: "نظام آلي لتحليل وتصنيف رسائل البريد الإلكتروني الواردة باستخدام نماذج OpenAI وتقسيمها إلى (استفسار، دعم فني، بريد مزعج، فواتير) مع كتابة مسودات ردود سياقية تلقائية.",
-    tech: ["React", "Node.js", "OpenAI API", "Tailwind CSS", "Nodemailer"],
-    category: ["React", "web-app"],
-    demo: "https://ai-email-classifier.vercel.app/",
-    github: "https://github.com/rabea-shaban/ai-email-classification",
-    featured: true,
-    features: [
-      "Instant sentiment and intent analysis via OpenAI API.",
-      "Automated categorization into custom business workflows.",
-      "Pre-generated response drafts with one-click reply dispatch."
-    ],
-    featuresAr: [
-      "تحليل لغوي فوري لرسائل البريد وتحديد النية والهدف بدقة عبر OpenAI.",
-      "تصنيف آلي وفق مسارات العمل المخصصة وتوزيع الأولويات.",
-      "توليد مسودات ردود احترافية مع إمكانية التعديل والإرسال الفوري."
-    ],
-    img: Latest_Products,
-  },
+
+  // =========================================================================
+  // 4. REMAINING ARCHIVED PROJECTS (سائر المشروعات وسابقة الأعمال)
+  // =========================================================================
   {
     title: "User Management System",
     titleAr: "نظام إدارة المستخدمين (UMS)",
@@ -170,7 +342,7 @@ export const projects = [
     category: ["React", "web-app"],
     demo: "https://ums-gamma.vercel.app/",
     github: "https://github.com/rabea-shaban/UMS",
-    featured: true,
+    featured: false,
     features: [
       "Complete CRUD operations with instant UI feedback.",
       "Form validation using React Hook Form.",
@@ -184,54 +356,6 @@ export const projects = [
     img: UMS,
   },
   {
-    title: "Kayan Gardens - Riyadh Landscaping",
-    titleAr: "حدائق كيان - تنسيق حدائق بالرياض",
-    description: "An elegant Arabic website for a landscaping and garden design company in Riyadh. It offers a wide range of outdoor services including artificial grass, irrigation systems, pergolas, water features, and wooden flooring. Built with WordPress and optimized for RTL and local SEO.",
-    descriptionAr: "موقع عربي راقٍ لشركة تنسيق وتصميم حدائق بالرياض، يقدم خدمات متكاملة تشمل الثيل الصناعي، وشبكات الري، والمظلات، والشلالات، والنوافير، والأرضيات الخشبية، مبني عبر ووردبريس ومحسن للغة العربية والسيو المحلي.",
-    tech: ["WordPress", "Elementor", "Blocksy", "RTL Arabic", "Local SEO"],
-    category: "wordpress",
-    demo: "https://kayan-gardens.site/",
-    github: "#",
-    featured: false,
-    img: KayanGardens,
-  },
-  {
-    title: "Basmat Alwafa Medical Center",
-    titleAr: "مركز بسمة الوفاء الطبي",
-    description: "An Arabic WordPress website for a multi-specialty medical center in Saudi Arabia offering dentistry, dermatology, and cosmetic services. Built with Elementor and Blocksy, featuring modern UI/UX and high SEO optimization.",
-    descriptionAr: "موقع ووردبريس عربي لمركز طبي متعدد التخصصات بالمملكة العربية السعودية لخدمات الأسنان والجلدية والتجميل، مبني باستخدام Elementor و Blocksy مع تجربة مستخدم عصرية وتهيئة متقدمة للـ SEO.",
-    tech: ["WordPress", "Elementor", "Blocksy", "Arabic SEO", "Medical Services"],
-    category: ["wordpress", "e-commerce"],
-    demo: "https://basmat-alwafa.com/",
-    github: "#",
-    featured: false,
-    img: BasmatAlwafa,
-  },
-  {
-    title: "Tansiq Garden Riyadh",
-    titleAr: "تنسيق حدائق الرياض",
-    description: "A professional Arabic WordPress website for a landscaping company based in Riyadh, offering services like garden design, artificial/natural grass installation, irrigation systems, pergolas, and more. Built using Elementor and Blocksy, optimized for performance and local SEO.",
-    descriptionAr: "موقع ووردبريس احترافي لشركة تنسيق حدائق بالرياض يقدم خدمات الثيل الطبيعي والصناعي والمظلات والبرجولات والإنارة الخارجية مع سرعة أداء عالية وتهيئة للسيو المحلي.",
-    tech: ["WordPress", "Elementor", "Blocksy", "SEO", "Arabic"],
-    category: "wordpress",
-    demo: "https://tansiq-garden.org/",
-    github: "#",
-    featured: false,
-    img: TansiqGarden,
-  },
-  {
-    title: "Hadayiq Al-Marjan",
-    titleAr: "حدائق المرجان - المدينة المنورة والرياض",
-    description: "A beautifully crafted Arabic WordPress website for a landscape design and garden services company based in Madinah and Riyadh. Built using Elementor and Blocksy, the site showcases a wide range of services including natural/artificial grass installation, irrigation systems, garden decor, and more — all optimized for local SEO.",
-    descriptionAr: "موقع ووردبريس عربي مميز لشركة تصميم وتنسيق الحدائق بالمدينة المنورة والرياض، يستعرض باقة الخدمات والديكورات الخارجية وشبكات الري مع تهيئة متكاملة للظهور في نتائج البحث.",
-    tech: ["WordPress", "Elementor", "Blocksy", "SEO", "Arabic"],
-    category: "wordpress",
-    demo: "http://hadayiq-almarjan-ksa.org/",
-    github: "#",
-    featured: true,
-    img: HadayiqAlMarjan,
-  },
-  {
     title: "Car Rental React App",
     titleAr: "تطبيق تأجير السيارات التفاعلي",
     description: "A modern car rental web application with advanced filtering, responsive design, car detail pages, client testimonials, and dynamic data integration.",
@@ -240,7 +364,7 @@ export const projects = [
     category: ["React", "web-app", "e-commerce"],
     demo: "https://car-rental-eosin-ten.vercel.app/",
     github: "https://github.com/rabea-shaban/Car-Rental",
-    featured: true,
+    featured: false,
     img: CarRent,
   },
   {
@@ -264,7 +388,7 @@ export const projects = [
     category: ["e-commerce", "React"],
     demo: "https://company-365.netlify.app/",
     github: "#",
-    featured: true,
+    featured: false,
     img: Shahn365,
   },
   {
@@ -273,7 +397,7 @@ export const projects = [
     description: "A professional Arabic WordPress website for a building demolition and renovation company in Medina, Saudi Arabia. It showcases services like wall cutting, plumbing systems, marble installation, and structural restoration. Developed with Elementor and optimized for local SEO.",
     descriptionAr: "موقع ووردبريس احترافي لخدمات تكسير وهدم وترميم المباني بالمدينة المنورة، يقدم خدمات قص الجدران بالليزر والسباكة والترميم الإنشائي وتركيب الرخام.",
     tech: ["WordPress", "Elementor", "Blocksy", "Arabic SEO", "Local Services"],
-    category: "wordpress",
+    category: "website",
     demo: "https://taksir-watarmim.site/",
     github: "#",
     featured: false,
@@ -285,23 +409,11 @@ export const projects = [
     description: "A modern alert and notification component system built using React and TypeScript. Supports various alert types, custom styles, and animations.",
     descriptionAr: "مكتبة مكونات تنبيهات وإشعارات متقدمة مبنية بـ React و TypeScript تدعم مختلف أنواع التنبيهات مع تحريكات سلسة وأساليب تخصيص مرنة.",
     tech: ["React", "TypeScript", "SCSS", "Lucide-react", "@mixin"],
-    category: ["component", "React"],
+    category: ["React"],
     demo: "https://alert-react-tsx.vercel.app/",
     github: "https://github.com/Rabea-shaban/AlertReactTsx",
     featured: false,
     img: AlertSestem,
-  },
-  {
-    title: "Kashf w 3laj",
-    titleAr: "منصة كشف وعلاج الطبية",
-    description: "A full-featured Arabic WordPress medical booking website for clinics, doctors, and pharmacies. Built using Elementor (v3.29.2), JetEngine, and Blocksy Companion. Offers smart doctor search, appointment booking, pharmacy services, and medical content powered by AI.",
-    descriptionAr: "منصة طبية متكاملة لحجز العيادات والأطباء والصيدليات بالمملكة، تدعم البحث الذكي عن الأطباء وحجز المواعيد وخدمات الصيدلية وتوليد محتوى بالذكاء الاصطناعي.",
-    tech: ["WordPress", "Elementor 3.29.2", "JetEngine", "Blocksy Companion", "SEO", "Arabic"],
-    category: ["wordpress", "e-commerce"],
-    demo: "https://kashf-3laj.com/",
-    github: "#",
-    featured: true,
-    img: Kashf3laj,
   },
   {
     title: "Spider-Man Far From Home",
@@ -309,7 +421,7 @@ export const projects = [
     description: "Spider-Man Far From Home component design built with Tailwind CSS.",
     descriptionAr: "تصميم تفاعلي مبتكر ومميز لفيلم Spider-Man: Far From Home باستخدام Tailwind CSS مع تأثيرات بصرية جذابة.",
     tech: ["Html", "Css", "Tailwind css"],
-    category: "component",
+    category: "website",
     demo: "https://task-2-web-master-sbider-man.vercel.app",
     github: "https://github.com/rabea-shaban/Task-2-WebMaster-SbiderMan",
     featured: false,
@@ -321,7 +433,7 @@ export const projects = [
     description: "A professional WordPress website built using Blocksy and Elementor. Fully responsive and optimized for search engines.",
     descriptionAr: "موقع ووردبريس احترافي لتصميم وتنسيق المساحات الخضراء والحدائق المنزلية، متوافق تماماً مع محركات البحث وجميع الأجهزة الذكية.",
     tech: ["WordPress", "Elementor", "Blocksy", "SEO"],
-    category: "wordpress",
+    category: "website",
     demo: "https://tansiqhadayiq.com/",
     github: "#",
     featured: false,
@@ -333,35 +445,11 @@ export const projects = [
     description: "A professional WordPress website for a Riyadh-based company specializing in laser wall cutting and core drilling. Built using Elementor and the Blocksy theme. Fully responsive, fast-loading, and optimized for Arabic SEO.",
     descriptionAr: "موقع ووردبريس لشركة متخصصة في قص وتخريم الخرسانة وكور الليزر بالرياض، سريع التصفح ومهيأ لمحركات البحث مع عرض واضح لسابقة الأعمال.",
     tech: ["WordPress", "Elementor", "Blocksy", "SEO", "Arabic"],
-    category: "wordpress",
+    category: "website",
     demo: "https://al-amar.org/",
     github: "#",
     featured: false,
     img: AlAmar,
-  },
-  {
-    title: "Alarahma Ads Website",
-    titleAr: "موقع شركة الرحمة للدعاية والإعلان",
-    description: "A WordPress website for Alarahma Advertising Company. It showcases services like digital printing, signage, exhibitions, and more.",
-    descriptionAr: "موقع ووردبريس لشركة الرحمة للدعاية والإعلان يستعرض خدمات الطباعة الرقمية، وتصنيع اللوحات الإعلانية، وتجهيز المعارض والمؤتمرات.",
-    tech: ["WordPress", "Elementor", "Blocksy", "SEO"],
-    category: "wordpress",
-    demo: "http://alrahma-advertising.com/",
-    github: "#",
-    featured: false,
-    img: ALRamaADS,
-  },
-  {
-    title: "Abu Ruslan Garden Website",
-    titleAr: "موقع أبو رسلان لتنسيق الحدائق",
-    description: "A garden design and landscaping company website in Riyadh. Built using WordPress with a clean and elegant design.",
-    descriptionAr: "موقع لشركة تصميم وتنسيق الحدائق والديكورات الخارجية بالرياض بتصميم هادئ وواجهات متجاوبة.",
-    tech: ["Html", "Css", "JS", "Bootstrap"],
-    category: "wordpress",
-    demo: "https://aburuslan-garden.com/",
-    github: "https://aburuslan-garden.com/",
-    featured: false,
-    img: AboRaslan,
   },
   {
     title: "Latest Products CRUD App",
@@ -372,32 +460,8 @@ export const projects = [
     category: ["React", "web-app"],
     demo: "https://latest-products.vercel.app",
     github: "https://github.com/rabea-shaban/latest-products",
-    featured: true,
-    img: Latest_Products,
-  },
-  {
-    title: "Todos List App (Full-Stack)",
-    titleAr: "تطبيق إدارة المهام المتكامل (Full-Stack)",
-    description: "A full-stack Todo List application built with React and Strapi. Features JWT authentication, protected routes, advanced data fetching with React Query, and real-time notifications.",
-    descriptionAr: "تطبيق لإدارة المهام اليومية مبني بـ React و Strapi، يدعم المصادقة وحماية المسارات والجلب المتقدم للبيانات عبر React Query والتنبيهات الفورية.",
-    tech: ["React", "Strapi", "React Query", "Tailwind CSS", "JWT Auth", "Axios", "Vite"],
-    category: ["React", "web-app"],
-    demo: "https://todos-list-zeta.vercel.app",
-    github: "https://github.com/rabea-shaban/TodosList",
-    featured: true,
-    img: AddToDo,
-  },
-  {
-    title: "Takseer SA",
-    titleAr: "موقع تكسير وهدم المباني بالرياض",
-    description: "A professional Arabic WordPress website for a concrete and wall demolition company based in Riyadh. Built with Elementor and Blocksy theme, the site offers SEO-optimized content, a service catalog, and detailed informational articles to rank high in local search results.",
-    descriptionAr: "موقع ووردبريس احترافي لخدمات هدم وتكسير المباني بالرياض مع كتالوج خدمات متكامل ومقالات إرشادية مهيأة للسيو المحلي لضمان الصدارة في محركات البحث.",
-    tech: ["WordPress", "Elementor", "Blocksy", "SEO", "Arabic"],
-    category: "wordpress",
-    demo: "https://takseer-sa.site/",
-    github: "#",
     featured: false,
-    img: TakseerSA,
+    img: Latest_Products,
   },
   {
     title: "🚀 Personal Portfolio - TaskOenUpskilling",
@@ -408,7 +472,7 @@ export const projects = [
     category: ["React", "web-app"],
     demo: "https://task-oen-upskilling.vercel.app/",
     github: "https://github.com/Rabea-shaban/TaskOenUpskilling",
-    featured: true,
+    featured: false,
     img: TaskOenUpskilling,
   },
   {
