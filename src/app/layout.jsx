@@ -12,14 +12,26 @@ import { CustomizationButton, CustomizationPanel } from "@/components/customizat
 export const metadata = {
   metadataBase: new URL("https://www.rabea-shaban.com"),
   title: {
-    default: "Rabea Shaban | ربيع شعبان - Full Stack Software Engineer",
-    template: "%s | Rabea Shaban | ربيع شعبان",
+    default: "Rabea Shaban (ربيع شعبان / ربيع الزيات) | Full Stack Software Engineer",
+    template: "%s | Rabea Shaban",
   },
   description:
-    "Rabea Shaban (ربيع شعبان) - Full Stack Software Engineer specializing in MERN Stack, React, Next.js, Node.js, Express, MongoDB, AWS Cloud, Docker, Kubernetes, and Terraform. Building scalable, secure, and production-ready applications. مهندس برمجيات وتطوير ويب شامل.",
+    "Official Portfolio of Rabea Shaban (ربيع شعبان / ربيع الزيات - Rabea Elzayat / Rabea Sh Elzayat / rabea-shaban) - Senior Full Stack Software Engineer specializing in MERN Stack, React, Next.js, Node.js, Express, MongoDB, AWS Cloud, Docker, Kubernetes, and AI. مهندس برمجيات وتطوير ويب شامل.",
   keywords: [
-    "Rabea Shaban",
+    "rabea shaban",
+    "rabea-shaban",
     "ربيع شعبان",
+    "ربيع الزيات",
+    "ربيع شعبان الزيات",
+    "rabea elzayate",
+    "rabea elzayat",
+    "rabea sh elzayat",
+    "rabea sh el-zayat",
+    "rabea_sh_elzayat",
+    "Rabea Shaban Elzayat",
+    "موقع ربيع شعبان",
+    "موقع ربيع الزيات",
+    "معرض أعمال ربيع شعبان",
     "Full Stack Software Engineer",
     "مهندس برمجيات",
     "مطور ويب شامل",
@@ -39,9 +51,9 @@ export const metadata = {
     "مطور Next.js",
     "مهندس DevOps"
   ],
-  authors: [{ name: "Rabea Shaban", url: "https://www.rabea-shaban.com" }],
-  creator: "Rabea Shaban",
-  publisher: "Rabea Shaban",
+  authors: [{ name: "Rabea Shaban (ربيع شعبان / ربيع الزيات)", url: "https://www.rabea-shaban.com" }],
+  creator: "Rabea Shaban (ربيع شعبان)",
+  publisher: "Rabea Shaban (ربيع شعبان)",
   robots: {
     index: true,
     follow: true,
@@ -70,28 +82,28 @@ export const metadata = {
     apple: "/logo.png",
   },
   openGraph: {
-    type: "website",
+    type: "profile",
     locale: "en_US",
     alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],
     url: "https://www.rabea-shaban.com",
-    siteName: "Rabea Shaban Portfolio | ربيع شعبان",
-    title: "Rabea Shaban | ربيع شعبان - Full Stack Software Engineer",
+    siteName: "Rabea Shaban Portfolio | ربيع شعبان (ربيع الزيات)",
+    title: "Rabea Shaban (ربيع شعبان / ربيع الزيات) - Senior Full Stack Software Engineer",
     description:
-      "Full Stack Software Engineer building high-performance web applications with React, Next.js, Node.js, MongoDB, AWS, Docker, and Kubernetes. مهندس برمجيات وتطوير ويب شامل.",
+      "Official Portfolio of Rabea Shaban (ربيع شعبان / ربيع الزيات - Rabea Elzayat / rabea-shaban). Senior Full Stack Software Engineer building high-performance web applications with React, Next.js, Node.js, MongoDB, AWS, Docker, and Kubernetes.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Rabea Shaban | ربيع شعبان - Full Stack Software Engineer",
+        alt: "Rabea Shaban | ربيع شعبان (ربيع الزيات) - Full Stack Software Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rabea Shaban | ربيع شعبان - Full Stack Software Engineer",
+    title: "Rabea Shaban (ربيع شعبان / ربيع الزيات) - Full Stack Software Engineer",
     description:
-      "Full Stack Software Engineer building high-performance web applications with React, Next.js, Node.js, MongoDB, AWS, Docker, and Kubernetes.",
+      "Official Portfolio of Rabea Shaban (ربيع شعبان / ربيع الزيات - Rabea Elzayat / rabea-shaban) - Full Stack Software Engineer building high-performance web applications.",
     images: ["/og-image.jpg"],
     creator: "@rabea_sh_elzayat",
   },
@@ -110,11 +122,30 @@ const jsonLd = {
       "@type": "Person",
       "@id": "https://www.rabea-shaban.com/#person",
       "name": "Rabea Shaban",
-      "alternateName": "ربيع شعبان",
-      "jobTitle": "Full Stack Software Engineer",
+      "givenName": "Rabea",
+      "familyName": "Shaban Elzayat",
+      "additionalName": "Elzayat",
+      "alternateName": [
+        "ربيع شعبان",
+        "ربيع الزيات",
+        "ربيع شعبان الزيات",
+        "rabea shaban",
+        "rabea-shaban",
+        "rabea elzayate",
+        "rabea elzayat",
+        "rabea sh elzayat",
+        "rabea sh el-zayat",
+        "rabea_sh_elzayat",
+        "Rabea Shaban Elzayat",
+        "Rabea Elzayate",
+        "Rabea Elzayat",
+        "Rabea Sh Elzayat"
+      ],
+      "jobTitle": "Senior Full Stack Software Engineer",
       "url": "https://www.rabea-shaban.com",
       "image": "https://www.rabea-shaban.com/logo.png",
-      "description": "Full Stack Software Engineer & Cloud DevOps Specialist | مهندس برمجيات وتطوير ويب شامل",
+      "description": "Rabea Shaban (ربيع شعبان / ربيع الزيات / Rabea Elzayat / Rabea Sh Elzayat / rabea-shaban) is a Senior Full Stack Software Engineer and Cloud DevOps Specialist specializing in MERN Stack, React, Next.js, Node.js, MongoDB, AWS Cloud, Docker, and Kubernetes.",
+      "disambiguatingDescription": "Senior Full Stack Software Engineer & Cloud DevOps Specialist known as Rabea Shaban, Rabea Elzayat, and ربيع شعبان الزيات.",
       "inLanguage": ["en", "ar"],
       "sameAs": [
         "https://github.com/rabea-shaban",
@@ -124,6 +155,7 @@ const jsonLd = {
         "https://mostaql.com/u/rabea_elzayat"
       ],
       "knowsAbout": [
+        "Full Stack Web Development",
         "React",
         "Next.js",
         "TypeScript",
@@ -164,10 +196,27 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://www.rabea-shaban.com/#website",
       "url": "https://www.rabea-shaban.com",
-      "name": "Rabea Shaban Portfolio | معرض أعمال ربيع شعبان",
-      "description": "Professional Full Stack Software Engineer Portfolio & Showcase",
+      "name": "Rabea Shaban Portfolio | معرض أعمال ربيع شعبان (ربيع الزيات)",
+      "alternateName": [
+        "rabea-shaban",
+        "Rabea Shaban",
+        "ربيع شعبان",
+        "ربيع الزيات",
+        "Rabea Elzayat",
+        "Rabea Sh Elzayat"
+      ],
+      "description": "Official Professional Full Stack Software Engineer Portfolio & Showcase for Rabea Shaban (ربيع شعبان / ربيع الزيات)",
       "inLanguage": ["en", "ar"],
       "publisher": {
+        "@id": "https://www.rabea-shaban.com/#person"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://www.rabea-shaban.com/#profilepage",
+      "url": "https://www.rabea-shaban.com",
+      "name": "Rabea Shaban (ربيع شعبان) - Developer Profile",
+      "mainEntity": {
         "@id": "https://www.rabea-shaban.com/#person"
       }
     }

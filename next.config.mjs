@@ -5,9 +5,26 @@ const nextConfig = {
     unoptimized: true,
     formats: ['image/avif', 'image/webp'],
   },
+  trailingSlash: false,
   // Ensure maximum static site generation (SSG) pre-rendering for all content routes
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error'] } : false,
+  },
+  // Redirect old vercel domain to custom domain
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'rabea-shaban.vercel.app',
+          },
+        ],
+        destination: 'https://www.rabea-shaban.com/:path*',
+        permanent: true,
+      },
+    ];
   },
   // Security and Caching Headers for SSG Assets
   async headers() {

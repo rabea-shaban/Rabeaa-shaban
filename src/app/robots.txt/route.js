@@ -19,7 +19,6 @@ Allow: /services
 Allow: /certificates
 Allow: /contact
 Disallow: /api/
-Disallow: /_next/
 Disallow: /private/
 
 # Googlebot Rules

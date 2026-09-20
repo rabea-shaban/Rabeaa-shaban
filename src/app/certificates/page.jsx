@@ -1,12 +1,21 @@
 import CertificatesView from "@/views/CertificatesView";
 
 export const metadata = {
-  title: "Verified Technical Credentials & Certifications | الشهادات والاعتمادات الرسمية - ربيع شعبان",
+  title: "Certificates & Degrees | شهادات واعتمادات ربيع شعبان",
   description:
-    "Official technical certifications and verified academic credentials of Rabea Shaban: AWS Certified Cloud Practitioner, Meta Front-End Developer Specialization, MIS Distinction Degree (91.3% Imtiyaz), Digilians AI-Based Software Diploma, and ITI certificates. استعراض الشهادات المعتمدة والاعتمادات الدولية لربيع شعبان.",
+    "Official certifications and academic credentials of Rabea Shaban (ربيع شعبان / ربيع الزيات): AWS Certified Cloud Practitioner, Meta Front-End Developer, MIS Distinction Degree (91.3%), and Digilians AI Diploma.",
   keywords: [
-    "Rabea Shaban Certificates",
-    "شهادات ربيع شعبان المعتمدة",
+    "Certificates Rabea Shaban",
+    "rabea shaban",
+    "rabea-shaban",
+    "ربيع شعبان",
+    "ربيع الزيات",
+    "ربيع شعبان الزيات",
+    "rabea elzayate",
+    "rabea elzayat",
+    "rabea sh elzayat",
+    "شهادات ربيع شعبان",
+    "شهادات ربيع الزيات",
     "AWS Certified Cloud Practitioner",
     "Meta Front-End Developer Certificate",
     "شهادة مطور واجهات ميتا",

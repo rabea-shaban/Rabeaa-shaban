@@ -1,12 +1,22 @@
 import ProjectsView from "@/views/ProjectsView";
 
 export const metadata = {
-  title: "Projects Showcase | معرض المشروعات والأعمال البرمجية - ربيع شعبان",
+  title: "Projects Showcase | سابقة أعمال ومشاريع ربيع شعبان",
   description:
-    "Explore production web applications, SaaS platforms, and enterprise software engineered by Rabea Shaban including EduSphere (WebRTC LMS SaaS), Sa2yanti Maintenance Platform, AGRSUP E-Commerce, and Cloud REST APIs with live demos and GitHub code. استعراض سابقة أعمال ربيع شعبان وتطبيقات Next.js و React و Node.js المتقدمة.",
+    "Explore production web applications, SaaS platforms, and enterprise software engineered by Rabea Shaban (ربيع شعبان / ربيع الزيات) including EduSphere LMS, Sa2yanti Platform, and Cloud REST APIs with live demos and code.",
   keywords: [
-    "Rabea Shaban Projects",
+    "Projects Rabea Shaban",
+    "rabea shaban",
+    "rabea-shaban",
+    "ربيع شعبان",
+    "ربيع الزيات",
+    "ربيع شعبان الزيات",
+    "rabea elzayate",
+    "rabea elzayat",
+    "rabea sh elzayat",
     "سابقة أعمال ربيع شعبان",
+    "مشاريع ربيع شعبان",
+    "مشاريع ربيع الزيات",
     "EduSphere SaaS LMS",
     "منصة تعليمية سحابية",
     "Sa2yanti Web App",

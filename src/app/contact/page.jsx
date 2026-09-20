@@ -1,12 +1,22 @@
 import ContactView from "@/views/ContactView";
 
 export const metadata = {
-  title: "Contact Rabea Shaban | تواصل معي - توظيف مهندس برمجيات وطلب الاستشارات - ربيع شعبان",
+  title: "Contact Me | تواصل مع ربيع شعبان (الزيات)",
   description:
-    "Get in touch with Rabea Shaban (ربيع شعبان) for full-time software engineering roles, contract consulting, freelance project development, and technical collaboration. Email: rabea.elzayate@gmail.com, WhatsApp: +201156807072. تواصل لطلب الخدمات البرمجية وعروض التوظيف المباشرة.",
+    "Get in touch with Rabea Shaban (ربيع شعبان / ربيع الزيات) for full-time software engineering roles, contract consulting, and freelance project development. Email: rabea.elzayate@gmail.com, WhatsApp: +201156807072.",
   keywords: [
     "Contact Rabea Shaban",
+    "rabea shaban",
+    "rabea-shaban",
+    "ربيع شعبان",
+    "ربيع الزيات",
+    "ربيع شعبان الزيات",
+    "rabea elzayate",
+    "rabea elzayat",
+    "rabea sh elzayat",
+    "rabea sh el-zayat",
     "تواصل مع ربيع شعبان",
+    "تواصل مع ربيع الزيات",
     "Hire Full Stack Engineer",
     "توظيف مهندس برمجيات",
     "Software Engineer WhatsApp Number",

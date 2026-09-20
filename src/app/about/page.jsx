@@ -1,12 +1,22 @@
 import AboutView from "@/views/AboutView";
 
 export const metadata = {
-  title: "About Rabea Shaban | من هو ربيع شعبان - المسيرة المهنية والأكاديمية وخريج مبادرة Digilians",
+  title: "About Me | من هو ربيع شعبان (الزيات)",
   description:
-    "Meet Rabea Shaban (ربيع شعبان) - Senior Full Stack Software Engineer. MIS Bachelor's Degree with Distinction (91.3% / Imtiyaz) & Graduate of Egyptian Military Academy AI-Based Software Development Specialized Diploma (Digilians / MCIT). سيرة ذاتية ومؤهلات ربيع شعبان الأكاديمية والمهنية وخبرات التطوير السحابي.",
+    "Meet Rabea Shaban (ربيع شعبان / ربيع الزيات) - Senior Full Stack Software Engineer, MIS Graduate with Distinction (91.3%), and Egyptian Military Academy (Digilians) AI Diploma Holder. سيرة ذاتية ومؤهلات ربيع شعبان الأكاديمية والمهنية وخبرات التطوير السحابي.",
   keywords: [
     "About Rabea Shaban",
+    "rabea shaban",
+    "rabea-shaban",
+    "ربيع شعبان",
+    "ربيع الزيات",
+    "ربيع شعبان الزيات",
+    "rabea elzayate",
+    "rabea elzayat",
+    "rabea sh elzayat",
+    "rabea sh el-zayat",
     "من هو ربيع شعبان",
+    "من هو ربيع الزيات",
     "سيرة ذاتية مهندس برمجيات",
     "Digilians Initiative Graduate",
     "خريج مبادرة الرواد الرقميون",

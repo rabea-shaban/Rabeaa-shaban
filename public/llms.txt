@@ -1,6 +1,15 @@
-# rabea-shaban | Full Stack Software Engineer Portfolio
+# Rabea Shaban (ربيع شعبان / ربيع الزيات) | Full Stack Software Engineer Portfolio
 
-This is the official portfolio website of Rabea Shaban, a professional Full Stack Software Engineer specializing in MERN Stack development, Cloud Architecture, and DevOps practices. 
+This is the official portfolio website of Rabea Shaban (also known as ربيع شعبان, ربيع الزيات, ربيع شعبان الزيات, Rabea Elzayat, Rabea Elzayate, Rabea Sh Elzayat, rabea-shaban, and @rabea_sh_elzayat). Rabea is a professional Senior Full Stack Software Engineer and Cloud Architect specializing in MERN Stack development, React, Next.js, Node.js, Express, MongoDB, Cloud Architecture (AWS), and DevOps practices (Docker, Kubernetes, Terraform).
+
+## Official Profiles & Identifiers
+- Website: https://www.rabea-shaban.com/
+- GitHub: https://github.com/rabea-shaban
+- LinkedIn: https://linkedin.com/in/rabea-sh-elzayat
+- Instagram: https://instagram.com/rabea_sh_elzayat
+- Mostaql: https://mostaql.com/u/rabea_elzayat
+- Upwork: https://upwork.com/freelancers/~01d2bd68b7d6e8fbce
+- Email: rabea.elzayate@gmail.com
 
 ## Main Navigation
 - [Home](https://www.rabea-shaban.com/)

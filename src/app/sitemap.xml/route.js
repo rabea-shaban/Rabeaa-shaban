@@ -11,43 +11,21 @@ export async function GET() {
     { path: "/contact", priority: "0.8", changefreq: "monthly" },
   ];
 
-  const pages = [];
-
-  routes.forEach((r) => {
+  const pages = routes.map((r) => {
     const cleanPath = r.path;
-    const defaultUrl = `${baseUrl}${cleanPath || "/"}`;
+    const pageUrl = `${baseUrl}${cleanPath || "/"}`;
     const enUrl = `${baseUrl}/en${cleanPath}`;
     const arUrl = `${baseUrl}/ar${cleanPath}`;
 
-    // Root page entry
-    pages.push({
-      loc: defaultUrl,
+    return {
+      loc: pageUrl,
       enLoc: enUrl,
       arLoc: arUrl,
+      defaultLoc: pageUrl,
       lastmod: currentDate,
       changefreq: r.changefreq,
       priority: r.priority,
-    });
-
-    // Dedicated /en entry
-    pages.push({
-      loc: enUrl,
-      enLoc: enUrl,
-      arLoc: arUrl,
-      lastmod: currentDate,
-      changefreq: r.changefreq,
-      priority: (parseFloat(r.priority) * 0.95).toFixed(2),
-    });
-
-    // Dedicated /ar entry
-    pages.push({
-      loc: arUrl,
-      enLoc: enUrl,
-      arLoc: arUrl,
-      lastmod: currentDate,
-      changefreq: r.changefreq,
-      priority: (parseFloat(r.priority) * 0.95).toFixed(2),
-    });
+    };
   });
 
   const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
@@ -59,7 +37,7 @@ ${pages
     <loc>${page.loc}</loc>
     <xhtml:link rel="alternate" hreflang="en" href="${page.enLoc}" />
     <xhtml:link rel="alternate" hreflang="ar" href="${page.arLoc}" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="${baseUrl}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${page.defaultLoc}" />
     <lastmod>${page.lastmod}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>

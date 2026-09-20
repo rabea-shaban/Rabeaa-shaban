@@ -1,10 +1,22 @@
 import ServicesView from "@/views/ServicesView";
 
 export const metadata = {
-  title: "Software Engineering Services | الخدمات والحلول البرمجية والاستشارات التقنية - ربيع شعبان",
+  title: "Services & Solutions | خدمات واستشارات ربيع شعبان",
   description:
-    "Professional software engineering and freelance consulting services by Rabea Shaban: Full-Stack MERN Web Apps, High-Speed Next.js UI, Scalable REST APIs, AWS Cloud Architecture, Docker & Kubernetes DevOps, and AI Integrations. خدمات تطوير البرمجيات وحلول السحابة وأتمتة DevOps للشركات والمشاريع الناشئة.",
+    "Software engineering and freelance consulting services by Rabea Shaban (ربيع شعبان / ربيع الزيات): Full-Stack MERN Web Apps, Next.js UI, Scalable REST APIs, AWS Cloud Architecture, and Docker & Kubernetes DevOps.",
   keywords: [
+    "Services Rabea Shaban",
+    "rabea shaban",
+    "rabea-shaban",
+    "ربيع شعبان",
+    "ربيع الزيات",
+    "ربيع شعبان الزيات",
+    "rabea elzayate",
+    "rabea elzayat",
+    "rabea sh elzayat",
+    "خدمات ربيع شعبان",
+    "خدمات ربيع الزيات",
+    "استشارات ربيع شعبان البرمجية",
     "Hire Full Stack Developer",
     "توظيف مطور برمجيات",
     "خدمات تطوير المواقع",
