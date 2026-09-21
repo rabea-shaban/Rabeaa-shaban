@@ -15,12 +15,12 @@ const domain = config.domain.replace(/\/$/, ''); // Remove trailing slash if any
 
 // 2. Define Sitemap pages
 const pages = [
-  { path: '/', priority: '1.0', changefreq: 'monthly' },
-  { path: '/about', priority: '0.8', changefreq: 'monthly' },
-  { path: '/projects', priority: '0.9', changefreq: 'monthly' },
-  { path: '/services', priority: '0.8', changefreq: 'monthly' },
-  { path: '/contact', priority: '0.7', changefreq: 'monthly' },
-  { path: '/certificates', priority: '0.7', changefreq: 'monthly' }
+  { path: '/', priority: '1.0', changefreq: 'daily' },
+  { path: '/about', priority: '0.9', changefreq: 'weekly' },
+  { path: '/projects', priority: '0.9', changefreq: 'weekly' },
+  { path: '/services', priority: '0.8', changefreq: 'weekly' },
+  { path: '/certificates', priority: '0.9', changefreq: 'weekly' },
+  { path: '/contact', priority: '0.8', changefreq: 'monthly' }
 ];
 
 const currentDate = new Date().toISOString().split('T')[0];

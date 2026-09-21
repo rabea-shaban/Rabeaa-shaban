@@ -10,9 +10,9 @@ export const useSEO = ({ title, description, keywords, canonicalUrl }) => {
 
     // 1. Update Document Title
     if (title) {
-      document.title = isAr 
-        ? `${title} | ربيع شعبان - مهندس برمجيات` 
-        : `${title} | Rabea Shaban - Full Stack Software Engineer`;
+      document.title = title.includes("Rabea Shaban") || title.includes("ربيع شعبان")
+        ? title
+        : (isAr ? `${title} | ربيع شعبان` : `${title} | Rabea Shaban`);
     }
 
     // Helper to create or update meta tag
@@ -28,15 +28,12 @@ export const useSEO = ({ title, description, keywords, canonicalUrl }) => {
     };
 
     // Helper to create or update link tag
-    const setLinkTag = (rel, hreflang, href) => {
+    const setLinkTag = (rel, href) => {
       if (!href) return;
-      let link = hreflang 
-        ? document.querySelector(`link[rel="${rel}"][hreflang="${hreflang}"]`)
-        : document.querySelector(`link[rel="${rel}"]`);
+      let link = document.querySelector(`link[rel="${rel}"]`);
       if (!link) {
         link = document.createElement("link");
         link.setAttribute("rel", rel);
-        if (hreflang) link.setAttribute("hreflang", hreflang);
         document.head.appendChild(link);
       }
       link.setAttribute("href", href);
@@ -45,32 +42,23 @@ export const useSEO = ({ title, description, keywords, canonicalUrl }) => {
     // 2. Standard Meta Tags
     setMetaTag("name", "description", description);
     setMetaTag("name", "keywords", keywords);
-    setMetaTag("http-equiv", "content-language", isAr ? "ar" : "en");
 
     // 3. OpenGraph Tags
-    setMetaTag("property", "og:title", title ? (isAr ? `${title} | ربيع شعبان` : `${title} | Rabea Shaban`) : undefined);
+    setMetaTag("property", "og:title", title ? (title.includes("Rabea Shaban") ? title : `${title} | Rabea Shaban`) : undefined);
     setMetaTag("property", "og:description", description);
     setMetaTag("property", "og:locale", isAr ? "ar_AR" : "en_US");
-    setMetaTag("property", "og:site_name", isAr ? "معرض أعمال ربيع شعبان" : "Rabea Shaban Portfolio");
+    setMetaTag("property", "og:site_name", "Rabea Shaban");
 
     // 4. Twitter Card Tags
-    setMetaTag("name", "twitter:title", title ? (isAr ? `${title} | ربيع شعبان` : `${title} | Rabea Shaban`) : undefined);
+    setMetaTag("name", "twitter:title", title ? (title.includes("Rabea Shaban") ? title : `${title} | Rabea Shaban`) : undefined);
     setMetaTag("name", "twitter:description", description);
 
-    // 5. Canonical and Hreflang Alternates
+    // 5. Canonical URL
     const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
-    const cleanPath = currentPath.replace(/^\/(ar|en)/, '');
     const currentBase = "https://www.rabea-shaban.com";
-    
-    const canonicalTarget = canonicalUrl || `${currentBase}${currentPath}`;
-    const enUrl = `${currentBase}/en${cleanPath}`;
-    const arUrl = `${currentBase}/ar${cleanPath}`;
-    const defaultUrl = `${currentBase}${cleanPath || '/'}`;
+    const canonicalTarget = canonicalUrl || `${currentBase}${currentPath || '/'}`;
 
-    setLinkTag("canonical", null, canonicalTarget);
-    setLinkTag("alternate", "en", enUrl);
-    setLinkTag("alternate", "ar", arUrl);
-    setLinkTag("alternate", "x-default", defaultUrl);
+    setLinkTag("canonical", canonicalTarget);
 
     // 6. Sync HTML attributes
     document.documentElement.setAttribute("lang", isAr ? "ar" : "en");

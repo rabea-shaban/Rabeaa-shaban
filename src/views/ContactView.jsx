@@ -27,14 +27,14 @@ const ContactView = () => {
 
   useSEO({
     title: isAr 
-      ? "تواصل مع ربيع شعبان | لطلب الخدمات البرمجية، التوظيف، والاستشارات التقنية" 
-      : "Contact Rabea Shaban | Hire Full Stack Engineer & Technical Inquiries",
+      ? "تواصل معي | ربيع شعبان — مهندس برمجيات وتطوير ويب شامل" 
+      : "Contact | Rabea Shaban — Full Stack Software Engineer",
     description: isAr
-      ? "تواصل مباشرة مع المهندس ربيع شعبان لطلب تطوير المشاريع البرمجية، عروض التوظيف بدوام كامل أو عن بُعد، والاستشارات التقنية عبر الواتساب أو البريد الإلكتروني أو لينكد إن."
-      : "Get in touch with Rabea Shaban for full-time software engineering roles, contract consulting, or freelance project inquiries. Fast response via Email, WhatsApp (+201156807072), or LinkedIn.",
+      ? "تواصل مباشرة مع المهندس ربيع شعبان لطلب تطوير المشاريع البرمجية، عروض التوظيف، والاستشارات التقنية عبر الواتساب أو البريد الإلكتروني."
+      : "Get in touch with Rabea Shaban for full-stack software development projects, technical consulting, and engineering inquiries.",
     keywords: isAr
-      ? "تواصل مع ربيع شعبان, توظيف مهندس برمجيات, رقم واتساب مهندس برمجيات, طلب تطوير موقع, استشارات تقنية للشركات, مبرمج فريلانسر مصر"
-      : "Contact Rabea Shaban, Hire Full Stack Engineer, Software Engineer WhatsApp, Freelance Developer Egypt Contact, Software Engineer Email, Technical Inquiries"
+      ? "تواصل مع ربيع شعبان, توظيف مهندس برمجيات, ربيع شعبان, مهندس برمجيات"
+      : "Contact Rabea Shaban, Rabea Shaban, Hire Full Stack Engineer, Software Engineering Inquiries"
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -86,6 +86,7 @@ const ContactView = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <SectionHeading
+          as="h1"
           badge={t.contact.badge}
           title={t.contact.title}
           watermark={t.contact.watermark}

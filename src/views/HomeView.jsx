@@ -21,14 +21,14 @@ const HomeView = () => {
 
   useSEO({
     title: isAr 
-      ? "مهندس برمجيات وتطوير ويب شامل وخبير حلول سحابية وذكاء اصطناعي" 
-      : "Senior Full Stack Software Engineer & Cloud Architect (MERN, Next.js, AI)",
+      ? "ربيع شعبان | مهندس برمجيات وتطوير ويب شامل | MERN Stack" 
+      : "Rabea Shaban | Full Stack Software Engineer | MERN Stack",
     description: isAr 
-      ? "الموقع الرسمي للمهندس ربيع شعبان - مهندس برمجيات وتطوير ويب شامل (Full Stack Engineer) متخصص في MERN Stack، وتطبيقات Next.js السريعة، وهندسة السحابة AWS، و DevOps، وتطبيقات الذكاء الاصطناعي."
-      : "Rabea Shaban - Senior Full Stack Software Engineer specializing in MERN Stack, Next.js 16, Node.js, AWS Cloud, Docker, Kubernetes & AI integrations. Available for enterprise roles & freelance.",
+      ? "ربيع شعبان — مهندس برمجيات وتطوير ويب شامل متخصص في MERN Stack و React.js و Next.js و Node.js و TypeScript و MongoDB و AWS."
+      : "Rabea Shaban — Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
     keywords: isAr
-      ? "ربيع شعبان, مهندس برمجيات, مطور ويب شامل, توظيف مبرمج, خبير ريأكت, خبير نكست, مطور نود, مهندس حوسبة سحابية, مهندس ديف أوبس مصر والسعودية, مبرمج مواقع محترف"
-      : "Rabea Shaban, Hire Full Stack Developer, Senior Software Engineer Egypt, MERN Stack Developer, Next.js Expert, React Specialist, Node.js Backend Engineer, Cloud DevOps, AWS Certified, Remote Developer"
+      ? "ربيع شعبان, مهندس برمجيات, مطور ويب شامل, MERN Stack, React, Next.js, Node.js, AWS, TypeScript"
+      : "Rabea Shaban, Full Stack Software Engineer, MERN Stack Developer, React.js Developer, Next.js Developer, Node.js Developer, TypeScript Developer, MongoDB Developer, AWS Developer"
   });
 
   const socialLinks = [
@@ -57,7 +57,7 @@ const HomeView = () => {
             <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-accent to-primary blur-md opacity-75 group-hover:opacity-100 transition duration-500"></div>
             <img
               src={profilePic.src || profilePic}
-              alt="Rabea Shaban Profile"
+              alt="Rabea Shaban — Full Stack Software Engineer"
               className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover border-4 border-background shadow-2xl"
             />
           </motion.div>
@@ -70,6 +70,7 @@ const HomeView = () => {
             className="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-display tracking-tight leading-tight"
           >
             {t.home.greeting} <span className="gradient-text">{isAr ? "ربيع شعبان" : "Rabea Shaban"}</span>
+            <span className="sr-only"> — {isAr ? "مهندس برمجيات وتطوير ويب شامل" : "Full Stack Software Engineer"}</span>
           </motion.h1>
 
           {/* Subtitle & Pill Badge */}
@@ -79,9 +80,9 @@ const HomeView = () => {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="space-y-2"
           >
-            <h2 className="text-xl sm:text-2xl font-bold text-foreground font-display">
+            <p className="text-xl sm:text-2xl font-bold text-foreground font-display">
               {t.home.role}
-            </h2>
+            </p>
             <div className="inline-block px-4 py-1 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full border border-primary/20">
               {t.home.pill}
             </div>
@@ -207,7 +208,7 @@ const HomeView = () => {
                       <div className="relative aspect-video rounded-xl overflow-hidden mb-4 bg-muted">
                         <img
                           src={typeof project.img === 'string' ? project.img : project.img.src || project.img}
-                          alt={projectTitle}
+                          alt={project.alt || `${projectTitle} - Rabea Shaban`}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>

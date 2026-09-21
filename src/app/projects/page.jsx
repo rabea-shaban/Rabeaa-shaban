@@ -1,50 +1,33 @@
 import ProjectsView from "@/views/ProjectsView";
 
 export const metadata = {
-  title: "Projects Showcase | سابقة أعمال ومشاريع ربيع شعبان",
+  title: "Projects | Rabea Shaban — Full Stack Software Engineer",
   description:
-    "Explore production web applications, SaaS platforms, and enterprise software engineered by Rabea Shaban (ربيع شعبان / ربيع الزيات) including EduSphere LMS, Sa2yanti Platform, and Cloud REST APIs with live demos and code.",
+    "Featured software engineering projects and full stack web applications built by Rabea Shaban using React, Next.js, Node.js, Express, MongoDB, TypeScript, and AWS.",
   keywords: [
     "Projects Rabea Shaban",
-    "rabea shaban",
-    "rabea-shaban",
+    "Rabea Shaban",
     "ربيع شعبان",
-    "ربيع الزيات",
-    "ربيع شعبان الزيات",
-    "rabea elzayate",
-    "rabea elzayat",
-    "rabea sh elzayat",
-    "سابقة أعمال ربيع شعبان",
-    "مشاريع ربيع شعبان",
-    "مشاريع ربيع الزيات",
-    "EduSphere SaaS LMS",
-    "منصة تعليمية سحابية",
-    "Sa2yanti Web App",
-    "تطبيق صيانتي لإدارة الخدمات",
-    "AGRSUP E-Commerce Platform",
-    "متجر زراعي إلكتروني",
-    "Production Next.js Projects",
-    "MERN Stack Portfolio Case Studies",
-    "Enterprise Full Stack GitHub",
-    "React Web Applications Egypt",
-    "مشاريع برمجة وتطوير مواقع"
+    "EduSphere",
+    "Pharmacy POS",
+    "Zein Hub",
+    "Sy2antek",
+    "MERN Stack Projects",
+    "Full Stack Software Engineer",
+    "Next.js Projects",
+    "React Applications",
+    "Node.js APIs"
   ],
   alternates: {
     canonical: "https://www.rabea-shaban.com/projects",
-    languages: {
-      "en": "https://www.rabea-shaban.com/en/projects",
-      "ar": "https://www.rabea-shaban.com/ar/projects",
-      "x-default": "https://www.rabea-shaban.com/projects",
-    },
   },
   openGraph: {
-    title: "Projects Showcase | معرض المشروعات البرمجية | Rabea Shaban",
+    title: "Projects | Rabea Shaban — Full Stack Software Engineer",
     description:
-      "A comprehensive portfolio of web applications, enterprise SaaS platforms, e-commerce stores, and cloud backend APIs. معرض المشروعات والتطبيقات الحديثة.",
+      "Featured software engineering projects and full stack web applications built by Rabea Shaban using React, Next.js, Node.js, Express, MongoDB, TypeScript, and AWS.",
     url: "https://www.rabea-shaban.com/projects",
     locale: "en_US",
-    alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],
-    images: ["/og-image.jpg"],
+    images: ["/opengraph-image", "/profile.jpg"],
   },
 };
 

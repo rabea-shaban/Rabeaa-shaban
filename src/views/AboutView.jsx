@@ -38,14 +38,14 @@ const AboutView = () => {
 
   useSEO({
     title: isAr 
-      ? "من هو ربيع شعبان | المسيرة المهنية، دبلومة الرواد الرقميون، وبكالوريوس نظم المعلومات" 
-      : "About Rabea Shaban | Software Engineer Journey, Digilians Diploma & MIS Distinction",
+      ? "من أنا | ربيع شعبان — مهندس برمجيات وتطوير ويب شامل" 
+      : "About Me | Rabea Shaban — Full Stack Software Engineer",
     description: isAr 
-      ? "تعرف على المسيرة المهنية والتعليمية للمهندس ربيع شعبان، خريج دبلومة تطوير البرمجيات بالذكاء الاصطناعي بالأكاديمية العسكرية (مبادرة Digilians) وبكالوريوس نظم المعلومات بتقدير ممتاز مع مرتبة الشرف، وفلسفته في بناء وتطوير الأنظمة البرمجية الحديثة."
-      : "Discover the professional journey, academic distinction (MIS 91.3% / Imtiyaz), and Egyptian Military Academy AI-Based Software Diploma (Digilians / MCIT) of Rabea Shaban. Learn about his engineering philosophy and cloud tech stack.",
+      ? "ربيع شعبان هو مهندس برمجيات وتطوير ويب شامل (Full Stack Software Engineer) متخصص في MERN Stack وتقنيات الويب الحديثة والحوسبة السحابية AWS."
+      : "Rabea Shaban is a Full Stack Software Engineer specializing in the MERN Stack, React.js, Next.js, Node.js, Express.js, TypeScript, MongoDB, and AWS.",
     keywords: isAr
-      ? "من هو ربيع شعبان, سيرة ذاتية مهندس برمجيات, خريج مبادرة الرواد الرقميون, بكالوريوس نظم معلومات إدارية ممتاز, مؤهلات ربيع شعبان, مهندس برمجيات القاهرة"
-      : "About Rabea Shaban, Software Engineer Background, Digilians Initiative Graduate, MIS Degree Excellent Grade, Full Stack Qualifications, Egyptian Military Academy Diploma"
+      ? "من هو ربيع شعبان, ربيع شعبان, مهندس برمجيات, مطور ويب شامل, MERN Stack"
+      : "About Rabea Shaban, Rabea Shaban, Full Stack Software Engineer, MERN Stack Developer"
   });
 
   return (
@@ -58,6 +58,7 @@ const AboutView = () => {
         
         {/* Header */}
         <SectionHeading
+          as="h1"
           badge={t.about.badge}
           title={t.about.title}
           watermark={t.about.watermark}
@@ -105,7 +106,7 @@ const AboutView = () => {
                 <div className="relative rounded-2xl overflow-hidden border-2 border-border/50 bg-card shadow-2xl">
                   <img
                     src={profilePhoto.src || profilePhoto}
-                    alt="Rabea Shaban"
+                    alt="Rabea Shaban — Full Stack Software Engineer"
                     className="w-full h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>

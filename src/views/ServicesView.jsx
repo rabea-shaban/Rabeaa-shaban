@@ -17,14 +17,14 @@ const ServicesView = () => {
 
   useSEO({
     title: isAr 
-      ? "الخدمات والحلول البرمجية | تطوير ويب مخصص، استشارات سحابية، وأتمتة DevOps" 
-      : "Software Engineering Services & Solutions | Full Stack, Cloud & DevOps by Rabea Shaban",
+      ? "الخدمات والحلول | ربيع شعبان — مهندس برمجيات وتطوير ويب شامل" 
+      : "Services & Solutions | Rabea Shaban — Full Stack Software Engineer",
     description: isAr
-      ? "خدمات هندسة برمجية متقدمة للشركات والناشئة: بناء تطبيقات الويب المخصصة، تطوير واجهات برمجة التطبيقات API، النشر السحابي على AWS، إدارة الحاويات بـ Docker و Kubernetes، وأتمتة خطوط الإنتاج CI/CD."
-      : "End-to-end software engineering services by Rabea Shaban: Custom Web App Development, Scalable REST APIs, Cloud Architecture (AWS), Docker & Kubernetes Containerization, Database Design, and AI integration.",
+      ? "خدمات هندسة برمجية متقدمة: بناء تطبيقات ويب متكاملة، واجهات برمجة التطبيقات REST APIs، والنشر السحابي على AWS وإدارة الحاويات Docker و Kubernetes."
+      : "Professional software engineering services by Rabea Shaban: Full Stack Development, React & Next.js UI, Node.js REST APIs, Cloud Deployment, and DevOps.",
     keywords: isAr
-      ? "خدمات تطوير البرمجيات, تصميم مواقع مخصصة, استشارات DevOps مصر والسعودية, بناء واجهات API, تطوير تطبيقات MERN, توظيف مهندس برمجيات"
-      : "Hire React Developer, Custom Software Development, Freelance Software Engineer Egypt, Cloud Migration AWS, Node.js API Service, Docker Kubernetes Consulting"
+      ? "خدمات ربيع شعبان, تطوير تطبيقات ويب, مهندس برمجيات, استشارات سحابية AWS"
+      : "Rabea Shaban Services, Full Stack Development, REST APIs, Cloud Deployment AWS, DevOps"
   });
 
   return (
@@ -35,6 +35,7 @@ const ServicesView = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <SectionHeading
+          as="h1"
           badge={t.services.badge}
           title={t.services.title}
           watermark={t.services.watermark}

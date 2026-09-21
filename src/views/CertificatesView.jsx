@@ -26,14 +26,14 @@ const CertificatesView = () => {
 
   useSEO({
     title: isAr 
-      ? "الشهادات والاعتمادات الرسمية المعتمدة | أمازون AWS، ميتا Meta، معهد ITI، ورواد مصر الرقمية" 
-      : "Verified Technical Credentials & Certifications | AWS, Meta, ITI & Digilians MCIT",
+      ? "الشهادات والاعتمادات | ربيع شعبان — مهندس برمجيات وتطوير ويب شامل" 
+      : "Certificates & Credentials | Rabea Shaban — Full Stack Software Engineer",
     description: isAr
-      ? "الشهادات المهنية المعتمدة والاعتمادات الدولية الحاصل عليها ربيع شعبان من أمازون AWS، شركة Meta العالمية، معهد تكنولوجيا المعلومات ITI، منصة Udacity، ودبلومة مبادرة الرواد الرقميون MCIT."
-      : "Official technical certifications and verified academic credentials of Rabea Shaban: AWS Certified Cloud Practitioner, Meta Front-End Developer Specialization, MIS Distinction Degree, MCIT Digilians Diploma, and ITI certificates.",
+      ? "الشهادات والاعتمادات الرسمية المعتمدة للمهندس ربيع شعبان: ممارس سحابي معتمد من أمازون AWS، مطور واجهات أمامية من Meta، وبكالوريوس نظم المعلومات بتقدير ممتاز."
+      : "Official certifications and technical credentials earned by Rabea Shaban: AWS Certified Cloud Practitioner, Meta Front-End Developer, and MIS Degree.",
     keywords: isAr
-      ? "شهادات معتمدة ربيع شعبان, شهادة أمازون السحابية, شهادة مطور واجهات ميتا, شهادات معهد تكنولوجيا المعلومات, اعتمادات مهندس برمجيات"
-      : "AWS Certified Cloud Practitioner, Meta Certified Front-End Developer, ITI Certified Developer, MCIT Digilians Certificate, Verified Software Engineer Credentials"
+      ? "شهادات ربيع شعبان, AWS Certified Cloud Practitioner, Meta Front-End Developer, اعتمادات مهندس برمجيات"
+      : "Rabea Shaban Certificates, AWS Certified Cloud Practitioner, Meta Front-End Developer, Software Engineer Credentials"
   });
 
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -66,6 +66,7 @@ const CertificatesView = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <SectionHeading
+          as="h1"
           badge={t.certificates.badge}
           title={t.certificates.title}
           watermark={t.certificates.watermark}

@@ -1,52 +1,31 @@
 import ServicesView from "@/views/ServicesView";
 
 export const metadata = {
-  title: "Services & Solutions | خدمات واستشارات ربيع شعبان",
+  title: "Services & Solutions | Rabea Shaban — Full Stack Software Engineer",
   description:
-    "Software engineering and freelance consulting services by Rabea Shaban (ربيع شعبان / ربيع الزيات): Full-Stack MERN Web Apps, Next.js UI, Scalable REST APIs, AWS Cloud Architecture, and Docker & Kubernetes DevOps.",
+    "Professional software engineering services by Rabea Shaban: Full Stack Development, React & Next.js UI, Node.js REST APIs, Cloud Deployment, and DevOps.",
   keywords: [
     "Services Rabea Shaban",
-    "rabea shaban",
-    "rabea-shaban",
+    "Rabea Shaban",
     "ربيع شعبان",
-    "ربيع الزيات",
-    "ربيع شعبان الزيات",
-    "rabea elzayate",
-    "rabea elzayat",
-    "rabea sh elzayat",
-    "خدمات ربيع شعبان",
-    "خدمات ربيع الزيات",
-    "استشارات ربيع شعبان البرمجية",
-    "Hire Full Stack Developer",
-    "توظيف مطور برمجيات",
-    "خدمات تطوير المواقع",
-    "Hire React Engineer Egypt",
-    "MERN Stack Freelancer",
-    "Node.js REST API Development Service",
-    "AWS Cloud Deployment Service",
-    "Docker Containerization Consulting",
-    "Kubernetes Orchestration",
-    "Custom Web App Development",
-    "استشارات DevOps مصر والسعودية",
-    "برمجة تطبيقات سحابية",
-    "بناء منصات التجارة الإلكترونية و SaaS"
+    "Full Stack Development Services",
+    "Frontend Development",
+    "Backend Development",
+    "REST API Development",
+    "Cloud Deployment AWS",
+    "Docker Containerization",
+    "Kubernetes Orchestration"
   ],
   alternates: {
     canonical: "https://www.rabea-shaban.com/services",
-    languages: {
-      "en": "https://www.rabea-shaban.com/en/services",
-      "ar": "https://www.rabea-shaban.com/ar/services",
-      "x-default": "https://www.rabea-shaban.com/services",
-    },
   },
   openGraph: {
-    title: "Services & Solutions | الخدمات والحلول البرمجية | Rabea Shaban",
+    title: "Services & Solutions | Rabea Shaban — Full Stack Software Engineer",
     description:
-      "Expert engineering services from database architecture and full-stack building to containerized deployments, Kubernetes orchestration, and cloud solutions. خدمات برمجية احترافية.",
+      "Professional software engineering services by Rabea Shaban: Full Stack Development, React & Next.js UI, Node.js REST APIs, Cloud Deployment, and DevOps.",
     url: "https://www.rabea-shaban.com/services",
     locale: "en_US",
-    alternateLocale: ["ar_AR", "ar_EG", "ar_SA"],
-    images: ["/og-image.jpg"],
+    images: ["/opengraph-image", "/profile.jpg"],
   },
 };
 

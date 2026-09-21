@@ -11,6 +11,7 @@ interface SectionHeadingProps {
   className?: string;
   align?: 'center' | 'left' | 'right';
   size?: 'normal' | 'large' | 'xl';
+  as?: 'h1' | 'h2' | 'h3';
 }
 
 export const SectionHeading: React.FC<SectionHeadingProps> = ({
@@ -21,7 +22,9 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
   className = '',
   align = 'center',
   size = 'large',
+  as = 'h2',
 }) => {
+  const HeadingTag = as === 'h1' ? motion.h1 : as === 'h3' ? motion.h3 : motion.h2;
   const bgText = watermark || title;
 
   const alignClasses = {
@@ -103,7 +106,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
         </div>
 
         {/* Sharp High-Contrast Foreground Heading */}
-        <motion.h2
+        <HeadingTag
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -111,7 +114,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
           className={`relative z-10 font-black font-display tracking-tight leading-none text-center floating-heading-text ${sizeClasses}`}
         >
           {title}
-        </motion.h2>
+        </HeadingTag>
       </div>
 
       {/* 4. Subtitle */}

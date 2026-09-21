@@ -16,14 +16,14 @@ const ProjectsView = () => {
 
   useSEO({
     title: isAr 
-      ? "معرض المشروعات والأعمال البرمجية | سابقة أعمال ربيع شعبان" 
-      : "Projects & Software Case Studies | Full Stack & Cloud Web Apps by Rabea Shaban",
+      ? "معرض المشروعات | ربيع شعبان — مهندس برمجيات وتطوير ويب شامل" 
+      : "Projects | Rabea Shaban — Full Stack Software Engineer",
     description: isAr
-      ? "استعرض سابقة أعمال ومشاريع برمجية متكاملة تشمل منصات LMS التعليمية، أنظمة نقاط البيع وإدارة الصيدليات POS، مواقع الأعمال والشركات، وتطبيقات الويب الحديثة مع روابط المعاينة الحية وكود المصدر GitHub."
-      : "Explore enterprise full-stack web applications, LMS education platforms, POS pharmacy systems, business websites, and digital portals built by Rabea Shaban with live previews and open GitHub repositories.",
+      ? "استعرض مشروعات وتطبيقات ويب متكاملة قمت بتطويرها تشمل EduSphere و Pharmacy POS و Zein Hub و Sy2antek باستخدام Next.js و React و Node.js و MongoDB و AWS."
+      : "Explore full-stack web applications and software platforms developed by Rabea Shaban including EduSphere, Pharmacy POS, Zein Hub, and Sy2antek.",
     keywords: isAr
-      ? "سابقة أعمال ربيع شعبان, مشاريع ويب حقيقية, منصة EduSphere, نظام Pharmacy POS, منصة Zein Hub, تطبيق صيانِتك, حدائق الراقي, صيدليات الزيات, حدائق الريان, منصة أثر, كود مصدر برمجيات, معرض أعمال Next.js و Node.js"
-      : "Software Engineering Portfolio, EduSphere LMS, Pharmacy POS, Zein Hub, Sy2antek, Production Next.js Projects, MERN Stack Case Studies, Enterprise Web Apps, Full Stack GitHub Projects, React SaaS Apps"
+      ? "مشاريع ربيع شعبان, EduSphere, Pharmacy POS, Zein Hub, Sy2antek, مهندس برمجيات, مطور ويب شامل"
+      : "Rabea Shaban Projects, EduSphere, Pharmacy POS, Zein Hub, Sy2antek, Full Stack Software Engineer, MERN Stack Projects"
   });
 
   const projectCategories = [
@@ -63,6 +63,7 @@ const ProjectsView = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <SectionHeading
+          as="h1"
           badge={t.projects.badge}
           title={t.projects.title}
           watermark={t.projects.watermark}
@@ -151,7 +152,7 @@ const ProjectsView = () => {
                         {project.img ? (
                           <img
                             src={typeof project.img === 'string' ? project.img : project.img.src || project.img}
-                            alt={projectTitle}
+                            alt={project.alt || `${projectTitle} - Rabea Shaban`}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
                         ) : (
@@ -240,7 +241,7 @@ const ProjectsView = () => {
                     <div className="relative aspect-video rounded-2xl overflow-hidden bg-muted">
                       <img
                         src={typeof activeProject.img === 'string' ? activeProject.img : activeProject.img.src || activeProject.img}
-                        alt={modalTitle}
+                        alt={activeProject.alt || `${modalTitle} - Rabea Shaban`}
                         className="w-full h-full object-cover"
                       />
                     </div>

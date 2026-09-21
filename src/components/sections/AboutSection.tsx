@@ -88,7 +88,7 @@ export const AboutSection: React.FC = () => {
               <div className="relative rounded-3xl overflow-hidden border-2 border-border/60 bg-card shadow-2xl">
                 <img
                   src={typeof profilePhoto === 'string' ? profilePhoto : (profilePhoto as any)?.src || '/rabea.jpg'}
-                  alt="Rabea Shaban"
+                  alt="Rabea Shaban — Full Stack Software Engineer"
                   className="w-full h-auto object-cover rounded-3xl group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
