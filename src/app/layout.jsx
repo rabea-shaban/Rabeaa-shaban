@@ -1,13 +1,6 @@
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import MobileDock from "@/components/MobileDock";
-import BackToTop from "@/components/BackToTop";
-import FloatingContact from "@/components/FloatingContact";
-import Footer from "@/components/Footer";
-import LoadingScreen from "@/components/LoadingScreen";
-import { Toaster } from "@/components/ui/toaster";
+import SiteChrome from "@/components/SiteChrome";
 import { ThemeProvider } from "@/contexts/ThemeContext";
-import { CustomizationButton, CustomizationPanel } from "@/components/customization";
 
 export const metadata = {
   metadataBase: new URL("https://www.rabea-shaban.com"),
@@ -176,16 +169,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen bg-background text-foreground antialiased">
         <ThemeProvider>
           <div className="min-h-screen bg-background text-foreground">
-            <LoadingScreen />
-            <Navbar />
-            <MobileDock />
-            <BackToTop />
-            <FloatingContact />
-            <CustomizationButton />
-            <CustomizationPanel />
-            <main>{children}</main>
-            <Footer />
-            <Toaster />
+            <SiteChrome>{children}</SiteChrome>
           </div>
         </ThemeProvider>
       </body>

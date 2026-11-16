@@ -1,0 +1,294 @@
+.cv-page {
+  min-height: 100vh;
+  padding: 16px 20px 52px;
+  background: #000;
+  color: #fff;
+  direction: ltr;
+  font-family: "Outfit", Inter, Arial, sans-serif;
+}
+
+.cv-container {
+  width: min(100%, 1040px);
+  margin: 0 auto;
+}
+
+.cv-hero {
+  display: flex;
+  min-height: 406px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 24px 22px;
+  border: 1px solid #07518b;
+  border-radius: 31px;
+  background: radial-gradient(ellipse at 50% 47%, #0b2548 0%, #061833 68%, #05142c 100%);
+  text-align: center;
+}
+
+.cv-portrait {
+  width: 204px;
+  height: 204px;
+  margin-bottom: 10px;
+  border: 5px solid #0ea5e9;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 28%;
+  background: white;
+}
+
+.cv-hero h1 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: clamp(2rem, 4.3vw, 2.55rem);
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+.cv-title {
+  margin: 6px 0 12px;
+  color: #dbeafe;
+  font-size: clamp(1.25rem, 2.7vw, 1.75rem);
+  line-height: 1.3;
+}
+
+.cv-specialization {
+  margin: 0;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #063e77;
+  color: #22d3ee;
+  font-size: clamp(1rem, 2.2vw, 1.4rem);
+  font-weight: 700;
+}
+
+.cv-personal {
+  display: grid;
+  gap: 9px;
+  padding: 22px 12px 25px;
+  color: #f8fafc;
+  text-align: left;
+}
+
+.cv-personal h2 {
+  margin: 0 0 1px;
+  color: #cbd5e1;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cv-personal p {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.3vw, 1.55rem);
+  line-height: 1.3;
+}
+
+.cv-personal strong {
+  font-weight: 750;
+}
+
+.cv-divider {
+  height: 1px;
+  margin: 0 14px 22px;
+  background: #64748b;
+}
+
+.cv-select h2 {
+  margin: 0 12px 18px;
+  text-align: left;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  font-weight: 750;
+}
+
+.cv-list {
+  display: grid;
+  gap: 12px;
+  padding: 0 4px;
+}
+
+.cv-card {
+  display: grid;
+  min-height: 98px;
+  grid-template-columns: 52px minmax(0, 1fr) 52px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 30px;
+  border: 1px solid #707985;
+  border-radius: 25px;
+  background: #000;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.cv-card:hover {
+  border-color: #38bdf8;
+  background: #050b14;
+  transform: translateY(-1px);
+}
+
+.cv-download,
+.cv-card-copy {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cv-download {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 10px;
+}
+
+.cv-download svg {
+  width: 34px;
+  height: 34px;
+  stroke-width: 1.8;
+}
+
+.cv-card-copy {
+  display: grid;
+  gap: 2px;
+  justify-items: start;
+  text-align: left;
+}
+
+.cv-card-copy:focus-visible,
+.cv-download:focus-visible,
+.cv-social:focus-visible {
+  outline: 3px solid #38bdf8;
+  outline-offset: 4px;
+}
+
+.cv-card-title {
+  font-size: clamp(1.1rem, 2.4vw, 1.55rem);
+  font-weight: 750;
+}
+
+.cv-card-subtitle {
+  color: #e2e8f0;
+  font-size: clamp(0.92rem, 2vw, 1.25rem);
+}
+
+.cv-role-icon {
+  width: 42px;
+  height: 42px;
+  justify-self: end;
+  stroke-width: 2;
+}
+
+.cv-role-icon.frontend { color: #0ea5e9; }
+.cv-role-icon.backend { color: #c084fc; }
+.cv-role-icon.fullstack { color: #00e599; }
+
+.cv-hint {
+  margin: 30px 0 56px;
+  color: #cbd5e1;
+  font-size: clamp(1rem, 2.2vw, 1.35rem);
+  text-align: center;
+}
+
+.cv-socials {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid #40546c;
+  border-radius: 29px;
+  background: linear-gradient(115deg, #07101b, #02070d);
+}
+
+.cv-social {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px 12px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+
+.cv-social:hover { background: #0b1725; }
+
+.cv-social + .cv-social::before {
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 0;
+  width: 1px;
+  background: #40546c;
+  content: "";
+}
+
+.cv-social-icon {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  color: #22d3ee;
+}
+
+.cv-social-icon > svg,
+.cv-social-brand-icon { width: 50px; height: 50px; }
+
+.cv-linkedin-icon {
+  width: 52px;
+  height: 52px;
+  padding: 5px;
+  border-radius: 10px;
+  background: #0a66c2;
+  color: white;
+}
+
+.cv-social:nth-child(2) .cv-social-icon { color: #fff; }
+
+.cv-social-label {
+  font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+  font-weight: 700;
+}
+
+.cv-social-url {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 7px;
+  color: #38bdf8;
+  font-size: clamp(0.82rem, 1.7vw, 1.05rem);
+  overflow-wrap: anywhere;
+}
+
+.cv-social-url svg { width: 18px; height: 18px; flex: 0 0 auto; }
+
+@media (max-width: 640px) {
+  .cv-page { padding: 12px 12px 30px; }
+  .cv-hero { min-height: 320px; padding: 20px 14px; border-radius: 25px; }
+  .cv-portrait { width: 150px; height: 150px; margin-bottom: 9px; border-width: 4px; }
+  .cv-personal { gap: 10px; padding: 21px 4px 23px; }
+  .cv-personal h2 { font-size: 1rem; }
+  .cv-personal p { font-size: clamp(1rem, 4.2vw, 1.2rem); }
+  .cv-divider { margin: 0 4px 19px; }
+  .cv-select h2 { margin: 0 5px 15px; }
+  .cv-list { gap: 10px; padding: 0; }
+  .cv-card { min-height: 84px; grid-template-columns: 40px minmax(0, 1fr) 38px; gap: 8px; padding: 9px 13px; border-radius: 21px; }
+  .cv-download { width: 38px; height: 38px; }
+  .cv-download svg { width: 29px; height: 29px; }
+  .cv-role-icon { width: 32px; height: 32px; }
+  .cv-card-subtitle { font-size: clamp(0.82rem, 3.3vw, 1rem); }
+  .cv-hint { margin: 24px 0 35px; }
+  .cv-socials { grid-template-columns: 1fr; border-radius: 24px; }
+  .cv-social { min-height: 132px; gap: 5px; padding: 14px 10px; }
+  .cv-social + .cv-social::before { top: 0; right: 12%; bottom: auto; left: 12%; width: auto; height: 1px; }
+  .cv-social-icon { width: 42px; height: 42px; }
+  .cv-social-icon > svg,
+  .cv-social-brand-icon { width: 39px; height: 39px; }
+  .cv-linkedin-icon { width: 40px; height: 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv-card, .cv-social { transition: none; }
+}
