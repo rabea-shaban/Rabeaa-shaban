@@ -29,11 +29,11 @@ const CertificatesView = () => {
       ? "الشهادات والاعتمادات | ربيع شعبان — مهندس برمجيات وتطوير ويب شامل" 
       : "Certificates & Credentials | Rabea Shaban — Full Stack Software Engineer",
     description: isAr
-      ? "الشهادات والاعتمادات الرسمية المعتمدة للمهندس ربيع شعبان: ممارس سحابي معتمد من أمازون AWS، مطور واجهات أمامية من Meta، وبكالوريوس نظم المعلومات بتقدير ممتاز."
-      : "Official certifications and technical credentials earned by Rabea Shaban: AWS Certified Cloud Practitioner, Meta Front-End Developer, and MIS Degree.",
+      ? "الشهادات والاعتمادات الرسمية المعتمدة للمهندس ربيع شعبان: شهادتا AWS Certified Cloud Practitioner وAWS Certified Developer - Associate، وشهادة Meta Front-End Developer، وبكالوريوس نظم المعلومات."
+      : "Official certifications and technical credentials earned by Rabea Shaban, including AWS Certified Cloud Practitioner, AWS Certified Developer - Associate, Meta Front-End Developer, and an MIS degree.",
     keywords: isAr
-      ? "شهادات ربيع شعبان, AWS Certified Cloud Practitioner, Meta Front-End Developer, اعتمادات مهندس برمجيات"
-      : "Rabea Shaban Certificates, AWS Certified Cloud Practitioner, Meta Front-End Developer, Software Engineer Credentials"
+      ? "شهادات ربيع شعبان, AWS Certified Cloud Practitioner, AWS Certified Developer Associate, Meta Front-End Developer, اعتمادات مهندس برمجيات"
+      : "Rabea Shaban Certificates, AWS Certified Cloud Practitioner, AWS Certified Developer Associate, Meta Front-End Developer, Software Engineer Credentials"
   });
 
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -110,7 +110,7 @@ const CertificatesView = () => {
                   onClick={() => setSelectedCategory(cat.id)}
                   className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold transition-all duration-200 ${
                     isSelected
-                      ? "bg-primary text-white shadow-[0_4px_15px_rgba(139,39,242,0.3)] scale-105"
+                      ? "bg-primary text-white shadow-[0_4px_15px_rgba(var(--primary-rgb),0.35)] scale-105"
                       : "glass-effect border border-border/40 text-muted-foreground hover:text-foreground hover:border-primary/40"
                   }`}
                 >
@@ -259,6 +259,22 @@ const CertificatesView = () => {
                 <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                   {isAr && activeCertificate.descriptionAr ? activeCertificate.descriptionAr : activeCertificate.description}
                 </p>
+                {activeCertificate.expirationDate && (
+                  <p className="text-xs text-muted-foreground mb-3">
+                    {isAr ? "تاريخ الانتهاء:" : "Expiration date:"} {activeCertificate.expirationDate}
+                  </p>
+                )}
+                {activeCertificate.validationNumber && (
+                  <a
+                    href={activeCertificate.validationUrl || "https://aws.amazon.com/verification"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-xs font-semibold text-primary hover:underline mb-5"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    {isAr ? "رقم التحقق: " : "Validation number: "}{activeCertificate.validationNumber}
+                  </a>
+                )}
                 <div className="flex justify-end gap-3">
                   <Button variant="outline" onClick={() => setActiveCertificate(null)}>
                     {isAr ? "إغلاق" : "Close"}

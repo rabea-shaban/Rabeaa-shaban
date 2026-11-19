@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">Rabea Shaban developer profile banner</title>
+  <desc id="desc">A dark navy digital workspace with cyan and violet pathways and a glass code panel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset=".58" stop-color="#111827"/>
+      <stop offset="1" stop-color="#17122b"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1=".4" x2="1" y2=".6">
+      <stop stop-color="#27d7f2"/>
+      <stop offset=".58" stop-color="#7c74ff"/>
+      <stop offset="1" stop-color="#f3a15b"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#16314a" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#181631" stop-opacity=".72"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="44%" r="65%">
+      <stop stop-color="#7048d7" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#07111f" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#9db9df" stroke-opacity=".075" stroke-width="1"/>
+    </pattern>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1200" height="330" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="330" rx="22" fill="url(#glow)"/>
+  <rect width="1200" height="330" rx="22" fill="url(#grid)"/>
+  <ellipse cx="905" cy="266" rx="250" ry="52" fill="#662ee5" opacity=".18" filter="url(#blur)"/>
+  <path d="M0 260 C150 228 240 285 370 252 S600 200 710 234 S880 283 1010 203 S1130 160 1200 175" fill="none" stroke="url(#path)" stroke-opacity=".22" stroke-width="22" filter="url(#blur)"/>
+  <path d="M0 260 C150 228 240 285 370 252 S600 200 710 234 S880 283 1010 203 S1130 160 1200 175" fill="none" stroke="url(#path)" stroke-width="2.5"/>
+  <circle cx="378" cy="251" r="5" fill="#54e5f5"/>
+  <circle cx="708" cy="234" r="5" fill="#a9a0ff"/>
+  <circle cx="1011" cy="203" r="5" fill="#ffc37f"/>
+  <g transform="translate(714 40)">
+    <rect x="14" y="12" width="370" height="214" rx="18" fill="#6f44db" opacity=".17"/>
+    <rect x="0" y="0" width="370" height="214" rx="18" fill="url(#glass)" stroke="#86dfff" stroke-opacity=".35"/>
+    <rect x="0" y="0" width="370" height="36" rx="18" fill="#ffffff" fill-opacity=".055"/>
+    <path d="M0 36H370" stroke="#d7edff" stroke-opacity=".14"/>
+    <circle cx="23" cy="18" r="4" fill="#f3a15b"/>
+    <circle cx="39" cy="18" r="4" fill="#8d7aff"/>
+    <circle cx="55" cy="18" r="4" fill="#36d3ec"/>
+    <rect x="27" y="66" width="88" height="7" rx="3.5" fill="#45d8f2"/>
+    <rect x="128" y="66" width="124" height="7" rx="3.5" fill="#8875ff"/>
+    <rect x="45" y="91" width="165" height="7" rx="3.5" fill="#9db8d6" fill-opacity=".68"/>
+    <rect x="63" y="116" width="117" height="7" rx="3.5" fill="#43d8ed"/>
+    <rect x="193" y="116" width="87" height="7" rx="3.5" fill="#b18aff"/>
+    <rect x="45" y="141" width="139" height="7" rx="3.5" fill="#9db8d6" fill-opacity=".58"/>
+    <rect x="63" y="166" width="82" height="7" rx="3.5" fill="#8c79ff"/>
+    <rect x="158" y="166" width="115" height="7" rx="3.5" fill="#45d8f2"/>
+  </g>
+  <g transform="translate(1016 187)">
+    <rect x="0" y="0" width="104" height="91" rx="15" fill="#172137" stroke="#8ce1f7" stroke-opacity=".52"/>
+    <rect x="10" y="10" width="84" height="71" rx="10" fill="#9d7aff" fill-opacity=".16"/>
+    <path d="M25 35 36 45 25 55M48 57h30" fill="none" stroke="#c7eefa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M60 54H470" stroke="#74dcf4" stroke-opacity=".10"/>
+  <path d="M60 274H305" stroke="#9c85ff" stroke-opacity=".13"/>
+</svg>

@@ -10,6 +10,7 @@ export async function GET() {
     { path: "/certificates", priority: "0.9", changefreq: "weekly" },
     { path: "/contact", priority: "0.8", changefreq: "monthly" },
     { path: "/cv", priority: "0.7", changefreq: "monthly" },
+    { path: "/privacy", priority: "0.6", changefreq: "monthly" },
   ];
 
   const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>

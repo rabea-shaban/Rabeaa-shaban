@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, RotateCcw, Sliders, Sparkles } from 'lucide-react';
+import { X, RotateCcw, Sliders, Palette } from 'lucide-react';
 import { useSettings } from '@/context/SettingsContext';
 import ThemeSelector from './ThemeSelector';
 import AccentColorSelector from './AccentColorSelector';
@@ -75,7 +75,7 @@ export const CustomizationPanel: React.FC = () => {
                 <div>
                   <h2 className="text-base font-bold font-display text-foreground flex items-center gap-1.5">
                     <span>{isRtl ? 'تخصيص الواجهة' : 'Customize UI'}</span>
-                    <Sparkles className="w-3.5 h-3.5 text-primary" />
+                    <Palette className="w-3.5 h-3.5 text-primary" />
                   </h2>
                   <p className="text-xs text-muted-foreground">
                     {isRtl ? 'خصص شكل وتجربة الموقع كما تفضل' : 'Personalize your portfolio experience'}

@@ -12,11 +12,7 @@ import {
   GraduationCap,
   Briefcase,
   MapPin,
-  Calendar,
-  Sparkles,
-  Award,
-  CheckCircle2,
-  BookOpen
+  Calendar
 } from "lucide-react";
 import { experience } from "@/Data/experience";
 import { skills } from "@/Data/skills";
@@ -38,14 +34,14 @@ const AboutView = () => {
 
   useSEO({
     title: isAr 
-      ? "من أنا | ربيع شعبان — مهندس برمجيات وتطوير ويب شامل" 
-      : "About Me | Rabea Shaban — Full Stack Software Engineer",
+      ? "من أنا | ربيع شعبان — مهندس برمجيات Full-Stack"
+      : "About Me | Rabea Shaban — Full-Stack Software Engineer",
     description: isAr 
-      ? "ربيع شعبان هو مهندس برمجيات وتطوير ويب شامل (Full Stack Software Engineer) متخصص في MERN Stack وتقنيات الويب الحديثة والحوسبة السحابية AWS."
-      : "Rabea Shaban is a Full Stack Software Engineer specializing in the MERN Stack, React.js, Next.js, Node.js, Express.js, TypeScript, MongoDB, and AWS.",
+      ? "ربيع شعبان مهندس برمجيات Full-Stack متخصص في MERN Stack وReact وNext.js وNode.js وTypeScript وMongoDB وAWS، ودرس تطوير البرمجيات في مبادرة Digilians وخاض تدريبات عملية في تطوير الواجهات والأنظمة الخلفية."
+      : "Rabea Shaban is a Full-Stack Software Engineer specializing in MERN, React, Next.js, Node.js, TypeScript, MongoDB, and AWS, with Digilians software development studies and hands-on frontend and backend training.",
     keywords: isAr
-      ? "من هو ربيع شعبان, ربيع شعبان, مهندس برمجيات, مطور ويب شامل, MERN Stack"
-      : "About Rabea Shaban, Rabea Shaban, Full Stack Software Engineer, MERN Stack Developer"
+      ? "من هو ربيع شعبان, ربيع شعبان, مهندس برمجيات, مطور ويب شامل, MERN Stack, AWS Certified Developer Associate"
+      : "About Rabea Shaban, Rabea Shaban, Full Stack Software Engineer, MERN Stack Developer, AWS Certified Developer Associate"
   });
 
   return (
@@ -182,12 +178,12 @@ const AboutView = () => {
                   className="glass-effect rounded-2xl p-6 border border-border/40 hover:border-primary/40 transition-all space-y-4"
                 >
                   <div className="flex flex-wrap items-center justify-between gap-2">
-                    <h3 className="text-lg font-bold font-display text-foreground">{exp.title}</h3>
+                    <h3 className="text-lg font-bold font-display text-foreground">{isAr && exp.titleAr ? exp.titleAr : exp.title}</h3>
                     <span className="px-3 py-0.5 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">
-                      {exp.period}
+                      {isAr && exp.periodAr ? exp.periodAr : exp.period}
                     </span>
                   </div>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{exp.description}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{isAr && exp.descriptionAr ? exp.descriptionAr : exp.description}</p>
                   <div className="flex flex-wrap gap-1.5 pt-2">
                     {exp.skills?.map((skill, sIdx) => (
                       <span key={sIdx} className="px-2.5 py-0.5 rounded text-[10px] font-semibold bg-muted text-muted-foreground">

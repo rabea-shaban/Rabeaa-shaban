@@ -5,7 +5,7 @@ import React, { createContext, useContext, useEffect, useState, useCallback } fr
 import { translations, TranslationDict } from '@/translations/dictionary';
 
 export type Theme = 'light' | 'dark' | 'system';
-export type AccentColor = 'blue' | 'purple' | 'green' | 'orange' | 'red' | 'yellow';
+export type AccentColor = 'blue' | 'cyan' | 'green' | 'orange' | 'red' | 'yellow';
 export type Language = 'en' | 'ar';
 export type ButtonStyle = 'rounded' | 'medium' | 'sharp';
 export type FontSize = 'small' | 'medium' | 'large';
@@ -55,7 +55,7 @@ const SettingsContext = createContext<SettingsContextType | undefined>(undefined
 // Accent colors color definition tokens (Light and Dark HSL values)
 export const ACCENT_PRESETS = [
   { id: 'blue', name: 'Royal Blue', hex: '#3B66F5', lightHsl: '228 92% 58%', darkHsl: '217 91% 60%' },
-  { id: 'purple', name: 'Cyber Violet', hex: '#8B27F2', lightHsl: '269 90% 55%', darkHsl: '270 95% 65%' },
+  { id: 'cyan', name: 'Cyber Cyan', hex: '#06B6D4', lightHsl: '189 94% 43%', darkHsl: '189 94% 48%' },
   { id: 'green', name: 'Emerald', hex: '#10B981', lightHsl: '158 64% 45%', darkHsl: '150 100% 45%' },
   { id: 'orange', name: 'Coral Sunset', hex: '#F97316', lightHsl: '25 95% 53%', darkHsl: '27 96% 55%' },
   { id: 'red', name: 'Crimson', hex: '#F43F5E', lightHsl: '350 89% 55%', darkHsl: '350 92% 60%' },
@@ -74,6 +74,9 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       const stored = localStorage.getItem(SETTINGS_STORAGE_KEY);
       if (stored) {
         const parsed = JSON.parse(stored);
+        if (parsed.accentColor === 'purple') {
+          parsed.accentColor = 'cyan';
+        }
         setSettings((prev) => ({ ...prev, ...parsed }));
       }
     } catch (e) {

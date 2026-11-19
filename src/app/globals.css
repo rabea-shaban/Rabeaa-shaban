@@ -77,7 +77,7 @@
 }
 
 /* ==========================================================================
-   Dynamic Accent Colors (Blue, Purple, Green, Orange, Red, Yellow)
+   Dynamic Accent Colors (Blue, Cyan, Green, Orange, Red, Yellow)
    ========================================================================== */
 
 /* 1. BLUE */
@@ -98,22 +98,23 @@
   --ring: 217 91% 60%;
 }
 
-/* 2. PURPLE */
-[data-accent="purple"] {
-  --primary: 269 90% 55%;
+/* 2. CYAN */
+[data-accent="cyan"], [data-accent="purple"] {
+  --primary: 189 94% 43%;
   --primary-foreground: 0 0% 100%;
-  --primary-rgb: 139, 39, 242;
-  --accent: 269 90% 55%;
+  --primary-rgb: 6, 182, 212;
+  --accent: 189 94% 43%;
   --accent-foreground: 0 0% 100%;
-  --ring: 269 90% 55%;
+  --ring: 189 94% 43%;
 }
+.dark[data-accent="cyan"], [data-theme="dark"][data-accent="cyan"],
 .dark[data-accent="purple"], [data-theme="dark"][data-accent="purple"] {
-  --primary: 270 95% 65%;
-  --primary-foreground: 0 0% 100%;
-  --primary-rgb: 168, 85, 247;
-  --accent: 270 95% 65%;
-  --accent-foreground: 0 0% 100%;
-  --ring: 270 95% 65%;
+  --primary: 189 94% 48%;
+  --primary-foreground: 0 0% 7%;
+  --primary-rgb: 6, 182, 212;
+  --accent: 189 94% 48%;
+  --accent-foreground: 0 0% 7%;
+  --ring: 189 94% 48%;
 }
 
 /* 3. GREEN */
@@ -457,7 +458,7 @@ button.bg-primary:hover, a.bg-primary:hover {
   color: #0f172a;
   text-shadow: 
     0 2px 4px rgba(15, 23, 42, 0.05),
-    0 10px 24px rgba(99, 102, 241, 0.12),
+    0 10px 24px rgba(59, 130, 246, 0.12),
     0 20px 40px rgba(15, 23, 42, 0.08);
 }
 

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Filter, Github, Search, X, Check, Code, Layers, Sparkles } from "lucide-react";
+import { ExternalLink, Filter, Github, Search, X, Check, Code, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { projects } from "@/Data/projects";
@@ -105,7 +105,7 @@ const ProjectsView = () => {
                   onClick={() => setSelectedCategory(cat.id)}
                   className={`px-4 py-2 rounded-full text-xs font-bold transition-all duration-200 ${
                     isSelected
-                      ? "bg-primary text-white shadow-[0_4px_15px_rgba(139,39,242,0.3)] scale-105"
+                      ? "bg-primary text-white shadow-[0_4px_15px_rgba(var(--primary-rgb),0.35)] scale-105"
                       : "glass-effect border border-border/40 text-muted-foreground hover:text-foreground hover:border-primary/40"
                   }`}
                 >
@@ -157,7 +157,7 @@ const ProjectsView = () => {
                           />
                         ) : (
                           <div className="w-full h-full flex items-center justify-center bg-primary/10">
-                            <Sparkles className="w-10 h-10 text-primary/40" />
+                            <Code className="w-10 h-10 text-primary/40" />
                           </div>
                         )}
                         {project.featured && (

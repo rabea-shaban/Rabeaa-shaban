@@ -73,6 +73,28 @@ export const certificates = [
     image: "/aws-cloud-practitioner-cert.png",
   },
   {
+    id: 102,
+    title: "AWS Certified Developer - Associate",
+    titleAr: "شهادة مطور معتمد من AWS - المستوى المساعد",
+    issuer: "Amazon Web Services (AWS)",
+    issuerAr: "أمازون لخدمات الويب (AWS)",
+    date: "November 3, 2026",
+    expirationDate: "November 3, 2029",
+    validationNumber: "ba20175fea6b421c8d4376330f4e8d79",
+    validationUrl: "https://aws.amazon.com/verification",
+    category: "Cloud",
+    categoryAr: "الحوسبة السحابية",
+    grade: "Official Certification",
+    gradeAr: "شهادة مهنية دولية معتمدة",
+    description:
+      "Official AWS Certified Developer - Associate certification, issued November 3, 2026 and valid through November 3, 2029.",
+    descriptionAr:
+      "شهادة AWS Certified Developer - Associate الرسمية، صادرة في 3 نوفمبر 2026 وصالحة حتى 3 نوفمبر 2029.",
+    icon: Cloud,
+    verified: true,
+    image: "/aws-developer-associate-cert.jpg",
+  },
+  {
     id: 2,
     title: "Meta Front-End Developer",
     titleAr: "شهادة مطور واجهات أمامية محترف من ميتا",

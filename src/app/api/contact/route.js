@@ -33,7 +33,7 @@ export async function POST(request) {
         subject: `[Portfolio Contact] ${subject || 'New Contact Form Submission'}`,
         html: `
           <div style="font-family: Arial, sans-serif; padding: 20px; color: #333; line-height: 1.6;">
-            <h2 style="color: #8B27F2;">New Portfolio Message Received</h2>
+            <h2 style="color: #2563EB;">New Portfolio Message Received</h2>
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
             <p><strong>Subject:</strong> ${subject || 'N/A'}</p>

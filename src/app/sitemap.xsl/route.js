@@ -17,7 +17,7 @@ export async function GET() {
         <style>
           body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0b0719;
+            background-color: #090d16;
             color: #e2e8f0;
             margin: 0;
             padding: 40px 20px;
@@ -44,7 +44,7 @@ export async function GET() {
             font-size: 24px;
             font-weight: 800;
             margin: 0;
-            color: #8B27F2;
+            color: #3b82f6;
           }
           p.subtitle {
             font-size: 13px;
@@ -52,9 +52,9 @@ export async function GET() {
             margin: 5px 0 0 0;
           }
           .badge {
-            background: rgba(139, 39, 242, 0.15);
-            color: #c084fc;
-            border: 1px solid rgba(139, 39, 242, 0.3);
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.3);
             padding: 6px 14px;
             border-radius: 20px;
             font-size: 12px;

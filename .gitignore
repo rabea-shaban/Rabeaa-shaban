@@ -76,3 +76,9 @@ coverage/
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+.vercel
+.env*
+!.env.example
+tmp/
+*.zip

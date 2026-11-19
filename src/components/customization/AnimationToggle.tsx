@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Sparkles, EyeOff } from 'lucide-react';
+import { Activity, EyeOff } from 'lucide-react';
 import { useSettings } from '@/context/SettingsContext';
 
 export const AnimationToggle: React.FC = () => {
@@ -16,7 +16,7 @@ export const AnimationToggle: React.FC = () => {
           }`}
         >
           {settings.animations ? (
-            <Sparkles className="w-4 h-4" />
+            <Activity className="w-4 h-4" />
           ) : (
             <EyeOff className="w-4 h-4" />
           )}

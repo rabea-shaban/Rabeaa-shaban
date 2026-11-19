@@ -21,11 +21,11 @@ const HomeView = () => {
 
   useSEO({
     title: isAr 
-      ? "ربيع شعبان | مهندس برمجيات وتطوير ويب شامل | MERN Stack" 
-      : "Rabea Shaban | Full Stack Software Engineer | MERN Stack",
+      ? "ربيع شعبان | مهندس برمجيات Full-Stack | MERN Stack"
+      : "Rabea Shaban | Full-Stack Software Engineer | MERN Stack",
     description: isAr 
-      ? "ربيع شعبان — مهندس برمجيات وتطوير ويب شامل متخصص في MERN Stack و React.js و Next.js و Node.js و TypeScript و MongoDB و AWS."
-      : "Rabea Shaban — Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
+      ? "ربيع شعبان — مهندس برمجيات Full-Stack يبني تطبيقات ويب متكاملة باستخدام MERN Stack وReact وNext.js وNode.js وTypeScript وMongoDB وAWS."
+      : "Rabea Shaban is a Full-Stack Software Engineer building end-to-end web applications with React, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
     keywords: isAr
       ? "ربيع شعبان, مهندس برمجيات, مطور ويب شامل, MERN Stack, React, Next.js, Node.js, AWS, TypeScript"
       : "Rabea Shaban, Full Stack Software Engineer, MERN Stack Developer, React.js Developer, Next.js Developer, Node.js Developer, TypeScript Developer, MongoDB Developer, AWS Developer"

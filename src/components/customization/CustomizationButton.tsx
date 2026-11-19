@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Settings, Sparkles } from 'lucide-react';
+import { Settings } from 'lucide-react';
 import { useSettings } from '@/context/SettingsContext';
 
 export const CustomizationButton: React.FC = () => {
@@ -38,7 +38,7 @@ export const CustomizationButton: React.FC = () => {
           <Settings className="w-5 h-5 group-hover:text-primary transition-colors" />
         </motion.div>
 
-        {/* Sparkle badge on top right */}
+        {/* Notification badge on top right */}
         <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
           <span className="relative inline-flex rounded-full h-3 w-3 bg-primary" />

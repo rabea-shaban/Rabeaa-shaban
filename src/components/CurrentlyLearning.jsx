@@ -32,7 +32,7 @@ const learningItems = [
     name: "Kubernetes", 
     icon: Network, 
     desc: "Studying container orchestration, microservices scheduling, service load balancing, and configuration management in sandbox clusters.", 
-    color: "from-indigo-500/20 to-blue-600/10 text-indigo-400" 
+    color: "from-blue-600/20 to-sky-600/10 text-blue-400" 
   },
   { 
     name: "Helm", 
@@ -44,7 +44,7 @@ const learningItems = [
     name: "Terraform", 
     icon: Cpu, 
     desc: "Understanding Infrastructure as Code (IaC) syntax, state management, provider settings, and modular setups for cloud provisioning.", 
-    color: "from-purple-500/20 to-violet-600/10 text-purple-400" 
+    color: "from-teal-500/20 to-emerald-600/10 text-teal-400" 
   },
   { 
     name: "GitHub Actions", 
