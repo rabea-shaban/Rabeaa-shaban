@@ -8,12 +8,12 @@ export const timelineData = [
     titleAr: "مبادرة الرواد الرقميون الرئاسية (Digilians)",
     subtitle: "AI-Based Software Development Specialized Diploma",
     subtitleAr: "الدبلومة التخصصية في تطوير البرمجيات القائمة على الذكاء الاصطناعي",
-    date: "12/2025 – 08/2026",
-    dateAr: "12/2025 – 08/2026",
+    date: "Dec 2025 – Sep 2026",
+    dateAr: "ديسمبر 2025 – سبتمبر 2026",
     description:
-      "Full-time intensive residential training under the Presidential Pioneers Initiative at the Egyptian Military Academy (Heliopolis, Cairo), organized by MCIT. Focuses on advanced software engineering, MERN stack, AI models integration, cloud platforms, DevOps architecture, agile lifecycles, and leadership communication.",
+      "Completed full-time intensive training under the Presidential Pioneers Initiative at the Egyptian Military Academy (Heliopolis, Cairo), organized by MCIT. Studied software engineering, MERN stack, AI integration, AWS cloud architecture, DevOps, and agile delivery.",
     descriptionAr:
-      "تدريب مكثف بدوام كامل بمقر الأكاديمية العسكرية المصرية بهليوبوليس، تحت إشراف وزارة الاتصالات وتكنولوجيا المعلومات (MCIT). يركز على هندسة البرمجيات المتقدمة، و MERN stack، ودمج نماذج الذكاء الاصطناعي، والمنصات السحابية AWS، وبنية DevOps، والأنظمة التوزيعية وإدارة المشاريع الرشيقة.",
+      "إتمام تدريب مكثف بدوام كامل بمقر الأكاديمية العسكرية المصرية بهليوبوليس، تحت إشراف وزارة الاتصالات وتكنولوجيا المعلومات (MCIT). شمل هندسة البرمجيات وMERN ودمج الذكاء الاصطناعي وبنية AWS السحابية وDevOps ومنهجيات العمل الرشيقة.",
     tags: [
       "AI",
       "Software Engineering",
@@ -31,6 +31,51 @@ export const timelineData = [
       "REST APIs",
       "Leadership"
     ],
+  },
+  {
+    type: "experience",
+    icon: Briefcase,
+    title: "Frontend Developer Intern (Next.js)",
+    titleAr: "متدرب تطوير واجهات أمامية (Next.js)",
+    subtitle: "Digital Fortress",
+    subtitleAr: "Digital Fortress",
+    date: "Sep 2026 – Nov 2026",
+    dateAr: "سبتمبر 2026 – نوفمبر 2026",
+    description:
+      "Built responsive, reusable UI components with Next.js and React, contributed to real-world projects, improved performance and usability, and collaborated through Git.",
+    descriptionAr:
+      "بناء مكونات واجهات متجاوبة وقابلة لإعادة الاستخدام باستخدام Next.js وReact، والمساهمة في مشروعات فعلية وتحسين الأداء وسهولة الاستخدام والتعاون عبر Git.",
+    tags: ["Next.js", "React", "JavaScript", "Git"],
+  },
+  {
+    type: "training",
+    icon: Briefcase,
+    title: "Backend Developer Trainee",
+    titleAr: "متدرب تطوير أنظمة خلفية",
+    subtitle: "Darwish & Co. · Backend Development Training",
+    subtitleAr: "Darwish & Co. · تدريب تطوير الأنظمة الخلفية",
+    date: "Sep 2026 – Nov 2026",
+    dateAr: "سبتمبر 2026 – نوفمبر 2026",
+    description:
+      "Trained in Node.js, Express.js, TypeScript, and MongoDB while building RESTful APIs and backend services with authentication, database design, API validation, and clean architecture.",
+    descriptionAr:
+      "تدريب على Node.js وExpress.js وTypeScript وMongoDB وبناء REST APIs وخدمات خلفية، مع تطبيق المصادقة وتصميم قواعد البيانات والتحقق من الطلبات ومبادئ Clean Architecture.",
+    tags: ["Node.js", "Express", "TypeScript", "MongoDB", "REST APIs"],
+  },
+  {
+    type: "experience",
+    icon: Briefcase,
+    title: "Frontend Developer Intern",
+    titleAr: "متدرب تطوير واجهات أمامية",
+    subtitle: "WEB MASTER · Remote",
+    subtitleAr: "WEB MASTER · عن بُعد",
+    date: "May 2025 – Sep 2025",
+    dateAr: "مايو 2025 – سبتمبر 2025",
+    description:
+      "Contributed to production web applications, developed reusable React components, improved responsiveness and performance, and worked with a cross-functional team.",
+    descriptionAr:
+      "المساهمة في تطبيقات ويب فعلية، وتطوير مكونات React قابلة لإعادة الاستخدام، وتحسين الاستجابة والأداء، والعمل مع فريق متعدد التخصصات.",
+    tags: ["React", "JavaScript", "Responsive UI", "Git"],
   },
   {
     type: "experience",

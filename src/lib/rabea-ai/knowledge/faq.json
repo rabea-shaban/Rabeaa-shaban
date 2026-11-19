@@ -1,0 +1,1267 @@
+[
+  {
+    "id": 1,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "من هو ربيع شعبان؟",
+    "answerAr": "ربيع شعبان هو مهندس برمجيات ومطور Full Stack متخصص في بناء تطبيقات الويب الحديثة، مع تركيز أساسي على Frontend Development باستخدام React.js وNext.js وTypeScript، بالإضافة إلى تطوير Backend باستخدام Node.js وExpress.js وقواعد البيانات.\n\nيمتلك ربيع خلفية في نظم معلومات الأعمال (Business Information Systems)، واهتمامًا بتطوير البرمجيات وفق معايير هندسية تشمل Clean Architecture، وقابلية التوسع، والأمان، والأداء.\n\nعمل على مجموعة متنوعة من المشاريع، منها تطبيقات التجارة الإلكترونية، والمنصات التعليمية، والتطبيقات الإسلامية، وأنظمة إدارة الأعمال، وحلول تعتمد على الذكاء الاصطناعي.\n\nكما يهتم بتطوير مهاراته في Cloud Computing وAWS وDevOps وSystem Design، ويعمل على صناعة محتوى تقني باللغة العربية لتبسيط مفاهيم البرمجة وهندسة البرمجيات.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "profile"
+    ]
+  },
+  {
+    "id": 2,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "احكيلي عن ربيع بالتفصيل.",
+    "answerAr": "ربيع بدأ مسيرته من دراسة Business Information Systems، وهي دراسة تجمع بين التكنولوجيا وإدارة الأعمال وتحليل الأنظمة.\n\nاتجه بعد ذلك إلى تطوير الويب، وبدأ ببناء واجهات المستخدم باستخدام HTML وCSS وJavaScript، ثم توسع إلى React.js وTypeScript وNext.js.\n\nمع تطور خبرته، بدأ العمل على تطبيقات Full Stack، بحيث لا يقتصر دوره على تصميم الواجهات، بل يشمل أيضًا بناء REST APIs، وتصميم قواعد البيانات، وتنفيذ أنظمة المصادقة والصلاحيات، وربط الواجهات بالخدمات الخلفية.\n\nشارك في برامج تدريبية ومبادرات تقنية متعددة، وعمل على مشاريع حقيقية وتطبيقات متكاملة، كما اتجه إلى مجال الذكاء الاصطناعي وتطوير التطبيقات التي تستفيد من نماذج اللغة الكبيرة وتقنيات OCR وAI Agents.\n\nاهتمامه الأساسي هو الانتقال من مجرد كتابة الكود إلى بناء منتجات برمجية متكاملة، قابلة للصيانة والتطوير والتوسع.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "profile"
+    ]
+  },
+  {
+    "id": 3,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "ربيع منين؟",
+    "answerAr": "[محتوى خاص محجوب عن قاعدة المعرفة العامة.]",
+    "status": "HISTORICAL",
+    "access": "PRIVATE",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": []
+  },
+  {
+    "id": 4,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "ربيع عنده كام سنة؟",
+    "answerAr": "[محتوى خاص محجوب عن قاعدة المعرفة العامة.]",
+    "status": "HISTORICAL",
+    "access": "PRIVATE",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": []
+  },
+  {
+    "id": 5,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه خلفية ربيع التعليمية؟",
+    "answerAr": "حصل ربيع على بكالوريوس نظم معلومات الأعمال (Business Information Systems – BIS) من المعهد العالي للتكنولوجيا والإدارة والمعلومات بالمنيا.\n\n- سنة التخرج: 2024.\n- التقدير: امتياز.\n- مشروع التخرج: Crime Prediction System.\n\nمشروع التخرج كان نظامًا للتنبؤ بالجريمة باستخدام React وFirebase.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "id": 6,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه اللي بيميز ربيع؟",
+    "answerAr": "من خلال مسيرته ومشاريعه، تظهر عدة نقاط مميزة:\n\n1. الجمع بين Frontend وBackend Development.\n2. الاهتمام بتطوير تطبيقات متكاملة، وليس مجرد واجهات.\n3. استخدام TypeScript في بناء تطبيقات أكثر تنظيمًا.\n4. الاهتمام بالـ Architecture وقابلية صيانة الكود.\n5. تجربة تقنيات Cloud وAWS.\n6. الاهتمام بتطبيقات الذكاء الاصطناعي.\n7. امتلاك خبرة عملية في أنواع مختلفة من المشاريع.\n8. الاهتمام بالتوثيق ومراجعة الكود واختبار الوظائف.\n9. القدرة على تبسيط المفاهيم التقنية من خلال صناعة المحتوى.",
+    "status": "INFERRED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "profile"
+    ]
+  },
+  {
+    "id": 7,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه اهتمامات ربيع خارج البرمجة؟",
+    "answerAr": "[محتوى خاص محجوب عن قاعدة المعرفة العامة.]",
+    "status": "HISTORICAL",
+    "access": "PRIVATE",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": []
+  },
+  {
+    "id": 8,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "ربيع اتخرج من كلية إيه؟",
+    "answerAr": "تخرج ربيع من المعهد العالي للتكنولوجيا والإدارة والمعلومات بالمنيا، قسم Business Information Systems، دفعة 2024، بتقدير امتياز.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "id": 9,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع حاصل على دبلومة في الذكاء الاصطناعي؟",
+    "answerAr": "نعم، شارك في دبلومة متخصصة بعنوان:\n\n**AI-Based Software Development Specialized Diploma**\n\nوهي دبلومة متخصصة في تطوير البرمجيات باستخدام تقنيات الذكاء الاصطناعي، مرتبطة بمبادرة Digilians وبالتعاون مع جهات مصرية، من بينها الأكاديمية العسكرية ووزارة الاتصالات وتكنولوجيا المعلومات وفق المعلومات التي شاركها.\n\nاستمرت الدراسة حوالي 9 أشهر.\n\nتناولت موضوعات متعددة، منها:\n\n- Software Development.\n- Frontend Development.\n- Backend Development.\n- React.js.\n- Next.js.\n- TypeScript.\n- Node.js.\n- Express.js.\n- MongoDB.\n- Generative AI.\n- Large Language Models.\n- AI Agents.\n- Prompt Engineering.\n- n8n.\n- AWS.\n- Docker.\n- Linux.\n- Git وCI/CD.\n- Cybersecurity.\n- OWASP.\n- Data Structures and Algorithms.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "education",
+      "training",
+      "ai"
+    ]
+  },
+  {
+    "id": 10,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع حاصل على شهادات AWS؟",
+    "answerAr": "نعم، وفق آخر تحديثات المستخدم، حصل على:\n\n1. AWS Certified Cloud Practitioner – CLF-C02.\n2. AWS Certified Developer – Associate – DVA-C02.\n\nالشهادة الأولى تثبت معرفته بالمفاهيم الأساسية لخدمات AWS وCloud Computing، والثانية ترتبط بتطوير التطبيقات على AWS واستخدام خدماتها في بناء الحلول البرمجية.\n\n**تنبيه:** حالة الشهادتين هنا مبنية على تحديثات ربيع، وينبغي إرفاق روابط التحقق أو الشهادات الرسمية عند تقديمها لجهة توظيف.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "education",
+      "certification"
+    ]
+  },
+  {
+    "id": 11,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه البرامج التدريبية اللي شارك فيها؟",
+    "answerAr": "شارك ربيع في عدد من البرامج التدريبية، منها:\n\n**Digital Egypt Pioneers Initiative – DEPI**\n\nبرنامج Full Stack .NET Developer، من أبريل إلى أكتوبر 2024، وعمل خلاله على مشروع AGRSUP.\n\n**Meta Front-End Developer Professional Certificate**\n\nبرنامج متخصص في تطوير الواجهات باستخدام تقنيات الويب وReact، عبر Coursera.\n\n**NTI Web Developer Training**\n\nتدريب في مجال تطوير الويب، وعمل خلاله على مشروع Tarahoj Dental Clinic.\n\n**Upskilling Front-End Program**\n\nركز على React.js وRedux وNext.js وTailwind CSS.\n\n**Digilians Specialized Diploma**\n\nبرنامج متخصص في AI-Based Software Development.\n\n**برامج إضافية:**\n\n- ASP.NET Diploma – 210 Hours.\n- Full Stack PHP – 120 Hours.\n- Pro Frontend Engineer.\n- Advanced Front-End Engineering.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "education",
+      "training"
+    ]
+  },
+  {
+    "id": 12,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه الفرق بين الشهادات الأكاديمية والمهنية عند ربيع؟",
+    "answerAr": "الشهادة الأكاديمية الأساسية هي بكالوريوس Business Information Systems.\n\nأما الشهادات المهنية والتدريبية فتشمل برامج تطوير الويب، وMeta Front-End، ومبادرات التدريب التقني، ودبلومة تطوير البرمجيات بالذكاء الاصطناعي، وشهادات AWS.\n\nهذا التنوع يعكس الجمع بين الخلفية الأكاديمية والتعلم التطبيقي المستمر.\n\n---\n\n# القسم الثالث: الخبرات المهنية",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "education",
+      "training",
+      "certification"
+    ]
+  },
+  {
+    "id": 13,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه خبرة ربيع في مجال البرمجة؟",
+    "answerAr": "يمتلك ربيع خبرة عملية وتدريبية في تطوير تطبيقات الويب باستخدام تقنيات Frontend وBackend.\n\nتتضمن خبراته:\n\n- تطوير واجهات React.js.\n- بناء تطبيقات باستخدام Next.js.\n- استخدام TypeScript.\n- تطوير RESTful APIs.\n- التعامل مع Node.js وExpress.js.\n- تصميم قواعد بيانات MongoDB.\n- استخدام Mongoose.\n- تنفيذ Authentication وAuthorization.\n- التعامل مع JWT.\n- تطبيق Role-Based Access Control.\n- التعامل مع قواعد البيانات العلائقية.\n- ربط التطبيقات بخدمات خارجية.\n- استخدام Firebase.\n- التعامل مع أدوات AWS وDocker.\n\nويجب التمييز بين الخبرة الناتجة عن العمل والتدريب والمشاريع الشخصية عند تقييم سنوات الخبرة.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience"
+    ]
+  },
+  {
+    "id": 14,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "اشتغل ربيع في شركات إيه؟",
+    "answerAr": "وفق المعلومات المهنية المتاحة، تتضمن مسيرته:\n\n**Digital Fortress**\n\nFrontend Developer Intern، مع التركيز على Next.js وتطوير واجهات المستخدم.\n\n**Darwish & Co.**\n\nBackend Developer Trainee/Intern، مع العمل على Node.js وExpress.js وTypeScript وMongoDB وMongoose.\n\n**WEB MASTER**\n\nFrontend Developer Intern، مع التركيز على تطوير الواجهات.\n\n**Beta Social**\n\nوردت تجربة تطوعية مرتبطة بتطوير الواجهات، لكن تفاصيلها وتاريخها يحتاجان إلى تأكيد.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience"
+    ]
+  },
+  {
+    "id": 15,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه طبيعة شغل ربيع في Digital Fortress؟",
+    "answerAr": "ارتبطت تجربته في Digital Fortress بتطوير الواجهات باستخدام Next.js، والعمل ضمن سياق مشروع تقني يهتم بالأمن الرقمي وحماية الهوية.\n\nومن المشروعات المرتبطة بهذه التجربة ImpersonaGuard، وهو نظام يهدف إلى تقييم المخاطر وتحليل السلوك والتهديدات الداخلية.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience"
+    ]
+  },
+  {
+    "id": 16,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل عند ربيع خبرة في Backend Development؟",
+    "answerAr": "نعم.\n\nعمل ربيع على تطوير Backend باستخدام Node.js وExpress.js وTypeScript وMongoDB.\n\nوتشمل الموضوعات التي تعامل معها:\n\n- REST API Development.\n- Authentication.\n- Authorization.\n- JWT.\n- Password Hashing.\n- Middleware.\n- Input Validation.\n- MongoDB Schema Design.\n- Mongoose.\n- Database Transactions.\n- Error Handling.\n- API Integration.\n\nكما شارك في تطوير منطق أنظمة الحجز وإدارة العمليات والبيانات.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience"
+    ]
+  },
+  {
+    "id": 17,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع يقدر يشتغل Full Stack Developer؟",
+    "answerAr": "نعم، لديه معرفة وخبرة تطبيقية في جانبي تطوير الويب.\n\nفي Frontend يعمل باستخدام React.js وNext.js وTypeScript، وفي Backend يستخدم Node.js وExpress.js وقواعد البيانات.\n\nكما لديه خبرة في ربط الواجهات بالخدمات الخلفية وإدارة البيانات وتنفيذ أنظمة المصادقة والصلاحيات.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience"
+    ]
+  },
+  {
+    "id": 18,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل عنده خبرة في العمل ضمن فريق؟",
+    "answerAr": "شارك في تجارب تدريبية ومشروعات تطوير مرتبطة بفرق عمل.\n\nلكن لا ينبغي تحديد حجم الفرق أو مستوى المسؤولية القيادية أو حجم المشروعات التي قادها دون معلومات موثقة.",
+    "status": "UNCONFIRMED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience"
+    ]
+  },
+  {
+    "id": 19,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع عنده خبرة في بناء REST APIs؟",
+    "answerAr": "نعم.\n\nتعامل مع بناء APIs باستخدام Node.js وExpress.js، وتنفيذ عمليات CRUD، والتحقق من البيانات، وإدارة الأخطاء، وتطبيق Authentication وAuthorization، وربط الـ APIs بقواعد البيانات.\n\n---\n\n# القسم الرابع: المهارات التقنية",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience"
+    ]
+  },
+  {
+    "id": 20,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه أقوى مهارات ربيع التقنية؟",
+    "answerAr": "يمكن تقسيم مهاراته إلى خمسة مجالات:\n\n**Frontend Development**\n- React.js.\n- Next.js.\n- TypeScript.\n- JavaScript.\n- HTML5.\n- CSS3.\n- Tailwind CSS.\n- Redux Toolkit.\n- Context API.\n- Material UI.\n\n**Backend Development**\n- Node.js.\n- Express.js.\n- REST APIs.\n- JWT.\n- Middleware.\n- Authentication.\n- Authorization.\n- Clean Architecture.\n\n**Databases**\n- MongoDB.\n- Mongoose.\n- MySQL.\n- SQL Server.\n- PostgreSQL.\n- Firebase.\n- Firestore.\n\n**Cloud & DevOps**\n- AWS.\n- Docker.\n- Kubernetes.\n- Terraform.\n- Linux.\n- Git.\n- GitHub Actions.\n- CI/CD.\n- Helm.\n- Minikube.\n- Prometheus.\n\n**AI Development**\n- Generative AI.\n- LLMs.\n- Gemini API.\n- OCR.\n- AI Agents.\n- Prompt Engineering.\n- n8n.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 21,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع متخصص Frontend ولا Backend؟",
+    "answerAr": "تركيزه المهني الأساسي يميل إلى Frontend Development، خصوصًا React.js وNext.js وTypeScript.\n\nلكنه يمتلك خبرة في Backend Development باستخدام Node.js وExpress.js وMongoDB، مما يسمح له بالعمل على تطبيقات Full Stack.\n\nبالتالي، يمكن وصفه بأنه:\n\n**Full Stack Developer with a Strong Frontend Focus.**",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 22,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه خبرته في React.js؟",
+    "answerAr": "تعامل ربيع مع React في بناء تطبيقات متعددة، ويشمل ذلك:\n\n- Component-Based Architecture.\n- Reusable Components.\n- Hooks.\n- State Management.\n- Context API.\n- Redux Toolkit.\n- API Integration.\n- Forms.\n- Authentication Flows.\n- Responsive UI.\n- TypeScript Integration.\n\nكما استخدم React في تطبيقات التجارة الإلكترونية ولوحات التحكم والمنصات التعليمية.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 23,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل عنده خبرة في Next.js؟",
+    "answerAr": "نعم.\n\nاستخدم Next.js في تطوير تطبيقات الويب، ويتعامل مع مفاهيم مثل:\n\n- App Router.\n- Server Components.\n- Client Components.\n- SSR.\n- SSG.\n- Routing.\n- Layouts.\n- Data Fetching.\n- Metadata.\n- SEO.\n- TypeScript Integration.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 24,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه خبرته في قواعد البيانات؟",
+    "answerAr": "تعامل مع قواعد بيانات NoSQL مثل MongoDB وFirebase Firestore، بالإضافة إلى قواعد بيانات SQL مثل MySQL وSQL Server وPostgreSQL.\n\nوتشمل خبرته:\n\n- تصميم البيانات.\n- إنشاء Collections وDocuments.\n- العلاقات بين البيانات.\n- Schema Validation.\n- Mongoose Models.\n- CRUD Operations.\n- Indexing.\n- Transactions.\n- التعامل مع ORM مثل Prisma.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 25,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل عنده خبرة في AWS؟",
+    "answerAr": "نعم، درس وتعامل مع خدمات AWS المختلفة، ومنها:\n\n- EC2.\n- S3.\n- Lambda.\n- IAM.\n- API Gateway.\n- DynamoDB.\n- CloudWatch.\n\nكما حصل، وفق تحديثاته، على شهادتي AWS Cloud Practitioner وAWS Developer Associate.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 26,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل عنده خبرة في Docker وKubernetes؟",
+    "answerAr": "نعم، لديه خبرة تدريبية وعملية في استخدام Docker، كما تعامل مع Kubernetes من خلال Minikube، واستخدم Helm في إدارة التطبيقات.\n\nلكن يجب عدم تقديمه كـ DevOps Engineer متخصص دون أدلة إضافية على خبرة تشغيل أنظمة Production على نطاق واسع.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 27,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه خبرته في الذكاء الاصطناعي؟",
+    "answerAr": "اهتمامه بالذكاء الاصطناعي يتجاوز مجرد استخدام أدوات المحادثة.\n\nدرس وعمل على موضوعات تشمل:\n\n- Generative AI.\n- LLM Integration.\n- Gemini API.\n- OCR.\n- AI-Based Applications.\n- AI Agents.\n- Prompt Engineering.\n- Automation باستخدام n8n.\n\nومن أمثلة ذلك مشروع MediMind الذي يعتمد على الذكاء الاصطناعي في التعامل مع بيانات الوصفات الطبية.\n\n---\n\n# القسم الخامس: المشاريع",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills",
+      "ai"
+    ]
+  },
+  {
+    "id": 28,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه أهم المشاريع اللي اشتغل عليها ربيع؟",
+    "answerAr": "من أبرز المشاريع:\n\n1. ATHAR.\n2. ImpersonaGuard.\n3. MediMind.\n4. Full Stack E-Commerce.\n5. EduSphere.\n6. Pharmacy POS.\n7. Sy2antek.\n8. Crime Prediction System.\n9. AGRSUP.\n10. Tarahoj Dental Clinic.\n11. E-Learning Dashboard.\n12. Zein Hub.\n\nبالإضافة إلى أعمال مواقع الويب مثل Riyadh Landscaping وBasmat Alwafa Medical Center و365 Furniture Website.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 29,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "احكيلي عن مشروع ATHAR.",
+    "answerAr": "يوجد تعارض بين مصدرين لوصف ATHAR: صفحة المشروع الحالية في الموقع تعرضه كمنصة ويب عربية، بينما ملف الأسئلة المقدم يصف تطبيقًا للموبايل باستخدام React Native وExpo وFirebase. لا أستطيع تأكيد هل هما نسختان من المشروع نفسه أم مشروعان مرتبطان؛ لذلك أعرض هذا التعارض بدل دمج التفاصيل. رابط المنصة المنشور: https://athar-library.vercel.app/ .",
+    "status": "UNCONFIRMED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 30,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه فكرة مشروع ImpersonaGuard؟",
+    "answerAr": "ImpersonaGuard مشروع مرتبط بالأمن الرقمي وحماية الهوية وتقييم المخاطر.\n\nيهدف إلى تحليل البيانات وتقييم احتمالات التهديدات والمخاطر المرتبطة بالسلوك والهوية الرقمية.\n\n**التقنيات:**\n\n- Node.js.\n- Express 5.\n- JavaScript ES Modules.\n- MongoDB.\n- Mongoose.\n- JWT.\n- Zod.\n- Python FastAPI في مكونات Red Engine.\n\nيتضمن النظام تكاملًا مع محرك تحليل مخاطر، ويهتم بمفاهيم Insider Threat وRisk Profiling.\n\nشارك ربيع في العمل على Backend APIs، وتنظيم المسارات، والتحقق من البيانات، والتكامل مع الخدمات الأخرى.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 31,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "احكيلي عن مشروع MediMind.",
+    "answerAr": "MediMind هو مشروع في مجال HealthTech يهدف إلى تسهيل إدارة الأدوية والالتزام بالجدول العلاجي.\n\nمن الأفكار والوظائف المرتبطة به:\n\n- قراءة الوصفات الطبية.\n- استخدام OCR لاستخراج المعلومات.\n- توظيف Gemini API في تحليل البيانات.\n- إدارة الأدوية.\n- تنظيم مواعيد الجرعات.\n- التذكير بمواعيد تناول الدواء.\n- دعم متابعة مقدمي الرعاية.\n\nالفكرة الأساسية هي تحويل المعلومات الطبية الموجودة في الوصفات إلى بيانات منظمة تساعد المستخدم على إدارة أدويته.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects",
+      "ai"
+    ]
+  },
+  {
+    "id": 32,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه فكرة مشروع E-Commerce؟",
+    "answerAr": "مشروع تجارة إلكترونية متكامل باستخدام MERN Stack.\n\n**Frontend:**\n- React 19.\n- TypeScript.\n- Tailwind CSS.\n\n**Backend:**\n- Node.js.\n- Express.js.\n- MongoDB.\n- Mongoose.\n\nيتضمن وظائف مثل:\n\n- إدارة المنتجات.\n- سلة المشتريات.\n- المفضلة.\n- تسجيل المستخدمين.\n- Authentication.\n- Role-Based Access Control.\n- Checkout.\n\nDemo: https://front-e-commerce-v2.vercel.app/\n\nGitHub: https://github.com/rabea-shaban/Front-E-commerce-v2",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 33,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "احكيلي عن EduSphere.",
+    "answerAr": "EduSphere مشروع مرتبط بإدارة العملية التعليمية.\n\nتم تطويره باستخدام تقنيات تشمل:\n\n- React.\n- Next.js.\n- TypeScript.\n- Node.js.\n- Express.js.\n- MongoDB.\n- Socket.IO.\n\nومن الوظائف المرتبطة به:\n\n- إدارة الدورات.\n- لوحات تحكم.\n- إدارة المستخدمين.\n- الرسائل الفورية.\n- المدفوعات.\n- تخزين الملفات.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 34,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه فكرة Pharmacy POS؟",
+    "answerAr": "نظام لإدارة عمليات الصيدليات ونقاط البيع.\n\nيتعامل مع:\n\n- المبيعات.\n- المخزون.\n- الأدوية.\n- الوصفات الطبية.\n- التأمين.\n- برامج الولاء.\n- التقارير.\n- الصلاحيات.\n- الباركود.\n- الطباعة الحرارية.\n- إدارة صلاحية المنتجات باستخدام FEFO.\n\nالتقنيات المستخدمة تشمل React وTypeScript وNode.js وExpress وPrisma وMySQL.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 35,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "احكيلي عن Sy2antek.",
+    "answerAr": "Sy2antek مشروع مرتبط بخدمات صيانة السيارات وإدارة طلبات الخدمة.\n\nيتضمن:\n\n- إدارة طلبات الصيانة.\n- بيانات المركبات.\n- متابعة الخدمات.\n- الخرائط.\n- تحديد المواقع الجغرافية.\n\nاستخدم React وTypeScript وNode.js وExpress وMongoDB وLeaflet.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 36,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه مشروع التخرج؟",
+    "answerAr": "Crime Prediction System.\n\nهو نظام للتنبؤ بالجريمة باستخدام React وFirebase.\n\nكان مشروع التخرج الخاص بربيع في مرحلة البكالوريوس، وحصل على تقدير امتياز وفق المعلومات المتاحة.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "education",
+      "projects"
+    ]
+  },
+  {
+    "id": 37,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع عنده مشاريع منشورة؟",
+    "answerAr": "من الروابط المهنية المنشورة: Portfolio: https://www.rabea-shaban.com/ ، ATHAR: https://athar-library.vercel.app/ ، مشروع E-Commerce: https://front-e-commerce-v2.vercel.app/ ، وGitHub: https://github.com/rabea-shaban . قد تتغير حالة تشغيل أي رابط؛ استخدم الرابط الرسمي للموقع الحالي وتحقق من العرض قبل إرساله.",
+    "status": "HISTORICAL",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 38,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه أصعب مشكلة تقنية اشتغل عليها؟",
+    "answerAr": "من أبرز المشكلات التقنية التي تعامل معها:\n\n**إدارة عمليات الحجز ومنع الحجز المزدوج.**\n\nفي أنظمة الحجز، قد يحاول أكثر من مستخدم حجز نفس الموعد في الوقت نفسه.\n\nالحل يتطلب التعامل الصحيح مع Database Transactions، بحيث يتم ضمان عدم تأكيد أكثر من حجز لنفس المورد أو الموعد.\n\nمن المفاهيم التي تعامل معها ربيع:\n\n- Atomicity.\n- Commit.\n- Rollback.\n- Race Conditions.\n- Concurrent Requests.\n- Transactional Consistency.\n\nوهي مشكلة مرتبطة بمشروع Sanad Transactional Booking Engine.\n\n---\n\n# القسم السادس: العمل والتوظيف",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience",
+      "projects",
+      "architecture"
+    ]
+  },
+  {
+    "id": 39,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع متاح لفرص عمل جديدة؟",
+    "answerAr": "المعلومات المهنية السابقة تشير إلى اهتمامه بفرص العمل في تطوير الويب، خصوصًا Frontend وFull Stack.\n\nلكن حالة التوظيف الحالية يجب التأكد منها مباشرة قبل تقديم إجابة نهائية باسم المساعد.",
+    "status": "UNCONFIRMED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 40,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه الوظيفة المناسبة لمهارات ربيع؟",
+    "answerAr": "أقرب الوظائف لمهاراته:\n\n1. Frontend Developer.\n2. React.js Developer.\n3. Next.js Developer.\n4. Frontend Software Engineer.\n5. Full Stack Developer – MERN Stack.\n6. Junior Node.js Developer.\n7. Software Engineer – Web Development.\n\nالاختيار الأفضل يعتمد على متطلبات الوظيفة، ومستوى المسؤولية، وطبيعة الفريق.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 41,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع بيفضل Frontend ولا Full Stack؟",
+    "answerAr": "يميل ربيع إلى Frontend Development، خصوصًا React.js وNext.js.\n\nلكنه يفضل امتلاك فهم متكامل للنظام، لذلك يهتم أيضًا بالـ Backend وقواعد البيانات وواجهات APIs.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 42,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ممكن يشتغل Remote؟",
+    "answerAr": "نعم، سبق أن أبدى اهتمامًا بفرص Remote وHybrid وOn-site.\n\nولا توجد قيود معلنة تمنعه من العمل عن بُعد.",
+    "status": "HISTORICAL",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 43,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ممكن ينتقل لمكان تاني بسبب العمل؟",
+    "answerAr": "سبق أن ذكر استعداده للانتقال إذا كانت الفرصة مناسبة.\n\nلكن يجب التأكد من ظروفه الحالية قبل تقديم وعد بالتنقل.",
+    "status": "HISTORICAL",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 44,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه القيمة اللي ممكن يضيفها لفريق العمل؟",
+    "answerAr": "يمكن أن يضيف ربيع قيمة من خلال:\n\n- تطوير واجهات مستخدم حديثة.\n- بناء تطبيقات باستخدام React وNext.js.\n- التعامل مع TypeScript.\n- ربط التطبيقات بالـ Backend APIs.\n- المشاركة في بناء Backend باستخدام Node.js.\n- التعامل مع قواعد البيانات.\n- الاهتمام بجودة الكود.\n- المشاركة في مراجعة الكود واكتشاف الأخطاء.\n- التفكير في قابلية التوسع والصيانة.\n- فهم احتياجات المنتج من الناحية التقنية.",
+    "status": "INFERRED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 45,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "ليه شركة تختار ربيع؟",
+    "answerAr": "لأنه يجمع بين خلفية أكاديمية في نظم المعلومات، ومهارات عملية في تطوير الويب، وتجارب في بناء مشروعات متنوعة.\n\nكما أنه لا يركز فقط على تنفيذ واجهة المستخدم، بل يهتم بفهم طريقة عمل النظام بالكامل، بداية من الواجهة وحتى قواعد البيانات والخدمات الخلفية.\n\nويعمل باستمرار على تطوير مهاراته في تقنيات الويب الحديثة والـ Cloud والذكاء الاصطناعي.",
+    "status": "INFERRED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 46,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل عنده خبرة في العمل تحت ضغط؟",
+    "answerAr": "شارك في مشروعات وتدريبات تقنية متعددة تتطلب التعامل مع مهام مختلفة.\n\nلكن لا توجد بيانات كافية لقياس أدائه تحت ضغط العمل أو تحديد حجم المهام التي كان مسؤولًا عنها في بيئة Production.\n\n---\n\n# القسم السابع: Software Architecture وجودة الكود",
+    "status": "UNCONFIRMED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 47,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إزاي ربيع بيصمم Architecture للمشاريع؟",
+    "answerAr": "يهتم ربيع بتنظيم المشروع وتقسيم المسؤوليات إلى أجزاء واضحة بدل وضع جميع الوظائف في مكان واحد.\n\nومن المبادئ التي يهتم بها:\n\n- Separation of Concerns.\n- Reusable Components.\n- Modular Architecture.\n- Clean Code.\n- Maintainability.\n- Scalability.\n- Type Safety.\n- Error Handling.\n- Validation.\n- Security.\n\nويختلف التصميم النهائي حسب حجم المشروع ومتطلباته.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills",
+      "architecture"
+    ]
+  },
+  {
+    "id": 48,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع بيستخدم Clean Architecture؟",
+    "answerAr": "درس وتعامل مع مفاهيم Clean Architecture وتنظيم طبقات التطبيق.\n\nومن المبادئ المرتبطة بها:\n\n- فصل منطق الأعمال عن البنية التحتية.\n- تقليل الاعتماد بين المكونات.\n- تنظيم الخدمات.\n- فصل مسؤوليات Controllers وServices وRepositories عند الحاجة.\n- تسهيل الاختبار والصيانة.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills",
+      "architecture"
+    ]
+  },
+  {
+    "id": 49,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه مفهوم ربيع عن Scalable Applications؟",
+    "answerAr": "التطبيق القابل للتوسع هو التطبيق الذي يمكنه استيعاب نمو عدد المستخدمين والطلبات والبيانات دون الحاجة إلى إعادة بناء النظام بالكامل.\n\nويتحقق ذلك من خلال:\n\n- Architecture مناسبة.\n- Database Design جيد.\n- Caching عند الحاجة.\n- Efficient API Design.\n- Background Jobs.\n- Monitoring.\n- Security.\n- Cloud Infrastructure.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills",
+      "architecture"
+    ]
+  },
+  {
+    "id": 50,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إزاي بيتعامل مع Authentication وAuthorization؟",
+    "answerAr": "يتعامل مع Authentication للتأكد من هوية المستخدم، وAuthorization لتحديد العمليات التي يسمح له بتنفيذها.\n\nومن التقنيات التي استخدمها:\n\n- JWT.\n- Password Hashing.\n- bcrypt.\n- HTTPOnly Cookies.\n- Middleware.\n- Role-Based Access Control.\n- Input Validation.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills",
+      "architecture"
+    ]
+  },
+  {
+    "id": 51,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إزاي يمنع مشاكل Double Booking؟",
+    "answerAr": "الحل لا يعتمد على فحص الموعد قبل الحجز فقط، لأن طلبين قد يصلان في الوقت نفسه.\n\nيجب تنفيذ الحجز بطريقة آمنة باستخدام Transactions وقيود مناسبة في قاعدة البيانات.\n\nومن الخطوات المهمة:\n\n1. التحقق من صلاحية الحجز.\n2. بدء Transaction.\n3. التأكد من أن الموعد متاح.\n4. تسجيل الحجز.\n5. تحديث حالة الموعد.\n6. تنفيذ Commit عند النجاح.\n7. تنفيذ Rollback عند الفشل.\n\nويجب تصميم آلية التزامن بحيث لا يتم تأكيد حجزين لنفس المورد.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills",
+      "architecture"
+    ]
+  },
+  {
+    "id": 52,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إزاي بيراجع مشروع برمجي قبل إطلاقه؟",
+    "answerAr": "منهج المراجعة الذي يفضله يتضمن:\n\n- مراجعة هيكل المشروع.\n- مراجعة Routes.\n- مراجعة Controllers وServices.\n- مراجعة Models وSchemas.\n- مراجعة API Integration.\n- مراجعة Authentication.\n- مراجعة Authorization.\n- مراجعة Validation.\n- مراجعة Database Operations.\n- البحث عن Mock Data.\n- مراجعة TODO وFIXME.\n- اختبار الوظائف.\n- مراجعة Error Handling.\n- مراجعة Security.\n- مراجعة Performance.\n- مراجعة Build وDeployment.\n\nويفضل أن تكون نتيجة المراجعة مبنية على أدلة من الملفات والاختبارات، وليس مجرد انطباعات.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills",
+      "architecture"
+    ]
+  },
+  {
+    "id": 53,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع بيكتب Unit Tests؟",
+    "answerAr": "تعامل مع الاختبارات ضمن مشروعاته ومراجعاته التقنية، لكن لا توجد معلومات كافية لتحديد إطار الاختبار الأساسي الذي يعتمد عليه في كل مشروعاته أو مستوى تغطية الاختبارات لديه.\n\n---\n\n# القسم الثامن: صناعة المحتوى",
+    "status": "UNCONFIRMED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills",
+      "architecture"
+    ]
+  },
+  {
+    "id": 54,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع بيقدم محتوى تعليمي؟",
+    "answerAr": "نعم.\n\nلديه مشروع محتوى تعليمي باسم:\n\n**خمسة برمجة بالبلدي**\n\nوهو محتوى تقني باللغة العربية يهدف إلى تبسيط مفاهيم البرمجة وهندسة البرمجيات.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "content"
+    ]
+  },
+  {
+    "id": 55,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه فكرة خمسة برمجة بالبلدي؟",
+    "answerAr": "العلامة مبنية على فكرة شرح المفاهيم التقنية المعقدة بطريقة بسيطة وقريبة من المطور العربي.\n\nالشعار:\n\n**افهمها بالبلدي .. اكتبها بالكود**\n\nويستهدف المحتوى المبتدئين والمطورين الذين يريدون فهم المفاهيم التقنية بشكل عملي.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "content"
+    ]
+  },
+  {
+    "id": 56,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه المواضيع اللي بيشرحها؟",
+    "answerAr": "من الموضوعات التي عمل عليها:\n\n- أساسيات البرمجة.\n- Web Development.\n- JavaScript.\n- React.\n- System Architecture.\n- Design Systems.\n- JWT.\n- SQL Injection.\n- XSS.\n- Cybersecurity.\n- Software Engineering.\n- مفاهيم Backend Development.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "content"
+    ]
+  },
+  {
+    "id": 57,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع بيشرح البرمجة باللهجة المصرية؟",
+    "answerAr": "نعم، يفضل استخدام اللهجة المصرية البسيطة في المحتوى التعليمي، خصوصًا الفيديوهات القصيرة والـ Voice Over.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "content"
+    ]
+  },
+  {
+    "id": 58,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه الهوية البصرية للعلامة؟",
+    "answerAr": "الألوان المعتمدة:\n\n| اللون | الكود |\n|---|---|\n| Studio Black | #0B0B0B |\n| Neon Yellow | #FFD400 |\n| Cyber Sky | #00FFCC |\n| White | #FFFFFF |\n\nالخط المفضل: Poppins ExtraBold.\n\nوالأسلوب البصري يميل إلى الطابع التقني الحديث مع خلفيات داكنة وتباين قوي.\n\n---\n\n# القسم التاسع: الأعمال التجارية والبراندات",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "content"
+    ]
+  },
+  {
+    "id": 59,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه هي نهج الرقمية؟",
+    "answerAr": "نهج الرقمية – NAHJ ALRAQAMIA هي مبادرة أو علامة تجارية مرتبطة بتقديم خدمات تطوير المواقع والحلول الرقمية والتسويق.\n\nترتبط أنشطتها بمجالات مثل:\n\n- Web Development.\n- Website Design.\n- Business Websites.\n- Digital Solutions.\n- تطوير واجهات المستخدم.\n- تطوير الأنظمة الإلكترونية.\n\nوقد تحدث ربيع عن دوره فيها باعتباره مؤسسًا أو قائدًا تقنيًا.\n\nلكن التفاصيل القانونية للكيان وحجم الفريق والخدمات التجارية الحالية تحتاج إلى تأكيد.",
+    "status": "UNCONFIRMED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "business"
+    ]
+  },
+  {
+    "id": 60,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع عنده خبرة في بناء مواقع الشركات؟",
+    "answerAr": "نعم، لديه تجارب في بناء مواقع ويب ومشروعات رقمية، ومنها:\n\n- Riyadh Landscaping.\n- Basmat Alwafa Medical Center.\n- 365 Furniture Website.\n- Car Rental React App.\n\nوتختلف تفاصيل التقنيات والمساهمات في هذه المشاريع، لذلك يجب عدم افتراض أنه نفذ كل أجزاء كل مشروع بمفرده دون توثيق.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "business"
+    ]
+  },
+  {
+    "id": 61,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل بيقدم حلول Digital Transformation؟",
+    "answerAr": "لديه اهتمام ومشروعات مرتبطة بتحويل العمليات التقليدية إلى أنظمة رقمية، مثل أنظمة إدارة الصيدليات، ولوحات التحكم، وأنظمة الحجز، والمنصات التعليمية.\n\nلكن لا ينبغي وصف ذلك بأنه سجل مؤسسي مثبت في تنفيذ مشروعات تحول رقمي واسعة النطاق دون وجود حالات موثقة.\n\n---\n\n# القسم العاشر: التحليل المهني",
+    "status": "USER_REPORTED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "business"
+    ]
+  },
+  {
+    "id": 62,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "حلل المسار المهني لربيع من البداية حتى الآن.",
+    "answerAr": "يمكن تقسيم المسار إلى مراحل:\n\n**المرحلة الأولى: التأسيس الأكاديمي**\n\nبدأ من دراسة Business Information Systems، واكتسب خلفية تجمع بين التكنولوجيا وإدارة الأعمال وتحليل الأنظمة.\n\n**المرحلة الثانية: تعلم تطوير الويب**\n\nاتجه إلى HTML وCSS وJavaScript، ثم React.js، وبدأ في بناء تطبيقات الويب.\n\n**المرحلة الثالثة: التخصص في Frontend**\n\nتوسع في React وRedux وTypeScript وNext.js وTailwind CSS.\n\n**المرحلة الرابعة: التوسع إلى Full Stack**\n\nبدأ في التعامل مع Node.js وExpress.js وMongoDB وبناء REST APIs.\n\n**المرحلة الخامسة: تطوير الخبرة العملية**\n\nشارك في تدريبات ومشروعات تقنية مثل Digital Fortress وDarwish & Co.، وعمل على أنظمة تتضمن متطلبات Backend وأمان وعمليات قواعد بيانات.\n\n**المرحلة السادسة: الذكاء الاصطناعي والـ Cloud**\n\nتوسع في AI-Based Software Development وAWS وDocker وKubernetes، وبدأ العمل على أفكار تطبيقات تعتمد على الذكاء الاصطناعي.\n\n**المرحلة الحالية: بناء هوية هندسية متكاملة**\n\nأصبح اهتمامه يتجه نحو بناء منتجات برمجية متكاملة، وتحسين Architecture وجودة الكود، وتطوير قدراته في System Design وCloud Computing.",
+    "status": "INFERRED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "profile",
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 63,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه نقاط القوة الأساسية في خبرة ربيع؟",
+    "answerAr": "من خلال المعلومات المتاحة:\n\n1. تنوع الخبرة بين Frontend وBackend.\n2. تركيز جيد على React وNext.js.\n3. استخدام TypeScript.\n4. القدرة على بناء تطبيقات متكاملة.\n5. خبرة في قواعد بيانات متنوعة.\n6. التعامل مع Authentication وAuthorization.\n7. اهتمام بالـ Architecture.\n8. تجربة في تطبيقات الذكاء الاصطناعي.\n9. اهتمام بالتعلم المستمر.\n10. تنوع المشاريع التي عمل عليها.",
+    "status": "INFERRED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "profile",
+      "career"
+    ]
+  },
+  {
+    "id": 64,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه المجالات اللي محتاج يطور نفسه فيها؟",
+    "answerAr": "دي توصيات تطوير مهنية، وليست بالضرورة نقاط ضعف مثبتة:\n\n- التعمق في System Design.\n- تحسين فهم Distributed Systems.\n- التعمق في Database Optimization.\n- التوسع في Testing Strategies.\n- التعمق في Advanced AWS Architecture.\n- تحسين خبرة Production Deployment.\n- دراسة Observability وMonitoring.\n- التعمق في Security Engineering.\n- تطوير مهارات Technical Communication.\n- توثيق الإنجازات بالأرقام والنتائج.",
+    "status": "INFERRED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "profile",
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 65,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل خبرته أقرب إلى Frontend Engineer ولا Full Stack Engineer؟",
+    "answerAr": "من ناحية التوجه المهني، Frontend Engineer هو الوصف الأقرب لتركيزه الأساسي.\n\nلكن امتلاكه خبرة في Node.js وExpress وMongoDB يسمح له بتقديم نفسه أيضًا كـ Full Stack Developer.\n\nأفضل وصف مهني يجمع الاثنين:\n\n**Full Stack Software Engineer | React.js & Next.js Specialist**",
+    "status": "INFERRED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "profile",
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 66,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه أفضل 3 مشاريع يعرضها في مقابلة عمل؟",
+    "answerAr": "بالنسبة لوظيفة Frontend أو Full Stack، يمكن اختيار:\n\n**1. ATHAR**\n\nلإظهار خبرته في React Native وTypeScript والتكامل مع Firebase وإدارة البيانات والتنزيلات.\n\n**2. Full Stack E-Commerce**\n\nلإظهار قدرته على بناء تطبيق ويب متكامل باستخدام MERN Stack.\n\n**3. EduSphere أو Pharmacy POS**\n\nلإظهار قدرته على التعامل مع الأنظمة الإدارية والـ Dashboards والعمليات التجارية المعقدة.\n\nأما لو الوظيفة Backend، فمن الأفضل تقديم ImpersonaGuard وSanad Transactional Booking Engine ضمن أبرز المشروعات ذات الصلة.",
+    "status": "INFERRED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "profile",
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 67,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "لو شركة بتدور على React Developer، ليه ربيع مناسب؟",
+    "answerAr": "لأنه يمتلك خبرة في React.js وTypeScript وRedux Toolkit وTailwind CSS، وعمل على مشروعات متعددة تشمل التجارة الإلكترونية ولوحات التحكم والمنصات التعليمية.\n\nكما أن معرفته بالـ Backend تساعده على فهم تكامل الواجهة مع الخدمات الخلفية، والتعامل مع APIs وحالات البيانات والأخطاء.",
+    "status": "INFERRED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "profile",
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 68,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه المسار المهني الأنسب ليه خلال السنوات القادمة؟",
+    "answerAr": "مسار مقترح:\n\n**المرحلة الأولى: Advanced Frontend Engineering**\n\nالتعمق في React وNext.js وTypeScript والأداء والاختبارات.\n\n**المرحلة الثانية: Full Stack Architecture**\n\nالتوسع في تصميم Backend Systems وDatabase Architecture وAuthentication وSecurity.\n\n**المرحلة الثالثة: Cloud Engineering**\n\nتعميق الخبرة في AWS وDocker وKubernetes وCI/CD.\n\n**المرحلة الرابعة: System Design**\n\nدراسة تصميم الأنظمة القابلة للتوسع والتعامل مع Distributed Systems.\n\n**المرحلة الخامسة: AI-Powered Applications**\n\nدمج الذكاء الاصطناعي مع تطبيقات الويب وبناء منتجات تعتمد على LLMs وAI Agents.\n\n---\n\n# القسم الحادي عشر: الأسئلة غير المباشرة",
+    "status": "INFERRED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "profile",
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 69,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "لو عايز أعمل مشروع مشابه لـ ATHAR، هل ربيع عنده خبرة تساعدني؟",
+    "answerAr": "نعم، لديه خبرة مرتبطة بتطوير تطبيقات React Native وExpo وTypeScript والتكامل مع Firebase.\n\nيمكنه المساهمة في تصميم هيكل التطبيق، وتنفيذ الواجهات، وإدارة البيانات، والتعامل مع الإشعارات والتنزيلات والوظائف التي تحتاج إلى العمل دون اتصال بالإنترنت.",
+    "status": "INFERRED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 70,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع يقدر يساعدني في مشروع MERN Stack؟",
+    "answerAr": "نعم.\n\nلديه خبرة في React وTypeScript وNode.js وExpress.js وMongoDB.\n\nويمكنه المساهمة في بناء Frontend وBackend وربطهما، وتنفيذ المصادقة وإدارة البيانات وواجهات REST APIs.",
+    "status": "INFERRED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 71,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "لو عندي مشكلة في Next.js، هل خبرته مناسبة؟",
+    "answerAr": "نعم، لديه خبرة في Next.js App Router وServer Components وClient Components وSSR وSSG وData Fetching.\n\nويمكنه المساعدة في تحليل المشكلات المرتبطة بالـ Routing والـ Rendering والـ API Integration والـ SEO والـ Build.",
+    "status": "INFERRED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 72,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل يقدر يبني Backend لتطبيق Mobile؟",
+    "answerAr": "نعم، يمتلك المهارات الأساسية اللازمة لذلك باستخدام Node.js وExpress.js وMongoDB.\n\nيمكن بناء APIs خاصة بالتسجيل والدخول وإدارة المستخدمين والبيانات والإشعارات وربطها بتطبيق React Native.",
+    "status": "INFERRED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 73,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل يقدر يجمع بين React وNode.js والذكاء الاصطناعي؟",
+    "answerAr": "نعم، هذا يجمع بين ثلاثة مجالات تعامل معها:\n\n- React وNext.js لتطوير الواجهة.\n- Node.js وExpress لتطوير Backend.\n- Gemini API وLLMs وOCR وتقنيات AI لتوفير الوظائف الذكية.\n\nويمكن استخدام هذه المهارات في بناء تطبيقات تعتمد على الذكاء الاصطناعي من البداية إلى النهاية.\n\n---\n\n# القسم الثاني عشر: أسئلة حساسة ودقة المعلومات\n\nهذا القسم مهم جدًا؛ لأنه يمنع Rabea AI من تقديم معلومات خاطئة عن صاحبه.",
+    "status": "INFERRED",
+    "access": "PROFESSIONAL",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects",
+      "ai"
+    ]
+  },
+  {
+    "id": 74,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع خبير في Python؟",
+    "answerAr": "لا توجد معلومات كافية لوصفه بأنه Python Developer متخصص.\n\nلديه تعامل مع Python في سياق مكونات مرتبطة بمشروع ImpersonaGuard وFastAPI، لكن تخصصه الأساسي في تطوير الويب باستخدام JavaScript وTypeScript.",
+    "status": "UNCONFIRMED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 75,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع اشتغل في شركة معينة؟",
+    "answerAr": "يجب التحقق من سجل الخبرات المهنية قبل الإجابة.\n\nإذا كانت الشركة موجودة في قاعدة المعرفة، يوضح المساعد طبيعة العلاقة وتاريخها، سواء كانت وظيفة أو تدريبًا أو عملًا تطوعيًا.\n\nإذا لم تكن موجودة، يجب أن يقول إنه لا يمتلك معلومة موثقة عنها.",
+    "status": "UNCONFIRMED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": []
+  },
+  {
+    "id": 76,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع حاصل على شهادة معينة؟",
+    "answerAr": "يجب التفريق بين:\n\n- شهادة مكتملة.\n- دبلومة مكتملة.\n- دورة تدريبية.\n- برنامج تدريبي.\n- شهادة قيد الدراسة.\n- شهادة مخطط للحصول عليها.\n\nلا يجوز تحويل دورة تدريبية إلى شهادة احترافية، أو تقديم شهادة مخطط لها باعتبارها مكتملة.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "certification"
+    ]
+  },
+  {
+    "id": 77,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه آخر مشروع اشتغل عليه ربيع؟",
+    "answerAr": "يجب الاعتماد على أحدث تحديث موثق للمشروعات.\n\nولا ينبغي للمساعد افتراض أن المشروع الأحدث في قاعدة المعرفة هو بالضرورة آخر مشروع يعمل عليه ربيع حاليًا.",
+    "status": "UNCONFIRMED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": []
+  },
+  {
+    "id": 78,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "كام سنة خبرة عند ربيع؟",
+    "answerAr": "لا ينبغي للمساعد تقديم رقم عشوائي.\n\nيجب حساب الخبرة وفق الفترات المهنية الموثقة، مع التمييز بين:\n\n- الخبرة الوظيفية.\n- التدريب.\n- العمل التطوعي.\n- المشاريع الشخصية.\n- المشاريع الأكاديمية.\n\nوالأفضل عرض الخط الزمني للخبرات بدل اختزال كل ذلك في رقم واحد قد يكون مضللًا.",
+    "status": "UNCONFIRMED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "experience",
+      "career"
+    ]
+  },
+  {
+    "id": 79,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع نفذ مشاريع لعملاء؟",
+    "answerAr": "توجد مشروعات ومواقع مرتبطة بأعمال تجارية وعلامات ومبادرات، لكن يجب التحقق من طبيعة كل مشروع قبل وصفه بأنه مشروع عميل مدفوع.",
+    "status": "UNCONFIRMED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": []
+  },
+  {
+    "id": 80,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "إيه رقم تليفون ربيع أو بيانات التواصل الخاصة به؟",
+    "answerAr": "يجب ألا يعرض المساعد البيانات الشخصية الحساسة بشكل تلقائي.\n\nيمكنه توجيه الزائر إلى قنوات التواصل المهنية العامة التي اختار ربيع نشرها، مثل LinkedIn أو Portfolio أو GitHub.\n\n---\n\n# القسم الثالث عشر: أسئلة إضافية متقدمة\n\nهذه الأسئلة تضيف قيمة حقيقية للشات بوت، خصوصًا عند استخدامه من مسؤولي التوظيف أو العملاء.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "id": 81,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "ما الفرق بين مشاريع ربيع الأكاديمية والمشاريع العملية؟",
+    "answerAr": "المشاريع الأكاديمية ارتبطت بمسيرته التعليمية، مثل Crime Prediction System.\n\nأما المشاريع العملية والشخصية فتشمل تطبيقات مثل ATHAR وE-Commerce وMediMind وImpersonaGuard.\n\nالمشاريع الأكاديمية تساعد على إثبات الأساس النظري، بينما المشاريع العملية توضح كيفية تطبيق المهارات في بناء أنظمة حقيقية.",
+    "status": "INFERRED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 82,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع يستطيع تطوير منتج من الصفر؟",
+    "answerAr": "يمتلك المهارات اللازمة للمساهمة في دورة تطوير منتج ويب متكامل، بدءًا من تصميم الواجهة، مرورًا ببناء Backend APIs وقاعدة البيانات، وحتى التكامل والاختبار والنشر.\n\nلكن حجم المنتج وتعقيده وعدد أعضاء الفريق والوقت المطلوب عوامل تحدد نطاق مسؤوليته.",
+    "status": "INFERRED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": 83,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل لديه خبرة في SEO؟",
+    "answerAr": "تعامل مع مفاهيم SEO في سياق تطوير مواقع الويب باستخدام Next.js، ومنها Metadata وServer-Side Rendering وتحسين ظهور الصفحات لمحركات البحث.\n\nكما عمل على مراجعات مرتبطة بأداء المواقع وتهيئتها لمحركات البحث وGoogle AdSense.",
+    "status": "UNCONFIRMED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 84,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل لديه خبرة في التعامل مع Git وGitHub؟",
+    "answerAr": "نعم، يستخدم Git وGitHub ضمن بيئة تطوير البرمجيات، ويحتفظ بمشروعات ومستودعات برمجية على GitHub.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 85,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل لديه خبرة في تطبيقات Mobile؟",
+    "answerAr": "نعم، من خلال React Native وExpo وTypeScript، خصوصًا مشروع ATHAR.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 86,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل لديه خبرة في بناء Dashboards؟",
+    "answerAr": "نعم، عمل على لوحات تحكم وأنظمة إدارية ضمن مشروعات متعددة، مثل المنصات التعليمية وأنظمة إدارة الصيدليات والتجارة الإلكترونية.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 87,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل لديه خبرة في الدفع الإلكتروني؟",
+    "answerAr": "وردت وظائف مدفوعات ضمن نطاق بعض مشروعاته، مثل EduSphere، لكن لا توجد تفاصيل كافية عن بوابات الدفع التي استخدمها أو طبيعة تكاملها؛ لذلك يجب عدم اختراع أسماء مزودي خدمات.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills",
+      "projects"
+    ]
+  },
+  {
+    "id": 88,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل لديه خبرة في Security؟",
+    "answerAr": "تعامل مع مفاهيم أمن التطبيقات، منها:\n\n- JWT.\n- Password Hashing.\n- Authentication.\n- Authorization.\n- RBAC.\n- Input Validation.\n- OWASP.\n- حماية واجهات APIs.\n\nكما ارتبط أحد مشروعاته بمجال تقييم المخاطر والأمن الرقمي.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills",
+      "architecture"
+    ]
+  },
+  {
+    "id": 89,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "ما الأدوات التي يستخدمها في التطوير؟",
+    "answerAr": "من الأدوات والتقنيات المعروفة في بيئة عمله:\n\n- VS Code.\n- Git.\n- GitHub.\n- Postman.\n- Docker.\n- Ubuntu.\n- MongoDB.\n- Firebase.\n- AWS.\n- Android Studio.\n- Expo.\n- Minikube.\n- Helm.\n- Prometheus.\n\nوقد تتغير الأدوات التي يعتمد عليها حسب المشروع.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "id": 90,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "ما نوع المشروعات التي يفضل العمل عليها؟",
+    "answerAr": "يميل إلى المشروعات التي تتضمن بناء تطبيقات ويب متكاملة، وواجهات حديثة، وأنظمة إدارة، ومنصات رقمية، وتطبيقات تستفيد من الذكاء الاصطناعي.\n\nكما يهتم بالمشروعات التي تتطلب تنظيمًا هندسيًا جيدًا وقابلية للصيانة والتوسع.\n\n---\n\n# القسم الرابع عشر: معلومات تقنية وشخصية إضافية",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "career"
+    ]
+  },
+  {
+    "id": 91,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "ما جهاز العمل الأساسي الذي يستخدمه ربيع؟",
+    "answerAr": "[محتوى خاص محجوب عن قاعدة المعرفة العامة.]",
+    "status": "HISTORICAL",
+    "access": "PRIVATE",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": []
+  },
+  {
+    "id": 92,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع مهتم بالتصوير وصناعة الفيديو؟",
+    "answerAr": "[محتوى خاص محجوب عن قاعدة المعرفة العامة.]",
+    "status": "HISTORICAL",
+    "access": "PRIVATE",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "content"
+    ]
+  },
+  {
+    "id": 93,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "هل ربيع يعمل على تطوير علامته الشخصية؟",
+    "answerAr": "نعم، لديه حضور مهني على LinkedIn وGitHub وPortfolio، بالإضافة إلى مشروع المحتوى التعليمي خمسة برمجة بالبلدي.\n\nويعمل على إبراز مهاراته ومشروعاته وشهاداته المهنية.",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "content"
+    ]
+  },
+  {
+    "id": 94,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "ما الرؤية المهنية التي يمكن استنتاجها من مشروعاته؟",
+    "answerAr": "من تنوع المشروعات، يمكن استنتاج أن ربيع يهتم ببناء حلول تقنية متكاملة تجمع بين تجربة المستخدم والوظائف الخلفية وإدارة البيانات.\n\nكما يظهر اهتمامه بدمج الذكاء الاصطناعي مع تطبيقات الويب، والتوسع في Cloud Computing وSystem Design.\n\nهذه قراءة لمساره وليست تصريحًا رسميًا منه عن هدف وظيفي نهائي.",
+    "status": "INFERRED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "profile",
+      "career"
+    ]
+  },
+  {
+    "id": 95,
+    "section": "القسم الأول: التعريف الشخصي",
+    "questionAr": "ما أفضل طريقة للتواصل المهني معه؟",
+    "answerAr": "يمكن توجيه المهتمين إلى قنواته المهنية:\n\n- Portfolio: https://rabea-shaban.vercel.app/\n- LinkedIn: https://www.linkedin.com/in/rabea-sh-elzayat/\n- GitHub: https://github.com/rabea-shaban\n\n---",
+    "status": "USER_REPORTED",
+    "access": "PUBLIC",
+    "source": "User-provided Rabea AI 95 Q&A document",
+    "lastUpdated": "2026-11-19",
+    "tags": [
+      "contact"
+    ]
+  }
+]

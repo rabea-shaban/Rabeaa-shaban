@@ -59,7 +59,7 @@ export default async function Image() {
             width: '380px',
             height: '380px',
             borderRadius: '50%',
-            background: 'rgba(139, 92, 246, 0.18)',
+            background: 'rgba(6, 182, 212, 0.18)',
             filter: 'blur(80px)',
           }}
         />
@@ -191,7 +191,7 @@ export default async function Image() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%)',
+              background: 'linear-gradient(135deg, #3b82f6 0%, #0ea5e9 50%, #06b6d4 100%)',
               padding: '7px',
               boxShadow: '0 20px 50px rgba(59, 130, 246, 0.35)',
             }}

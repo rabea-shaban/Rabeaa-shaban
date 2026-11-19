@@ -3,7 +3,7 @@ import AboutView from "@/views/AboutView";
 export const metadata = {
   title: "About Me | Rabea Shaban — Full Stack Software Engineer",
   description:
-    "Rabea Shaban (ربيع شعبان) is a Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
+    "Rabea Shaban (ربيع شعبان) is a Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS. He holds the AWS Certified Developer - Associate credential.",
   keywords: [
     "About Rabea Shaban",
     "Rabea Shaban",
@@ -19,7 +19,8 @@ export const metadata = {
     "Node.js Developer",
     "TypeScript Developer",
     "MongoDB Developer",
-    "AWS Developer"
+    "AWS Developer",
+    "AWS Certified Developer Associate",
   ],
   alternates: {
     canonical: "https://www.rabea-shaban.com/about",
@@ -27,7 +28,7 @@ export const metadata = {
   openGraph: {
     title: "About Rabea Shaban | Full Stack Software Engineer",
     description:
-      "Rabea Shaban (ربيع شعبان) is a Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
+      "Rabea Shaban (ربيع شعبان) is a Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS. He holds the AWS Certified Developer - Associate credential.",
     url: "https://www.rabea-shaban.com/about",
     locale: "en_US",
     images: ["/opengraph-image", "/profile.jpg"],

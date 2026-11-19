@@ -1,0 +1,74 @@
+{
+  "system": "RABEA AI – PERSONAL KNOWLEDGE SYSTEM",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-19",
+  "sources": [
+    {
+      "id": "portfolio",
+      "type": "current repository",
+      "status": "VERIFIED",
+      "priority": 1,
+      "description": "Current public portfolio data in src/Data and the structured knowledge modules."
+    },
+    {
+      "id": "owner-95-qa",
+      "type": "user-provided document",
+      "status": "USER_REPORTED",
+      "priority": 2,
+      "description": "The owner-provided 95-question personal knowledge profile. Each record keeps its own status and access classification."
+    },
+    {
+      "id": "personal-knowledge-zip",
+      "type": "user-provided archive",
+      "status": "USER_REPORTED",
+      "priority": 2,
+      "description": "Structured personal knowledge base; use as supplemental context and honor its verification caveats."
+    }
+  ],
+  "sourcePrecedence": [
+    "Latest explicit user correction",
+    "Current portfolio and certificate data",
+    "Owner-provided Q&A with its stated status",
+    "Historical CV or inferred analysis"
+  ],
+  "statusDefinitions": {
+    "VERIFIED": "Supported by current portfolio or documentary data in the project.",
+    "USER_REPORTED": "Present in information supplied by Rabea; not independently verified.",
+    "HISTORICAL": "Was recorded previously and may no longer be current.",
+    "UNCONFIRMED": "Conflicting or insufficient information; explain uncertainty.",
+    "INFERRED": "An assessment from the available facts, not a confirmed personal claim.",
+    "OUTDATED": "Superseded by a newer explicit fact.",
+    "PLANNED": "A goal or plan, not a completed achievement."
+  },
+  "privacy": {
+    "policy": "Private records are never sent to the visitor client or retrieved into the public assistant prompt.",
+    "redactedFaqIds": [3, 4, 7, 91, 92],
+    "visitorContact": "Only public professional channels in knowledge/contact.ts may be shared."
+  },
+  "conflicts": [
+    {
+      "id": "athar-platform-type",
+      "faqId": 29,
+      "status": "UNCONFIRMED",
+      "portfolioDescription": "The current project page describes ATHAR as an Arabic web platform.",
+      "supplementalDescription": "The owner-provided Q&A describes a React Native / Expo / Firebase mobile app.",
+      "resolution": "Do not combine the two stacks or claim they are the same product. Tell visitors the source descriptions differ until Rabea confirms."
+    },
+    {
+      "id": "degree-name",
+      "status": "RESOLVED_BY_USER_CORRECTION",
+      "resolution": "Use Business Information Systems (BIS); older MIS wording is outdated."
+    },
+    {
+      "id": "aws-developer-associate",
+      "status": "RESOLVED_BY_CERTIFICATE",
+      "resolution": "Use the AWS Certified Developer – Associate certificate record in src/Data/certificates.js."
+    }
+  ],
+  "updateHistory": [
+    {
+      "date": "2026-11-19",
+      "change": "Added the owner-provided 95-question FAQ corpus, access/status labels, privacy redaction, and lightweight retrieval metadata."
+    }
+  ]
+}

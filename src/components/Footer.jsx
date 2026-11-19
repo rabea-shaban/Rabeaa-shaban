@@ -53,6 +53,7 @@ const Footer = () => {
     { name: t.nav.services, path: "/services" },
     { name: t.nav.contact, path: "/contact" },
     { name: t.nav.certificates, path: "/certificates" },
+    { name: isAr ? "سياسة الخصوصية" : "Privacy Policy", path: "/privacy" },
   ];
 
   const techStack = [

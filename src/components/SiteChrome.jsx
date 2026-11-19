@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import LoadingScreen from "@/components/LoadingScreen";
 import { Toaster } from "@/components/ui/toaster";
 import { CustomizationButton, CustomizationPanel } from "@/components/customization";
+import RabeaAIChat from "@/components/rabea-ai/RabeaAIChat";
 
 export default function SiteChrome({ children }) {
   const pathname = usePathname();
@@ -24,6 +25,7 @@ export default function SiteChrome({ children }) {
       <FloatingContact />
       <CustomizationButton />
       <CustomizationPanel />
+      <RabeaAIChat />
       <main>{children}</main>
       <Footer />
       <Toaster />
