@@ -67,6 +67,35 @@ function GithubIcon() {
   );
 }
 
+function WhatsAppIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 32 32" className="cv-whatsapp-icon">
+      <path
+        d="M16 3.25A12.35 12.35 0 0 0 5.4 21.95L4 28l6.2-1.62A12.35 12.35 0 1 0 16 3.25Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+      <path
+        d="M12.1 10.2c-.3-.7-.65-.72-.95-.73h-.8c-.28 0-.73.1-1.11.52-.38.43-1.46 1.43-1.46 3.48s1.5 4.03 1.7 4.3c.2.28 2.9 4.64 7.17 6.32 3.55 1.4 4.28 1.12 5.05 1.05.77-.07 2.48-1.02 2.83-2 .35-.98.35-1.81.25-1.99-.1-.18-.38-.28-.8-.49-.42-.21-2.48-1.22-2.86-1.36-.38-.14-.66-.21-.94.21-.28.42-1.08 1.36-1.32 1.64-.24.28-.49.32-.9.1-.42-.2-1.77-.65-3.37-2.07-1.25-1.1-2.1-2.47-2.34-2.9-.24-.41-.03-.64.18-.84.19-.18.42-.48.63-.72.21-.24.28-.42.42-.7.14-.28.07-.53-.03-.74-.1-.21-.92-2.29-1.25-3.08Z"
+        fill="currentColor"
+        transform="translate(2 0) scale(.86)"
+      />
+    </svg>
+  );
+}
+
+function EmailIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="cv-email-icon">
+      <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" strokeWidth="1.8" />
+      <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" />
+    </svg>
+  );
+}
+
 function LinkedInIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className="cv-linkedin-icon">
@@ -92,15 +121,58 @@ export default function CvPage() {
             priority
           />
           <h1>Rabea Shaban Ibrahim</h1>
-          <p className="cv-title">Software Developer</p>
-          <p className="cv-specialization">AI-based Software Development</p>
+          <p className="cv-title">
+            Software Engineer | Full-Stack MERN Developer | React.js &amp; Next.js
+          </p>
+          <p className="cv-specialization">
+            Digilians Specialized Diploma · AI-based Software Development
+          </p>
         </header>
 
-        <section className="cv-personal" aria-labelledby="personal-heading">
-          <h2 id="personal-heading">Personal Information</h2>
-          <p><strong>Date of Birth:</strong> June 2, 2002</p>
-          <p><strong>Education:</strong> Management Information Systems — 2024</p>
-          <p><strong>English Level:</strong> A2</p>
+        <nav className="cv-contact" aria-label="Direct contact">
+          <a
+            className="cv-contact-link cv-whatsapp"
+            href="https://wa.me/201156807072"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="cv-contact-icon"><WhatsAppIcon /></span>
+            <span className="cv-contact-copy">
+              <span className="cv-contact-label">WhatsApp</span>
+              <span className="cv-contact-value" dir="ltr">+20 115 680 7072</span>
+            </span>
+            <ExternalLink className="cv-contact-external" aria-hidden="true" />
+          </a>
+          <a className="cv-contact-link cv-email" href="mailto:rabea.elzayate@gmail.com">
+            <span className="cv-contact-icon"><EmailIcon /></span>
+            <span className="cv-contact-copy">
+              <span className="cv-contact-label">Email</span>
+              <span className="cv-contact-value">rabea.elzayate@gmail.com</span>
+            </span>
+          </a>
+        </nav>
+
+        <section className="cv-personal" aria-labelledby="about-heading">
+          <h2 id="about-heading">About Me</h2>
+          <p>
+            I’m a Software Engineer focused on full-stack web development with
+            the MERN stack, React.js, and Next.js.
+          </p>
+        </section>
+
+        <section className="cv-section cv-education" aria-labelledby="education-heading">
+          <div className="cv-divider" />
+          <h2 id="education-heading">Education &amp; Training</h2>
+          <div className="cv-education-list">
+            <article className="cv-education-card">
+              <h3>AI-Based Software Development Specialized Diploma</h3>
+              <p>Digilians Initiative · Dec 2025 – Sep 2026</p>
+            </article>
+            <article className="cv-education-card">
+              <h3>Bachelor of Management Information Systems</h3>
+              <p>Higher Institute of Technology, Management and Information – Minya · 2020 – 2024</p>
+            </article>
+          </div>
         </section>
 
         <section className="cv-select" aria-labelledby="cv-heading">
@@ -158,6 +230,7 @@ export default function CvPage() {
             </a>
           ))}
         </nav>
+
       </div>
     </main>
   );
