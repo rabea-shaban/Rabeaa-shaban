@@ -8,17 +8,37 @@ import {
   Monitor,
 } from "lucide-react";
 
+const shareTitle = "Rabea Shaban Ibrahim | Software Engineer";
+const shareDescription =
+  "Software Engineer specializing in Full-Stack MERN, React.js, and Next.js. Explore Rabea's education and tailored CVs.";
+const shareImageAlt =
+  "Rabea Shaban Ibrahim — Software Engineer and Full-Stack MERN Developer";
+
 export const metadata = {
-  title: { absolute: "Rabea Shaban | Digital CV" },
-  description:
-    "Explore Rabea Shaban's professional information and download his Frontend, Backend, or Full Stack Developer CV.",
-  alternates: { canonical: "https://rabea-shaban.com/cv" },
+  title: { absolute: shareTitle },
+  description: shareDescription,
+  alternates: { canonical: "https://www.rabea-shaban.com/cv" },
   openGraph: {
-    title: "Rabea Shaban | Digital CV",
-    description:
-      "Explore Rabea Shaban's professional information and download his Frontend, Backend, or Full Stack Developer CV.",
-    url: "https://rabea-shaban.com/cv",
+    title: shareTitle,
+    description: shareDescription,
+    url: "https://www.rabea-shaban.com/cv",
+    siteName: "Rabea Shaban",
     type: "profile",
+    images: [
+      {
+        url: "/cv/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: shareImageAlt,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: shareTitle,
+    description: shareDescription,
+    images: ["/cv/twitter-image"],
+    creator: "@rabea_sh_elzayat",
   },
 };
 
